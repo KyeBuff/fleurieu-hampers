@@ -30,3 +30,20 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+add_action('acf/init', 'add_footer_options');
+
+function add_footer_options() {
+    
+    if( function_exists('acf_add_options_page') ) {
+        
+        $option_page = acf_add_options_page(array(
+            'page_title'    => 'Footer content',
+            'menu_title'    => 'Footer content',
+        ));
+        
+    }
+
+    add_action( 'acf/init', 'add_contact_form_options' );
+
+}

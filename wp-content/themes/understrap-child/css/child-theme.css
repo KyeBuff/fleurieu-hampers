@@ -11037,6 +11037,59 @@ a {
     padding: 1em 0;
     width: 100%; } }
 
+.footer-wrapper {
+  padding-bottom: 0;
+  background-color: black;
+  color: white; }
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.links__header {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.links__list {
+  display: inline-block;
+  margin-right: 1em;
+  padding-bottom: 2em; }
+
+.links__link {
+  display: block;
+  margin: 0.5em 0;
+  color: white; }
+  .links__link:hover {
+    color: white;
+    text-decoration: underline; }
+
+.social__link {
+  margin: 0 0.25em; }
+
+.social .fa-circle {
+  color: white;
+  font-size: 2em; }
+
+.social .fa-social-icon {
+  font-size: 1.1em; }
+
+.legal-text {
+  font-size: .8em;
+  text-align: center;
+  padding: 4em 0 0;
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .links__link {
+    margin: 0; } }
+
 .carousel-inner {
   height: 500px; }
 
