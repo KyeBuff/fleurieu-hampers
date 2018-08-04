@@ -1,0 +1,63 @@
+.carousel-inner {
+	height: 500px;
+}
+
+.carousel-item {
+	position: relative;
+	height: 500px;
+	padding: $spacing;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&.header {
+		.carousel-item__overlay {
+			background-color: transparent;
+			color: $white;
+			.carousel-item__header {
+				font-size: 3em;
+			}
+		}
+	}
+	&.header-sale {
+		.carousel-item__overlay {
+			.carousel-item__header {
+				font-size: 3em;
+			}
+		}
+	}
+	@at-root #{&}__overlay {
+		margin: 100px auto 0;
+		max-width: 250px;
+		padding: $spacing;
+
+		background-color: rgba(255, 255 , 255, 0.9);
+
+		text-align: center;
+	}
+	@at-root #{&}__header {
+		margin: $spacing 0;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.carousel-item {
+		@at-root #{&}__tag {
+
+			position: absolute;
+			bottom: 1.2em;
+			right: -1.25em;
+
+			padding: $spacing;
+
+			transform: rotate(-90deg);
+
+			background-color: pink;
+
+			font-size: 2em;
+			letter-spacing: .4em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
