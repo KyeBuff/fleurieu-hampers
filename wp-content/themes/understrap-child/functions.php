@@ -23,7 +23,7 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
     wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/libraries/slick/slick.min.js', array('jquery'), false);
-    wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), true);
+    wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), false);
 }
 
 function add_child_theme_textdomain() {

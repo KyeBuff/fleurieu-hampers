@@ -1,0 +1,10 @@
+.featured-products {
+	.slide-item {
+		display: block;
+	}
+	@at-root #{&}__text {
+		margin: 0 auto;
+		max-width: 300px;
+		text-align: center;
+	}
+}

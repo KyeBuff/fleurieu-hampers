@@ -10924,6 +10924,45 @@ a.skip-link {
       color: black;
       opacity: 0.75; }
 
+button {
+  background-color: transparent;
+  border: none; }
+
+a {
+  color: black; }
+  a:hover {
+    text-decoration: none; }
+
+.fa {
+  font-size: 1.5em; }
+
+.section__header {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 0.5em;
+  padding: 1em 0;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .section__header {
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+    margin: 1em 0 2em;
+    padding: 0; }
+    .section__header::before, .section__header::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 20px;
+      height: 2px;
+      width: 35%;
+      background-color: black; }
+    .section__header::before {
+      left: 0; }
+    .section__header::after {
+      right: 0; } }
+
 .header-top {
   text-align: center;
   padding: 1em 0; }
@@ -10998,14 +11037,10 @@ a.skip-link {
     padding: 1em 0;
     width: 100%; } }
 
-button {
-  background-color: transparent;
-  border: none; }
+.featured-products .slide-item {
+  display: block; }
 
-a {
-  color: black; }
-  a:hover {
-    text-decoration: none; }
-
-.fa {
-  font-size: 1.5em; }
+.featured-products__text {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center; }

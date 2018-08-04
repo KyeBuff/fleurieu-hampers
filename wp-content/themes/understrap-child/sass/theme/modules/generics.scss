@@ -13,3 +13,44 @@ a {
 .fa {
 	font-size: 1.5em;
 }
+
+
+
+
+.section__header {
+	border-top: 2px solid $black;
+	border-bottom: 2px solid $black;
+	margin-bottom: $spacing / 2;
+	padding: $spacing 0;
+
+	text-align: center;
+}
+
+@include media-breakpoint-up(md) {
+	.section__header {
+		position: relative;
+
+		border-top: none;
+		border-bottom: none;
+		margin: $spacing 0 $spacing * 2;
+		padding: 0;
+
+		&::before, &::after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 20px;
+
+			height: 2px;
+			width: 35%;
+
+			background-color: $black;
+		}
+		&::before {
+			left: 0;
+		}
+		&::after {
+			right: 0;
+		}
+	}
+}
