@@ -31,19 +31,21 @@ function add_child_theme_textdomain() {
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
-add_action('acf/init', 'add_footer_options');
+add_action('acf/init', 'add_options');
 
-function add_footer_options() {
+function add_options() {
     
     if( function_exists('acf_add_options_page') ) {
         
-        $option_page = acf_add_options_page(array(
+        $footer_option_page = acf_add_options_page(array(
             'page_title'    => 'Footer content',
             'menu_title'    => 'Footer content',
         ));
         
+        $policies_option_page = acf_add_options_page(array(
+            'page_title'    => 'Policies',
+            'menu_title'    => 'Policies',
+        ));
     }
-
-    add_action( 'acf/init', 'add_contact_form_options' );
 
 }

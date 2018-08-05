@@ -11168,3 +11168,62 @@ a {
 @media (min-width: 576px) {
   .woocommerce ul.products li.product {
     min-width: 25%; } }
+
+.woocommerce #content div.product .product_title {
+  display: none; }
+
+.woocommerce #content div.product div.images {
+  float: none;
+  width: 100%; }
+  .woocommerce #content div.product div.images .flex-viewport {
+    border: 1px solid #D1D1D1; }
+  .woocommerce #content div.product div.images .flex-control-thumbs li {
+    margin-top: 1em;
+    margin-right: 1em;
+    max-width: 50px;
+    width: 20%; }
+    .woocommerce #content div.product div.images .flex-control-thumbs li img {
+      border: 1px solid #D1D1D1; }
+
+.woocommerce #content div.product .price .woocommerce-Price-amount {
+  color: #5E5E5E;
+  font-weight: lighter; }
+
+.woocommerce #content div.product form.cart div.quantity {
+  margin: 1em 0 4em;
+  float: none; }
+  .woocommerce #content div.product form.cart div.quantity .sr-only {
+    position: static;
+    height: auto;
+    width: auto; }
+  .woocommerce #content div.product form.cart div.quantity .qty {
+    display: block;
+    padding: 0.5em;
+    width: 6em;
+    text-align: left; }
+
+.woocommerce #content div.product form.cart .btn[name="add-to-cart"], .woocommerce #content div.product form.cart .wpcf7 input[name="add-to-cart"][type=submit], .wpcf7 .woocommerce #content div.product form.cart input[name="add-to-cart"][type=submit] {
+  border: none;
+  border-radius: 0;
+  padding: 1em;
+  width: 100%;
+  background-color: #B59C6D;
+  color: white;
+  text-transform: uppercase; }
+
+.woocommerce #content div.product .additional-info .additional-info__section {
+  border-top: 1px solid #5E5E5E;
+  padding: 0; }
+  .woocommerce #content div.product .additional-info .additional-info__section:last-of-type {
+    border-bottom: 1px solid #5E5E5E; }
+
+.woocommerce #content div.product .additional-info .additional-info__toggle {
+  display: block;
+  padding: 1.5em 0;
+  width: 100%;
+  text-align: left; }
+  .woocommerce #content div.product .additional-info .additional-info__toggle .toggle-icon {
+    float: right;
+    font-size: 1.75em;
+    font-weight: lighter;
+    line-height: 50%; }

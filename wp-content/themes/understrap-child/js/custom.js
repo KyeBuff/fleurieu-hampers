@@ -25,4 +25,19 @@ jQuery(document).ready(function() {
 	  ]
 	});
 
+	$('.additional-info__toggle').on('click', function() {
+		const button = $(this);
+		const icon = button.children();
+		const isPlus = icon.text() === '+';
+
+		if(isPlus) {
+			icon.text('-');
+			button.next().removeClass('d-none');
+
+		} else {
+			icon.text('+');
+			button.next().addClass('d-none');
+		}
+	});
+
 });
