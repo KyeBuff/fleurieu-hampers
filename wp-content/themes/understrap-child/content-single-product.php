@@ -37,6 +37,8 @@ $sale_price = $post_meta['_sale_price'][0];
 $shipping_info = get_field('shipping_info', 'options');
 $return_policy = get_field('return_policy', 'options');
 
+$product_info = get_field('product_information');
+
 
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
@@ -100,6 +102,12 @@ $return_policy = get_field('return_policy', 'options');
 	 	?>
 	 	</div>
 	 	<div class="col-12 additional-info">
+	 		<div class="additional-info__section">
+	 			<button class="additional-info__toggle">PRODUCT INFO<span class="toggle-icon">+</span></button>
+	 			<div class="additional-info__content d-none">
+	 			<?php echo $product_info; ?>
+	 			</div>
+	 		</div>
 	 		<div class="additional-info__section">
 	 			<button class="additional-info__toggle">RETURN AND REFUND POLICY<span class="toggle-icon">+</span></button>
 	 			<div class="additional-info__content d-none">
