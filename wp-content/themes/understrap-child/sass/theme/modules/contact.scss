@@ -1,0 +1,51 @@
+.contact {
+	.wpcf7-form-control[type="text"], .wpcf7-form-control[type="email"], .wpcf7-textarea {
+		border: none;
+		border-bottom: 1px solid $grey;
+		border-radius: 0;
+
+		color: $grey;
+		caret-color: $grey;
+		font-size: .9em;
+		font-weight: lighter;
+		&:focus {
+			border-bottom-color: $gold;
+			caret-color: $gold;
+		}
+		&:valid {
+			color: $gold;
+		}
+	}
+	.wpcf7 input[type=submit] {
+		border: none;
+		color: $gold;
+		&:hover {
+			background-color: transparent;
+			color: $gold;
+		}
+	}
+	.wpcf7-not-valid-tip {
+		padding: $spacing / 2;
+	}
+	.wpcf7-validation-errors {
+		border: none;
+		height: auto;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.contact {
+		.wpcf7-form-control-wrap {
+			&:first-of-type, &:nth-of-type(2) {
+				float: left;
+				width: 48%;
+			}
+			&:first-of-type {
+				margin-right: 2%;
+			}
+			&:nth-of-type(2), {
+				margin-left: 2%;
+			}
+		}
+	}
+}

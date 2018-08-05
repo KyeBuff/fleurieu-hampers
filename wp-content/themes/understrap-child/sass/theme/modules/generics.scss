@@ -24,6 +24,25 @@ a {
 	text-align: center;
 }
 
+.gold {
+	color: $gold;
+}
+
+.separator {
+	display: inline-block;
+
+	padding: 0 $spacing / 2;
+
+	font-size: 1.25em;
+}
+
+/* remember to define focus styles! */
+*:focus {
+	outline: none !important;
+  	-webkit-box-shadow: none !important;
+  	box-shadow: none !important;
+}
+
 @include media-breakpoint-up(md) {
 	.section__header {
 		position: relative;

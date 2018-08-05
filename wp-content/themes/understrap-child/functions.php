@@ -46,6 +46,11 @@ function add_options() {
             'page_title'    => 'Policies',
             'menu_title'    => 'Policies',
         ));
+
+        $policies_option_page = acf_add_options_page(array(
+            'page_title'    => 'Contact information',
+            'menu_title'    => 'Contact information',
+        ));
     }
 
 }
