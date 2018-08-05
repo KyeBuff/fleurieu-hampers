@@ -56,6 +56,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- container end -->
 
+	<?php get_template_part( 'global-templates/cart', 'overlay' ); ?>
+
 </div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->

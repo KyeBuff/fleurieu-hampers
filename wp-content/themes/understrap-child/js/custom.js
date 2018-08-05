@@ -40,4 +40,17 @@ jQuery(document).ready(function() {
 		}
 	});
 
+	$('#show-cart').on('click', function() {
+		const cartPreview = $('.cart-preview');
+		if(cartPreview.hasClass('d-none')) {
+			cartPreview.removeClass('d-none');
+			cartPreview.hide();
+		}
+		cartPreview.fadeIn();
+	});
+
+	$('#close-cart').on('click', function() {
+		$('.cart-preview').fadeOut();
+	});
+
 });

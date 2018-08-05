@@ -31,7 +31,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<header>
-
 			<div class="container">
 				<div class="header-top">
 					<div class="header-top__contact">
@@ -40,14 +39,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="header-top__user-info d-none d-md-block">
 						<a class="header-top__log-in" href="#">Log In</a>
-						<button class="header-top__cart"><i class="fa fa-shopping-cart"></i></button>
+						<button id="show-cart" class="header-top__cart"><i class="fa fa-shopping-cart"></i></button>
 					</div>
 				</div>
 				<div class="header-logo">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/img/logo.png' ?>" alt="Fleurieu Hampers logo">		
 				</div>
 				<div class="header-top__user-info d-md-none">
-					<button class="header-top__cart"><i class="fa fa-shopping-cart"></i></button>
+					<a href="/checkout" class="header-top__cart d-md-none"><i class="fa fa-shopping-cart"></i></a>
 					<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
 				</div>
 			</div>
@@ -59,9 +58,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 				<div class="container" >
 			<?php endif; ?>
-
-					
-
 					<!-- The WordPress Menu goes here -->
 					<?php wp_nav_menu(
 						array(
