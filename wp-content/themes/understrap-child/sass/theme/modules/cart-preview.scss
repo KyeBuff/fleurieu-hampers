@@ -2,6 +2,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 1000;
 
 	height: 100vh;
 	width: 100vw;
@@ -91,6 +92,8 @@
 	}
 	.mini_cart_item {
 		display: flow-root;
+
+		margin: $spacing 0;
 
 		a {
 			color: $grey;

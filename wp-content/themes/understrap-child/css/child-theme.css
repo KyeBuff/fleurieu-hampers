@@ -11294,6 +11294,7 @@ button {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1000;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6); }
@@ -11357,7 +11358,8 @@ button {
       font-size: 1.5em;
       font-weight: lighter; }
   .woocommerce-mini-cart .mini_cart_item {
-    display: flow-root; }
+    display: flow-root;
+    margin: 1em 0; }
     .woocommerce-mini-cart .mini_cart_item a {
       color: #5E5E5E;
       font-weight: lighter; }
