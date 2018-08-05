@@ -1,6 +1,13 @@
 .woocommerce {
 	#content {
+		p, h2, label, input, button {
+			color: $grey;
+			font-weight: lighter;
+		}
 		div.product {
+			span.onsale {
+				display: none;
+			}
 			.product_title {
 				display: none;
 			}
@@ -71,6 +78,7 @@
 					width: 100%;
 
 					text-align: left;
+					cursor: pointer;
 					.toggle-icon {
 						float: right;
 						font-size: 1.75em;

@@ -34,11 +34,6 @@ $sku = $post_meta['_sku'][0];
 $reg_price = $post_meta['_regular_price'][0];
 $sale_price = $post_meta['_sale_price'][0];
 
-$shipping_info = get_field('shipping_info', 'options');
-$return_policy = get_field('return_policy', 'options');
-
-$product_info = get_field('product_information');
-
 
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
@@ -64,6 +59,12 @@ $product_info = get_field('product_information');
 				 * @hooked WC_Structured_Data::generate_product_data() - 60
 				 */
 			?>
+			<div class="d-none d-md-block">
+				<?php woocommerce_template_single_add_to_cart(); ?>
+			</div>
+			<div class="additional-info d-none d-md-block">
+				<?php get_template_part('product-templates/product', 'additional') ?>
+		 	</div>
 		</div>
 		<div class="col-12 col-md-6 order-md-0">
 		<?php
@@ -74,18 +75,13 @@ $product_info = get_field('product_information');
 			 * @hooked woocommerce_show_product_images - 20
 			 */
 			do_action( 'woocommerce_before_single_product_summary' );
+			wc_get_template( 'single-product/short-description.php' );
 		?>
 		</div>
 
-		<div class="col-12 product-description">
-			<?php 
-			wc_get_template( 'single-product/short-description.php' );
-			?>
-		</div>
-
-		<div class="col-12 product-cta">
+		<div class="col-12 product-cta d-md-none">
 		<?php
-			woocommerce_template_single_add_to_cart() 
+			woocommerce_template_single_add_to_cart();
 			/**
 			* Hook: woocommerce_single_product_summary.
 			*
@@ -101,29 +97,8 @@ $product_info = get_field('product_information');
 			// do_action( 'woocommerce_single_product_summary' );
 	 	?>
 	 	</div>
-	 	<div class="col-12 additional-info">
-	 		<div class="additional-info__section">
-	 			<button class="additional-info__toggle">PRODUCT INFO<span class="toggle-icon">+</span></button>
-	 			<div class="additional-info__content d-none">
-	 			<?php echo $product_info; ?>
-	 			</div>
-	 		</div>
-	 		<div class="additional-info__section">
-	 			<button class="additional-info__toggle">RETURN AND REFUND POLICY<span class="toggle-icon">+</span></button>
-	 			<div class="additional-info__content d-none">
-	 			<?php foreach ($return_policy as $text) { $text = $text['paragraph']; ?>
-	 				<p><?php echo $text; ?></p>
-	 			<?php } ?>
-	 			</div>
-	 		</div>
-	 		<div class="additional-info__section">
-	 			<button class="additional-info__toggle">SHIPPING INFO<span class="toggle-icon">+</span></button>
-	 			<div class="additional-info__content d-none">
-	 			<?php foreach ($shipping_info as $text) { $text = $text['paragraph']; ?>
-	 				<p><?php echo $text; ?></p>
-	 			<?php } ?>
-	 			</div>
-	 		</div>
+	 	<div class="col-12 additional-info order-md-2 d-md-none">
+			<?php get_template_part('product-templates/product', 'additional') ?>
 	 	</div>
 	</div>
 

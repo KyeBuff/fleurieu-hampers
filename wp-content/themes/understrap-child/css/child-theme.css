@@ -11169,6 +11169,13 @@ a {
   .woocommerce ul.products li.product {
     min-width: 25%; } }
 
+.woocommerce #content p, .woocommerce #content h2, .woocommerce #content label, .woocommerce #content input, .woocommerce #content button {
+  color: #5E5E5E;
+  font-weight: lighter; }
+
+.woocommerce #content div.product span.onsale {
+  display: none; }
+
 .woocommerce #content div.product .product_title {
   display: none; }
 
@@ -11221,7 +11228,8 @@ a {
   display: block;
   padding: 1.5em 0;
   width: 100%;
-  text-align: left; }
+  text-align: left;
+  cursor: pointer; }
   .woocommerce #content div.product .additional-info .additional-info__toggle .toggle-icon {
     float: right;
     font-size: 1.75em;
