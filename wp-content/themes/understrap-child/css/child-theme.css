@@ -10933,6 +10933,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+button {
+  cursor: pointer; }
+
 .fa {
   font-size: 1.5em; }
 
@@ -11305,8 +11308,9 @@ a {
     background-color: white; }
   .cart-preview__heading {
     position: relative;
-    background-color: black;
-    padding: 1em; }
+    height: 68px;
+    padding: 1em;
+    background-color: black; }
   .cart-preview__close {
     position: absolute;
     top: 1.25em;
@@ -11320,15 +11324,50 @@ a {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    padding: 1em; }
-  .cart-preview__checkout {
-    display: block;
+    height: 56px;
     padding: 1em;
-    width: 100%;
-    background-color: #B59C6D;
-    color: white;
-    text-align: center;
-    text-transform: uppercase; }
-    .cart-preview__checkout:hover {
-      color: white; }
+    width: 100%; }
+
+.woocommerce-mini-cart {
+  padding: 1em; }
+  .woocommerce-mini-cart__buttons {
+    padding: 2em 1em 1em; }
+    .woocommerce-mini-cart__buttons .button:last-of-type {
+      display: block;
+      margin-left: 1em;
+      padding: 1em;
+      width: calc(100% - 2em);
+      background-color: #B59C6D;
+      color: white;
+      text-align: center;
+      text-transform: uppercase; }
+      .woocommerce-mini-cart__buttons .button:last-of-type:hover {
+        color: white; }
+    .woocommerce-mini-cart__buttons .button:first-of-type {
+      display: none; }
+  .woocommerce-mini-cart__total {
+    border-bottom: 1px solid #5E5E5E;
+    padding: 2em 1em;
+    color: black; }
+    .woocommerce-mini-cart__total strong {
+      font-size: 1.5em;
+      font-weight: lighter; }
+    .woocommerce-mini-cart__total .amount {
+      display: block;
+      font-size: 1.5em;
+      font-weight: lighter; }
+  .woocommerce-mini-cart .mini_cart_item {
+    display: flow-root; }
+    .woocommerce-mini-cart .mini_cart_item a {
+      color: #5E5E5E;
+      font-weight: lighter; }
+    .woocommerce-mini-cart .mini_cart_item .remove {
+      display: none; }
+    .woocommerce-mini-cart .mini_cart_item .size-woocommerce_thumbnail {
+      float: left;
+      margin-right: 0.25em;
+      width: 100px; }
+    .woocommerce-mini-cart .mini_cart_item .quantity {
+      display: block;
+      padding: 0.25em 0;
+      color: black; }
