@@ -11348,25 +11348,25 @@ button {
     height: 56px;
     padding: 1em;
     width: 100%; }
+  .cart-preview__btn {
+    display: block;
+    margin-left: 1em;
+    padding: 1em;
+    width: calc(100% - 2em);
+    background-color: #B59C6D;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase; }
+    .cart-preview__btn:hover {
+      background-color: #B59C6D;
+      color: white; }
 
 .woocommerce-mini-cart {
   padding: 1em; }
   .woocommerce-mini-cart__buttons {
     padding: 2em 1em 1em; }
-    .woocommerce-mini-cart__buttons .button:last-of-type {
-      display: block;
-      margin: 0;
-      padding: 1em;
-      width: 100%;
-      background-color: #B59C6D;
-      color: white;
-      font-weight: lighter;
-      text-align: center;
-      text-transform: uppercase; }
-      .woocommerce-mini-cart__buttons .button:last-of-type:hover {
-        background-color: #B59C6D;
-        color: white; }
-    .woocommerce-mini-cart__buttons .button:first-of-type {
+    .woocommerce-mini-cart__buttons .button {
       display: none; }
   .woocommerce-mini-cart__total {
     border-bottom: 1px solid #D1D1D1;
