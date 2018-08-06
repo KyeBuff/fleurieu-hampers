@@ -8,6 +8,10 @@
  */
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+
+$cart_total = WC()->cart->get_cart_contents_count();
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -39,14 +43,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="header-top__user-info d-none d-md-block">
 						<a class="header-top__log-in" href="#">Log In</a>
-						<button id="show-cart" class="header-top__cart"><i class="fa fa-shopping-cart"></i></button>
+						<button id="show-cart" class="header-top__cart <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>						
+							<?php if ($cart_total) { ?>
+								<span class="header-top__item-count"><?php echo $cart_total > 9 ? '9+' : $cart_total; ?></span>
+							<?php } ?>
+						</button>
 					</div>
 				</div>
 				<div class="header-logo">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/img/logo.png' ?>" alt="Fleurieu Hampers logo">		
 				</div>
 				<div class="header-top__user-info d-md-none">
-					<a href="/checkout" class="header-top__cart d-md-none"><i class="fa fa-shopping-cart"></i></a>
+					<a href="/checkout" class="header-top__cart d-md-none <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>
+						<?php if ($cart_total) { ?>
+						<span class="header-top__item-count"><?php echo $cart_total > 9 ? '9+' : $cart_total; ?></span>
+						<?php } ?>
+					</a>
 					<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
 				</div>
 			</div>

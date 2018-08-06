@@ -59,15 +59,17 @@
 		.button:last-of-type {
 			display: block;
 
-			margin-left: 1em;
+			margin: 0;
 			padding: $spacing;
-			width: calc(100% - 2em);
+			width: 100%;
 
 			background-color: $add-cart;
 			color: $white;
+			font-weight: lighter;
 			text-align: center;
 			text-transform: uppercase;
 			&:hover {
+				background-color: $add-cart;
 				color: $white;
 			}
 		}
@@ -76,7 +78,7 @@
 		}
 	}
 	@at-root #{&}__total {
-		border-bottom: 1px solid $grey;
+		border-bottom: 1px solid $lightgrey;
 		padding: $spacing * 2 $spacing;
 
 		color: $black;
@@ -114,5 +116,11 @@
 
 			color: $black;
 		}
+	}
+}
+
+.woocommerce {
+	ul.woocommerce-mini-cart {
+		padding: $spacing;
 	}
 }
