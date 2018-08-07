@@ -22,7 +22,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<main class="site-main" id="main">
+			<main class="site-main col-12" id="main">
 
 			<?php get_template_part( 'global-templates/carousel' ); ?>
 			<?php get_template_part( 'global-templates/featured-products' ); ?>
