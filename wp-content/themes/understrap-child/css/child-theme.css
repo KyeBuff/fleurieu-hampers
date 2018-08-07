@@ -11029,7 +11029,8 @@ button {
   transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
   .navbar-nav .nav-link:hover {
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;

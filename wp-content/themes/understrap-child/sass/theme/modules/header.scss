@@ -51,6 +51,7 @@
 		transition: transform .25s ease-in-out;
 		transform: scale(1);
 		text-transform: uppercase;
+		width: 100%;
 		&:hover {
 			transition: all .25s ease-in-out;
 			transform: scale(1.2);
