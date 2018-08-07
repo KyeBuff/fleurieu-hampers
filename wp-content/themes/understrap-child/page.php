@@ -1,7 +1,7 @@
 <?php
 /**
- * The template is for displaying the contact page
-
+ * The template for displaying all pages.
+ *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
@@ -22,11 +22,18 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<main class="site-main col-12 contact" id="main">
+			<main class="site-main" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'contact' ); ?>
+					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+
+					<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+					?>
 
 				<?php endwhile; // end of the loop. ?>
 
