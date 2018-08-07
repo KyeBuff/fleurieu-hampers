@@ -1,23 +1,12 @@
 <?php
 /**
- * The Template for displaying product archives, including the main shop page which is a post type archive
+ * The template for displaying all pages.
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/archive-product.php.
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
- *
- * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce/Templates
- * @version 3.4.0
- */
-
-/**
- * The template is for displaying the contact page
-
  * @package understrap
  */
 
@@ -25,95 +14,28 @@ get_header();
 
 $container   = get_theme_mod( 'understrap_container_type' );
 
-defined( 'ABSPATH' ) || exit;
-
-get_header( 'shop' );
-
-/**
- * Hook: woocommerce_before_main_content.
- *
- * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
- * @hooked woocommerce_breadcrumb - 20
- * @hooked WC_Structured_Data::generate_website_data() - 30
- */
-do_action( 'woocommerce_before_main_content' );
-
 ?>
-<div class="wrapper cart-wrapper" id="page-wrapper">
+
+<div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
-			<main class="site-main col-12 cart-page" id="main">
+			<main class="site-main" id="main">
 
-				<?php 
+				<?php while ( have_posts() ) : the_post(); ?>
 
-if ( woocommerce_product_loop() ) {
+					<?php get_template_part( 'global-templates/content', 'shop' ); ?>
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked wc_print_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action( 'woocommerce_before_shop_loop' );
+				<?php endwhile; // end of the loop. ?>
 
-	woocommerce_product_loop_start();
-
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
-			the_post();
-
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 *
-			 * @hooked WC_Structured_Data::generate_product_data() - 10
-			 */
-			do_action( 'woocommerce_shop_loop' );
-
-			wc_get_template_part( 'content', 'product' );
-		}
-	}
-
-	woocommerce_product_loop_end();
-
-	/**
-	 * Hook: woocommerce_after_shop_loop.
-	 *
-	 * @hooked woocommerce_pagination - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop' );
-} else {
-	/**
-	 * Hook: woocommerce_no_products_found.
-	 *
-	 * @hooked wc_no_products_found - 10
-	 */
-	do_action( 'woocommerce_no_products_found' );
-}
-
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action( 'woocommerce_after_main_content' ); ?>
-
-			</main>
+			</main><!-- #main -->
 
 		</div><!-- .row -->
 
 	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
-<?php 
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
 
-get_footer( 'shop' );
+<?php get_footer(); ?>
