@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 				<div class="row">
 					<div class="col-12 col-md-6 pb-3">
-						<a class="gold cart__back" href="/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
+						<a class="gold cart__back" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
 					</div>
 					<div class="col-12 col-md-6">
 						<a href="http://fleurieuhampers.box/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
