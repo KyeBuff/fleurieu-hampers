@@ -1,3 +1,6 @@
+.cart-wrapper {
+	padding-top: 0;
+}
 .cart-page {
 	.shop_table {
 		width: 100%;
@@ -5,15 +8,60 @@
 			width: 100%;
 		}
 	}
+	.cart__back {
+		display: inline-block;
+		margin: $spacing 0;
+		.fa {
+			font-size: 1em;
+		}
+	}
+	.cart__btn {
+		display: block;
+
+		padding: $spacing / 4;
+
+		background-color: $checkout_pink;
+		border: none;
+		border-radius: 0;
+
+		color: $white;
+		font-size: 1.25em;
+		font-weight: lighter;
+		text-align: center;
+		.fa {
+			font-size: .95em;
+		}
+		&:hover {
+			background-color: $checkout_pink;
+			color: $white;
+		}
+	}
+	.cart__header {
+		margin: 0;
+		padding: $spacing * 2 0 0;
+		color: $grey;
+		font-size: 1em;
+		font-weight: lighter;
+	}
 	table.cart {
 		width: 100%;
+		tr:nth-child(2n) {
+			td {
+				background-color: transparent;
+			}
+		}
 		.cart_item {
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			padding: $spacing;
+
+			border-top: 1px solid $lightgrey;
+			margin: $spacing 0;
+			padding: $spacing 0;
 			td[data-title] {
-				color: blue;
+				color: $grey;
+				font-size: .9em;
+				font-weight: lighter;
 				&::before {
 					content: '';
 					display: none;
@@ -25,6 +73,8 @@
 				a {
 					display: block;
 					img {
+						display: block;
+						border: 1px solid $lightgrey;
 						max-width: 100px;
 						width: 100%;
 					}
@@ -38,18 +88,30 @@
 				width: 70%;
 				a:first-of-type {
 					float: left;
+
+					color: $black;
+					font-size: .9em;
+					font-weight: lighter;
 				}
 				a:last-of-type {
 					position: relative;
-					top: -.25em;
+					top: -.5em;
 					font-size: 1.5em;
+					font-weight: normal;
 				}
+			}
+			.product-quantity {
+				padding: $spacing * 1.5 0 0;
+				.quantity {
+					.qty {
+						padding-left: .5em;
+						text-align: center;
+					}
+				}
+			}
+			.product-price {
+				padding: $spacing * 1.5 0 0;
 			}
 		}
 	}
 }
-
-
-// .woocommerce-page table.shop_table_responsive tr td::before
-
-// .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td

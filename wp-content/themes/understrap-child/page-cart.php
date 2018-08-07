@@ -14,6 +14,8 @@ get_header();
 
 $container   = get_theme_mod( 'understrap_container_type' );
 
+$cart_total = WC()->cart->get_cart_contents_count();
+
 /**
  * Cart Page
  *
@@ -36,7 +38,7 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper cart-wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
@@ -45,11 +47,14 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<main class="site-main col-12 cart-page" id="main">
 
 				<div class="row">
-					<div class="col-12 col-md-6">
-						<a class="gold" href="/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
+					<div class="col-12 col-md-6 pb-3">
+						<a class="gold cart__back" href="/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
 					</div>
 					<div class="col-12 col-md-6">
-						<a href="http://fleurieuhampers.box/checkout/" class="btn btn-primary float-md-right">Checkout</a>
+						<a href="http://fleurieuhampers.box/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="cart__header">My Cart <?php echo $cart_total ? "($cart_total)" : '' ?></h2>
 					</div>
 				</div>
 
@@ -122,16 +127,20 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 										?>
 
+										<?php 
+										$sku = esc_attr( $_product->get_sku())
+										?>
+											<?php if ($sku) { ?>
+											<div class="product-item-sku text-left">
+												SKU: <span class="d-block"><?php echo esc_attr( $_product->get_sku()); ?></span>
+											</div>
+											<?php } ?>
 											<div class="product-item-total-price text-left">
-
+											Price: 
 											<?php
 												echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 											?>
 
-											</div>
-
-											<div class="product-item-sku text-left">
-												SKU: <span class="d-block"><?php echo esc_attr( $_product->get_sku()); ?></span>
 											</div>
 										</td>
 
@@ -157,10 +166,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 											<?php
 											echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 											?>
-										</td>
-
-										<td class="product-subtotal" data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>">
-
 										</td>
 									</tr>
 									<?php

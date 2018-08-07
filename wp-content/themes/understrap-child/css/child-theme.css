@@ -11399,13 +11399,47 @@ button {
 .woocommerce ul.woocommerce-mini-cart {
   padding: 1em; }
 
+.cart-wrapper {
+  padding-top: 0; }
+
 .cart-page .shop_table {
   width: 100%; }
   .cart-page .shop_table tbody {
     width: 100%; }
 
+.cart-page .cart__back {
+  display: inline-block;
+  margin: 1em 0; }
+  .cart-page .cart__back .fa {
+    font-size: 1em; }
+
+.cart-page .cart__btn {
+  display: block;
+  padding: 0.25em;
+  background-color: #fab89d;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 1.25em;
+  font-weight: lighter;
+  text-align: center; }
+  .cart-page .cart__btn .fa {
+    font-size: .95em; }
+  .cart-page .cart__btn:hover {
+    background-color: #fab89d;
+    color: white; }
+
+.cart-page .cart__header {
+  margin: 0;
+  padding: 2em 0 0;
+  color: #5E5E5E;
+  font-size: 1em;
+  font-weight: lighter; }
+
 .cart-page table.cart {
   width: 100%; }
+  .cart-page table.cart tr:nth-child(2n) td {
+    background-color: transparent; }
   .cart-page table.cart .cart_item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11415,9 +11449,13 @@ button {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 1em; }
+    border-top: 1px solid #D1D1D1;
+    margin: 1em 0;
+    padding: 1em 0; }
     .cart-page table.cart .cart_item td[data-title] {
-      color: blue; }
+      color: #5E5E5E;
+      font-size: .9em;
+      font-weight: lighter; }
       .cart-page table.cart .cart_item td[data-title]::before {
         content: '';
         display: none; }
@@ -11427,6 +11465,8 @@ button {
       .cart-page table.cart .cart_item .product-thumbnail a {
         display: block; }
         .cart-page table.cart .cart_item .product-thumbnail a img {
+          display: block;
+          border: 1px solid #D1D1D1;
           max-width: 100px;
           width: 100%; }
       .cart-page table.cart .cart_item .product-thumbnail::before {
@@ -11435,8 +11475,19 @@ button {
       padding: 0.5em;
       width: 70%; }
       .cart-page table.cart .cart_item .product-name a:first-of-type {
-        float: left; }
+        float: left;
+        color: black;
+        font-size: .9em;
+        font-weight: lighter; }
       .cart-page table.cart .cart_item .product-name a:last-of-type {
         position: relative;
-        top: -.25em;
-        font-size: 1.5em; }
+        top: -.5em;
+        font-size: 1.5em;
+        font-weight: normal; }
+    .cart-page table.cart .cart_item .product-quantity {
+      padding: 1.5em 0 0; }
+      .cart-page table.cart .cart_item .product-quantity .quantity .qty {
+        padding-left: .5em;
+        text-align: center; }
+    .cart-page table.cart .cart_item .product-price {
+      padding: 1.5em 0 0; }
