@@ -10924,6 +10924,10 @@ a.skip-link {
       color: black;
       opacity: 0.75; }
 
+body {
+  overflow: hidden;
+  width: 100vw; }
+
 button {
   background-color: transparent;
   border: none; }
