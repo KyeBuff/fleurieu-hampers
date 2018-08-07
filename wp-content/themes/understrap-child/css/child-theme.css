@@ -11491,3 +11491,39 @@ button {
         text-align: center; }
     .cart-page table.cart .cart_item .product-price {
       padding: 1.5em 0 0; }
+  .cart-page table.cart .actions .update-cart {
+    margin-top: -.5em;
+    margin-bottom: 1em; }
+    .cart-page table.cart .actions .update-cart .button {
+      padding: 0.25em 0;
+      font-size: 1.25em;
+      font-weight: lighter;
+      background-color: #5E5E5E;
+      color: white; }
+  .cart-page table.cart .actions .coupon .coupon_code {
+    display: block;
+    border: #D1D1D1;
+    height: 3em;
+    border-right: none;
+    margin-right: 0;
+    min-width: 75%; }
+    .cart-page table.cart .actions .coupon .coupon_code::-webkit-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page table.cart .actions .coupon .coupon_code:-ms-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page table.cart .actions .coupon .coupon_code::-ms-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page table.cart .actions .coupon .coupon_code::placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+  .cart-page table.cart .actions .btn-coupon {
+    padding: 1em 0;
+    font-size: .9em;
+    font-weight: lighter; }
+    .cart-page table.cart .actions .btn-coupon .fa {
+      font-size: 1em; }
+  .cart-page table.cart .actions .btn-apply {
+    border: 1px solid #BC9B5D; }

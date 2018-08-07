@@ -113,5 +113,45 @@
 				padding: $spacing * 1.5 0 0;
 			}
 		}
+		.actions {
+			.update-cart {
+				margin-top: -.5em;
+				margin-bottom: $spacing;
+				.button {
+					padding: $spacing / 4 0;
+
+					font-size: 1.25em;
+					font-weight: lighter;
+
+					background-color: $grey;
+					color: $white;
+				}
+			}
+			.coupon {
+				.coupon_code {
+					display: block;
+					border: $lightgrey;
+					height: $spacing * 3;
+					border-right: none;
+					margin-right: 0;
+					min-width: 75%;
+					&::placeholder {
+						color: $lightgrey;
+						font-size: .9em;
+					}
+				}
+			}
+			.btn-coupon {
+				padding: $spacing 0;
+				font-size: .9em;
+				font-weight: lighter;
+				.fa {
+					font-size: 1em;
+				}
+			}
+			.btn-apply {
+				border: 1px solid $gold;
+			}
+		}
 	}
 }
