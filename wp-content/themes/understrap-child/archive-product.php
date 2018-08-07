@@ -15,6 +15,16 @@
  * @version 3.4.0
  */
 
+/**
+ * The template is for displaying the contact page
+
+ * @package understrap
+ */
+
+get_header();
+
+$container   = get_theme_mod( 'understrap_container_type' );
+
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
@@ -27,6 +37,17 @@ get_header( 'shop' );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
+
+?>
+<div class="wrapper cart-wrapper" id="page-wrapper">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
+		<div class="row">
+
+			<main class="site-main col-12 cart-page" id="main">
+
+				<?php 
 
 if ( woocommerce_product_loop() ) {
 
@@ -78,8 +99,16 @@ if ( woocommerce_product_loop() ) {
  *
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
-do_action( 'woocommerce_after_main_content' );
+do_action( 'woocommerce_after_main_content' ); ?>
 
+			</main>
+
+		</div><!-- .row -->
+
+	</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+<?php 
 /**
  * Hook: woocommerce_sidebar.
  *
