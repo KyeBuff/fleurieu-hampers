@@ -11175,6 +11175,9 @@ button {
   max-width: 300px;
   text-align: center; }
 
+.featured-products__text {
+  overflow: hidden; }
+
 .woocommerce-result-count {
   display: none; }
 
