@@ -11172,6 +11172,10 @@ button {
     text-align: center;
     text-transform: uppercase; } }
 
+.featured-products__carousel {
+  max-width: 100vw;
+  overflow: hidden; }
+
 .featured-products .slide-item {
   display: block; }
 

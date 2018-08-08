@@ -1,4 +1,8 @@
 .featured-products {
+	@at-root #{&}__carousel {
+		max-width: 100vw;
+		overflow: hidden;
+	}
 	.slide-item {
 		display: block;
 	}
