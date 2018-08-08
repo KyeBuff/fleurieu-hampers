@@ -54,3 +54,5 @@ function add_options() {
     }
 
 }
+
+add_action('woocommerce_checkout_update_order_meta', 'custom_checkout_field_update_order_meta');

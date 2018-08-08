@@ -2,11 +2,11 @@
 	padding-top: 0;
 }
 .cart-page {
+	.cart__top, .cart__bottom {
+		margin: 0;
+	}
 	.shop_table {
 		width: 100%;
-		tbody {
-			width: 100%;
-		}
 	}
 	.cart__back {
 		display: inline-block;
@@ -43,7 +43,7 @@
 		font-size: 1em;
 		font-weight: lighter;
 	}
-	table.cart {
+	.cart {
 		width: 100%;
 		tr:nth-child(2n) {
 			td {
@@ -57,16 +57,30 @@
 
 			border-top: 1px solid $lightgrey;
 			margin: $spacing 0;
-			padding: $spacing 0;
-			td[data-title] {
+			padding: $spacing * 2 0;
+			.product-name {
 				color: $grey;
 				font-size: .9em;
 				font-weight: lighter;
+				a {
+					display: inline-block;
+					padding-bottom: $spacing / 4;
+				}
+				a.remove {
+					position: relative;
+					top: -.4em;
+					float: right;
+
+					font-size: 1.5em;
+				}
 				&::before {
 					content: '';
 					display: none;
 				}
 			}	
+			.product-item-sku {
+				clear: both;
+			}
 			.product-thumbnail {
 				display: block !important;
 				width: 30%;
@@ -83,34 +97,22 @@
 					display: none;
 				}	
 			}
-			.product-name {
-				padding: $spacing / 2;
-				width: 70%;
-				a:first-of-type {
-					float: left;
-
-					color: $black;
-					font-size: .9em;
-					font-weight: lighter;
-				}
-				a:last-of-type {
-					position: relative;
-					top: -.5em;
-					font-size: 1.5em;
-					font-weight: normal;
-				}
-			}
 			.product-quantity {
-				padding: $spacing * 1.5 0 0;
+				padding-top: $spacing * 1.5;
 				.quantity {
 					.qty {
 						padding-left: .5em;
+
+						color: $grey;
 						text-align: center;
 					}
 				}
 			}
 			.product-price {
-				padding: $spacing * 1.5 0 0;
+				padding-top: $spacing * 1.5;
+
+				color: $grey;
+				text-align: right;
 			}
 		}
 		.actions {
@@ -118,7 +120,9 @@
 				margin-top: -.5em;
 				margin-bottom: $spacing;
 				.button {
+					display: block;
 					padding: $spacing / 4 0;
+					width: 100%;
 
 					font-size: 1.25em;
 					font-weight: lighter;
@@ -130,18 +134,22 @@
 			.coupon {
 				.coupon_code {
 					display: block;
-					border: $lightgrey;
+					border: 1px solid $lightgrey;
 					height: $spacing * 3;
 					border-right: none;
 					margin-right: 0;
+					padding: $spacing;
 					min-width: 75%;
 					&::placeholder {
 						color: $lightgrey;
 						font-size: .9em;
 					}
 				}
+				.btn-apply {
+					min-width: 25%;
+				}
 			}
-			.btn-coupon {
+			.btn-action {
 				padding: $spacing 0;
 				font-size: .9em;
 				font-weight: lighter;
@@ -152,6 +160,25 @@
 			.btn-apply {
 				border: 1px solid $gold;
 			}
+			.special-note {
+				border: 1px solid $lightgrey;
+				height: 150px;
+				padding: $spacing;
+				width: 100%;
+				font-size: .9em;
+  				resize: none;
+					&::placeholder {
+					color: $lightgrey;
+					font-weight: lighter;
+				}
+			}
+		}
+	}
+	.cart-collaterals {
+		padding: $spacing;
+		font-size: .9em;
+		.amount {
+			float: right;
 		}
 	}
 }

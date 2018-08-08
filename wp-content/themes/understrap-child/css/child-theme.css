@@ -11413,10 +11413,11 @@ button {
 .cart-wrapper {
   padding-top: 0; }
 
+.cart-page .cart__top, .cart-page .cart__bottom {
+  margin: 0; }
+
 .cart-page .shop_table {
   width: 100%; }
-  .cart-page .shop_table tbody {
-    width: 100%; }
 
 .cart-page .cart__back {
   display: inline-block;
@@ -11447,11 +11448,11 @@ button {
   font-size: 1em;
   font-weight: lighter; }
 
-.cart-page table.cart {
+.cart-page .cart {
   width: 100%; }
-  .cart-page table.cart tr:nth-child(2n) td {
+  .cart-page .cart tr:nth-child(2n) td {
     background-color: transparent; }
-  .cart-page table.cart .cart_item {
+  .cart-page .cart .cart_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11462,79 +11463,109 @@ button {
         flex-wrap: wrap;
     border-top: 1px solid #D1D1D1;
     margin: 1em 0;
-    padding: 1em 0; }
-    .cart-page table.cart .cart_item td[data-title] {
+    padding: 2em 0; }
+    .cart-page .cart .cart_item .product-name {
       color: #5E5E5E;
       font-size: .9em;
       font-weight: lighter; }
-      .cart-page table.cart .cart_item td[data-title]::before {
+      .cart-page .cart .cart_item .product-name a {
+        display: inline-block;
+        padding-bottom: 0.25em; }
+      .cart-page .cart .cart_item .product-name a.remove {
+        position: relative;
+        top: -.4em;
+        float: right;
+        font-size: 1.5em; }
+      .cart-page .cart .cart_item .product-name::before {
         content: '';
         display: none; }
-    .cart-page table.cart .cart_item .product-thumbnail {
+    .cart-page .cart .cart_item .product-item-sku {
+      clear: both; }
+    .cart-page .cart .cart_item .product-thumbnail {
       display: block !important;
       width: 30%; }
-      .cart-page table.cart .cart_item .product-thumbnail a {
+      .cart-page .cart .cart_item .product-thumbnail a {
         display: block; }
-        .cart-page table.cart .cart_item .product-thumbnail a img {
+        .cart-page .cart .cart_item .product-thumbnail a img {
           display: block;
           border: 1px solid #D1D1D1;
           max-width: 100px;
           width: 100%; }
-      .cart-page table.cart .cart_item .product-thumbnail::before {
+      .cart-page .cart .cart_item .product-thumbnail::before {
         display: none; }
-    .cart-page table.cart .cart_item .product-name {
-      padding: 0.5em;
-      width: 70%; }
-      .cart-page table.cart .cart_item .product-name a:first-of-type {
-        float: left;
-        color: black;
-        font-size: .9em;
-        font-weight: lighter; }
-      .cart-page table.cart .cart_item .product-name a:last-of-type {
-        position: relative;
-        top: -.5em;
-        font-size: 1.5em;
-        font-weight: normal; }
-    .cart-page table.cart .cart_item .product-quantity {
-      padding: 1.5em 0 0; }
-      .cart-page table.cart .cart_item .product-quantity .quantity .qty {
+    .cart-page .cart .cart_item .product-quantity {
+      padding-top: 1.5em; }
+      .cart-page .cart .cart_item .product-quantity .quantity .qty {
         padding-left: .5em;
+        color: #5E5E5E;
         text-align: center; }
-    .cart-page table.cart .cart_item .product-price {
-      padding: 1.5em 0 0; }
-  .cart-page table.cart .actions .update-cart {
+    .cart-page .cart .cart_item .product-price {
+      padding-top: 1.5em;
+      color: #5E5E5E;
+      text-align: right; }
+  .cart-page .cart .actions .update-cart {
     margin-top: -.5em;
     margin-bottom: 1em; }
-    .cart-page table.cart .actions .update-cart .button {
+    .cart-page .cart .actions .update-cart .button {
+      display: block;
       padding: 0.25em 0;
+      width: 100%;
       font-size: 1.25em;
       font-weight: lighter;
       background-color: #5E5E5E;
       color: white; }
-  .cart-page table.cart .actions .coupon .coupon_code {
+  .cart-page .cart .actions .coupon .coupon_code {
     display: block;
-    border: #D1D1D1;
+    border: 1px solid #D1D1D1;
     height: 3em;
     border-right: none;
     margin-right: 0;
+    padding: 1em;
     min-width: 75%; }
-    .cart-page table.cart .actions .coupon .coupon_code::-webkit-input-placeholder {
+    .cart-page .cart .actions .coupon .coupon_code::-webkit-input-placeholder {
       color: #D1D1D1;
       font-size: .9em; }
-    .cart-page table.cart .actions .coupon .coupon_code:-ms-input-placeholder {
+    .cart-page .cart .actions .coupon .coupon_code:-ms-input-placeholder {
       color: #D1D1D1;
       font-size: .9em; }
-    .cart-page table.cart .actions .coupon .coupon_code::-ms-input-placeholder {
+    .cart-page .cart .actions .coupon .coupon_code::-ms-input-placeholder {
       color: #D1D1D1;
       font-size: .9em; }
-    .cart-page table.cart .actions .coupon .coupon_code::placeholder {
+    .cart-page .cart .actions .coupon .coupon_code::placeholder {
       color: #D1D1D1;
       font-size: .9em; }
-  .cart-page table.cart .actions .btn-coupon {
+  .cart-page .cart .actions .coupon .btn-apply {
+    min-width: 25%; }
+  .cart-page .cart .actions .btn-action {
     padding: 1em 0;
     font-size: .9em;
     font-weight: lighter; }
-    .cart-page table.cart .actions .btn-coupon .fa {
+    .cart-page .cart .actions .btn-action .fa {
       font-size: 1em; }
-  .cart-page table.cart .actions .btn-apply {
+  .cart-page .cart .actions .btn-apply {
     border: 1px solid #BC9B5D; }
+  .cart-page .cart .actions .special-note {
+    border: 1px solid #D1D1D1;
+    height: 150px;
+    padding: 1em;
+    width: 100%;
+    font-size: .9em;
+    resize: none; }
+    .cart-page .cart .actions .special-note::-webkit-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .cart .actions .special-note:-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .cart .actions .special-note::-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .cart .actions .special-note::placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+
+.cart-page .cart-collaterals {
+  padding: 1em;
+  font-size: .9em; }
+  .cart-page .cart-collaterals .amount {
+    float: right; }
