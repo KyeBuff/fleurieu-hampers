@@ -11569,3 +11569,22 @@ button {
   font-size: .9em; }
   .cart-page .cart-collaterals .amount {
     float: right; }
+
+@media (min-width: 768px) {
+  .cart-page .cart .cart_item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .cart-page .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2em; }
+    .cart-page .actions .update-cart {
+      display: flow-root;
+      width: 100%; }
+      .cart-page .actions .update-cart .button {
+        float: right;
+        max-width: 200px; } }

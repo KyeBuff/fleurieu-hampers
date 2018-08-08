@@ -182,3 +182,27 @@
 		}
 	}
 }
+
+@include media-breakpoint-up(md) {
+	.cart-page {
+		.cart {
+			.cart_item {
+				justify-content: flex-start;
+			}
+		}
+		.actions {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: $spacing * 2;
+			.update-cart {
+				display: flow-root;
+				width: 100%;
+				.button {
+					float: right;
+					max-width: 200px;
+				}
+			}
+		}
+	}
+}
+
