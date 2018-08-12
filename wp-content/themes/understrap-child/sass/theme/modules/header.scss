@@ -11,10 +11,16 @@
 	@at-root #{&}__cart {
 		margin-top: .5em;
 		font-size: 1.25em;
+		&:hover {
+			color: $checkout_pink;
+		}
 	}
 	@at-root #{&}__cart--items {
 		position: relative;
 		color: $success;
+		&:hover {
+			color: $success;
+		}
 	}
 	@at-root #{&}__item-count {
 		display: block;

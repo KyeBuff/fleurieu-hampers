@@ -10997,9 +10997,13 @@ button {
   .header-top__cart {
     margin-top: .5em;
     font-size: 1.25em; }
+    .header-top__cart:hover {
+      color: #fab89d; }
   .header-top__cart--items {
     position: relative;
     color: #49c94e; }
+    .header-top__cart--items:hover {
+      color: #49c94e; }
   .header-top__item-count {
     display: block;
     position: absolute;
