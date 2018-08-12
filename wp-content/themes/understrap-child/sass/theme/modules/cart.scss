@@ -30,13 +30,14 @@
 
 .cart__back {
 	display: inline-block;
-	margin: $spacing 0;
+	margin: $spacing * 2 0;
 	.fa {
 		font-size: 1em;
 	}
 }
 
 .cart-page {
+	padding: $spacing * 2 $spacing;
 	.cart__top, .cart__bottom {
 		margin: 0;
 	}
@@ -44,7 +45,6 @@
 		width: 100%;
 	}
 	.cart__header {
-		margin: 0;
 		padding: $spacing * 2 0 0;
 		color: $grey;
 		font-size: 1em;
@@ -64,7 +64,8 @@
 
 			border-top: 1px solid $lightgrey;
 			margin: $spacing 0;
-			padding: $spacing * 2 0;
+			padding-top: $spacing * 2;
+			padding-bottom: $spacing * 2;
 			.product-name {
 				color: $grey;
 				font-size: .9em;
@@ -185,7 +186,7 @@
 }
 
 .cart-collaterals {
-	padding: $spacing;
+	padding: $spacing 0;
 	font-size: .9em;
 	font-weight: lighter;
 }
@@ -221,6 +222,11 @@
 				.button {
 					float: right;
 					max-width: 200px;
+				}
+			}
+			.coupon-container {
+				.btn-action {
+					padding-top: 0;
 				}
 			}
 		}

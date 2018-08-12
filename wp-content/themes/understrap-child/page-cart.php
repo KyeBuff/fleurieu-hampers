@@ -271,7 +271,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<p class="cart-collaterals__subtotal">Subtotal <span class="float-right"><?php echo $sub_total; ?></span></p>
 						</div>
 						<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
-						</div>
 						<a class="gold cart__back d-md-none" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
 					</div>
 

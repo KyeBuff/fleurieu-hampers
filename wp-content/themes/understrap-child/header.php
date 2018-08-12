@@ -54,7 +54,7 @@ $cart_total = WC()->cart->get_cart_contents_count();
 					<img src="<?php echo get_stylesheet_directory_uri() . '/img/logo.png' ?>" alt="Fleurieu Hampers logo">		
 				</div>
 				<div class="header-top__user-info d-md-none">
-					<a href="<?php echo get_site_url(); ?>/checkout" class="header-top__cart d-md-none <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>
+					<a href="<?php echo get_site_url(); ?>/cart" class="header-top__cart d-md-none <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>
 						<?php if ($cart_total) { ?>
 						<span class="header-top__item-count"><?php echo $cart_total > 9 ? '9+' : $cart_total; ?></span>
 						<?php } ?>

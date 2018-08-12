@@ -11434,147 +11434,140 @@ button {
 
 .cart__back {
   display: inline-block;
-  margin: 1em 0; }
+  margin: 2em 0; }
   .cart__back .fa {
     font-size: 1em; }
 
-.cart-page .cart__top, .cart-page .cart__bottom {
-  margin: 0; }
-
-.cart-page .shop_table {
-  width: 100%; }
-
-.cart-page .cart__header {
-  margin: 0;
-  padding: 2em 0 0;
-  color: #5E5E5E;
-  font-size: 1em;
-  font-weight: lighter; }
-
-.cart-page .cart {
-  width: 100%; }
-  .cart-page .cart tr:nth-child(2n) td {
-    background-color: transparent; }
-  .cart-page .cart .cart_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border-top: 1px solid #D1D1D1;
-    margin: 1em 0;
-    padding: 2em 0; }
-    .cart-page .cart .cart_item .product-name {
-      color: #5E5E5E;
-      font-size: .9em;
-      font-weight: lighter; }
-      .cart-page .cart .cart_item .product-name a {
-        display: inline-block;
-        padding-bottom: 0.25em; }
-      .cart-page .cart .cart_item .product-name a.remove {
-        position: relative;
-        top: -.4em;
-        float: right;
-        font-size: 1.5em; }
-      .cart-page .cart .cart_item .product-name::before {
-        content: '';
-        display: none; }
-    .cart-page .cart .cart_item .product-item-sku {
-      clear: both; }
-    .cart-page .cart .cart_item .product-thumbnail {
-      display: block !important;
-      width: 30%; }
-      .cart-page .cart .cart_item .product-thumbnail a {
-        display: block; }
-        .cart-page .cart .cart_item .product-thumbnail a img {
-          display: block;
-          border: 1px solid #D1D1D1;
-          max-width: 100px;
-          width: 100%; }
-      .cart-page .cart .cart_item .product-thumbnail::before {
-        display: none; }
-    .cart-page .cart .cart_item .product-quantity {
-      padding-top: 1.5em; }
-      .cart-page .cart .cart_item .product-quantity .quantity .qty {
-        padding-left: .5em;
+.cart-page {
+  padding: 2em 1em; }
+  .cart-page .cart__top, .cart-page .cart__bottom {
+    margin: 0; }
+  .cart-page .shop_table {
+    width: 100%; }
+  .cart-page .cart__header {
+    padding: 2em 0 0;
+    color: #5E5E5E;
+    font-size: 1em;
+    font-weight: lighter; }
+  .cart-page .cart {
+    width: 100%; }
+    .cart-page .cart tr:nth-child(2n) td {
+      background-color: transparent; }
+    .cart-page .cart .cart_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      border-top: 1px solid #D1D1D1;
+      margin: 1em 0;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+      .cart-page .cart .cart_item .product-name {
         color: #5E5E5E;
-        text-align: center; }
-    .cart-page .cart .cart_item .product-price {
-      padding-top: 1.5em;
-      color: #5E5E5E;
-      text-align: right; }
-
-.cart-page .actions .update-cart {
-  margin-top: -.5em;
-  margin-bottom: 1em; }
-  .cart-page .actions .update-cart .button {
+        font-size: .9em;
+        font-weight: lighter; }
+        .cart-page .cart .cart_item .product-name a {
+          display: inline-block;
+          padding-bottom: 0.25em; }
+        .cart-page .cart .cart_item .product-name a.remove {
+          position: relative;
+          top: -.4em;
+          float: right;
+          font-size: 1.5em; }
+        .cart-page .cart .cart_item .product-name::before {
+          content: '';
+          display: none; }
+      .cart-page .cart .cart_item .product-item-sku {
+        clear: both; }
+      .cart-page .cart .cart_item .product-thumbnail {
+        display: block !important;
+        width: 30%; }
+        .cart-page .cart .cart_item .product-thumbnail a {
+          display: block; }
+          .cart-page .cart .cart_item .product-thumbnail a img {
+            display: block;
+            border: 1px solid #D1D1D1;
+            max-width: 100px;
+            width: 100%; }
+        .cart-page .cart .cart_item .product-thumbnail::before {
+          display: none; }
+      .cart-page .cart .cart_item .product-quantity {
+        padding-top: 1.5em; }
+        .cart-page .cart .cart_item .product-quantity .quantity .qty {
+          padding-left: .5em;
+          color: #5E5E5E;
+          text-align: center; }
+      .cart-page .cart .cart_item .product-price {
+        padding-top: 1.5em;
+        color: #5E5E5E;
+        text-align: right; }
+  .cart-page .actions .update-cart {
+    margin-top: -.5em;
+    margin-bottom: 1em; }
+    .cart-page .actions .update-cart .button {
+      display: block;
+      padding: 0.25em 0;
+      width: 100%;
+      font-size: 1.25em;
+      font-weight: lighter;
+      background-color: #5E5E5E;
+      color: white; }
+  .cart-page .actions .coupon .coupon_code {
     display: block;
-    padding: 0.25em 0;
+    border: 1px solid #D1D1D1;
+    height: 3em;
+    border-right: none;
+    margin-right: 0;
+    padding: 1em;
+    min-width: 75%; }
+    .cart-page .actions .coupon .coupon_code::-webkit-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page .actions .coupon .coupon_code:-ms-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page .actions .coupon .coupon_code::-ms-input-placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+    .cart-page .actions .coupon .coupon_code::placeholder {
+      color: #D1D1D1;
+      font-size: .9em; }
+  .cart-page .actions .coupon .btn-apply {
+    min-width: 25%; }
+  .cart-page .actions .btn-action {
+    padding: 1em 0;
+    font-size: .9em;
+    font-weight: lighter; }
+    .cart-page .actions .btn-action .fa {
+      font-size: 1em; }
+  .cart-page .actions .btn-apply {
+    border: 1px solid #BC9B5D; }
+  .cart-page .actions .special-note {
+    border: 1px solid #D1D1D1;
+    height: 150px;
+    padding: 1em;
     width: 100%;
-    font-size: 1.25em;
-    font-weight: lighter;
-    background-color: #5E5E5E;
-    color: white; }
-
-.cart-page .actions .coupon .coupon_code {
-  display: block;
-  border: 1px solid #D1D1D1;
-  height: 3em;
-  border-right: none;
-  margin-right: 0;
-  padding: 1em;
-  min-width: 75%; }
-  .cart-page .actions .coupon .coupon_code::-webkit-input-placeholder {
-    color: #D1D1D1;
-    font-size: .9em; }
-  .cart-page .actions .coupon .coupon_code:-ms-input-placeholder {
-    color: #D1D1D1;
-    font-size: .9em; }
-  .cart-page .actions .coupon .coupon_code::-ms-input-placeholder {
-    color: #D1D1D1;
-    font-size: .9em; }
-  .cart-page .actions .coupon .coupon_code::placeholder {
-    color: #D1D1D1;
-    font-size: .9em; }
-
-.cart-page .actions .coupon .btn-apply {
-  min-width: 25%; }
-
-.cart-page .actions .btn-action {
-  padding: 1em 0;
-  font-size: .9em;
-  font-weight: lighter; }
-  .cart-page .actions .btn-action .fa {
-    font-size: 1em; }
-
-.cart-page .actions .btn-apply {
-  border: 1px solid #BC9B5D; }
-
-.cart-page .actions .special-note {
-  border: 1px solid #D1D1D1;
-  height: 150px;
-  padding: 1em;
-  width: 100%;
-  font-size: .9em;
-  resize: none; }
-  .cart-page .actions .special-note::-webkit-input-placeholder {
-    color: #D1D1D1;
-    font-weight: lighter; }
-  .cart-page .actions .special-note:-ms-input-placeholder {
-    color: #D1D1D1;
-    font-weight: lighter; }
-  .cart-page .actions .special-note::-ms-input-placeholder {
-    color: #D1D1D1;
-    font-weight: lighter; }
-  .cart-page .actions .special-note::placeholder {
-    color: #D1D1D1;
-    font-weight: lighter; }
+    font-size: .9em;
+    resize: none; }
+    .cart-page .actions .special-note::-webkit-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .actions .special-note:-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .actions .special-note::-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
+    .cart-page .actions .special-note::placeholder {
+      color: #D1D1D1;
+      font-weight: lighter; }
 
 .cart-collaterals {
-  padding: 1em;
+  padding: 1em 0;
   font-size: .9em;
   font-weight: lighter; }
 
@@ -11602,6 +11595,8 @@ button {
       .cart-page .actions .update-cart .button {
         float: right;
         max-width: 200px; }
+    .cart-page .actions .coupon-container .btn-action {
+      padding-top: 0; }
   .cart__btn {
     float: right;
     width: 200px; }
