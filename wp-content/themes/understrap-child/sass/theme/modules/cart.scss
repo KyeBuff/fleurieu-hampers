@@ -141,6 +141,7 @@
 			}
 		}
 		.coupon {
+			display: flex;
 			.coupon_code {
 				display: block;
 				border: 1px solid $lightgrey;
@@ -157,6 +158,9 @@
 			.btn-apply {
 				min-width: 25%;
 			}
+		}
+		.hide-form-meta-field {
+			display: none;
 		}
 		.btn-action {
 			padding: $spacing 0;

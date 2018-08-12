@@ -53,4 +53,9 @@ jQuery(document).ready(function() {
 		$('.cart-preview').fadeOut();
 	});
 
+					
+	$('.btn-action').on('click', function(e) {
+		e.preventDefault();
+		$(this).next().toggleClass('hide-form-meta-field');
+	});
 });
