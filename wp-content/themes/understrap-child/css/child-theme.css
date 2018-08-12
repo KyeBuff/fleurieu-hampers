@@ -11292,6 +11292,18 @@ button {
     font-weight: lighter;
     line-height: 50%; }
 
+.woocommerce #content .flex-active-slide {
+  height: 20em; }
+  .woocommerce #content .flex-active-slide a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    .woocommerce #content .flex-active-slide a img {
+      height: auto;
+      width: auto; }
+
 .contact .wpcf7-form-control[type="text"], .contact .wpcf7-form-control[type="email"], .contact .wpcf7-textarea {
   border: none;
   border-bottom: 1px solid #5E5E5E;

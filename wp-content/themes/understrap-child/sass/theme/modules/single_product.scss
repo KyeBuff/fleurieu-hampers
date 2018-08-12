@@ -88,5 +88,18 @@
 				}
 			}
 		} 
+		.flex-active-slide {
+			height: 20em;
+			a {
+				display: block;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				img {
+					height: auto;
+					width: auto;
+				}
+			}
+		}
 	}
 } 
