@@ -11413,19 +11413,7 @@ button {
 .cart-wrapper {
   padding-top: 0; }
 
-.cart-page .cart__top, .cart-page .cart__bottom {
-  margin: 0; }
-
-.cart-page .shop_table {
-  width: 100%; }
-
-.cart-page .cart__back {
-  display: inline-block;
-  margin: 1em 0; }
-  .cart-page .cart__back .fa {
-    font-size: 1em; }
-
-.cart-page .cart__btn {
+.cart__btn {
   display: block;
   padding: 0.25em;
   background-color: #fab89d;
@@ -11435,11 +11423,23 @@ button {
   font-size: 1.25em;
   font-weight: lighter;
   text-align: center; }
-  .cart-page .cart__btn .fa {
+  .cart__btn .fa {
     font-size: .95em; }
-  .cart-page .cart__btn:hover {
+  .cart__btn:hover {
     background-color: #fab89d;
     color: white; }
+
+.cart__back {
+  display: inline-block;
+  margin: 1em 0; }
+  .cart__back .fa {
+    font-size: 1em; }
+
+.cart-page .cart__top, .cart-page .cart__bottom {
+  margin: 0; }
+
+.cart-page .shop_table {
+  width: 100%; }
 
 .cart-page .cart__header {
   margin: 0;
@@ -11503,72 +11503,77 @@ button {
       padding-top: 1.5em;
       color: #5E5E5E;
       text-align: right; }
-  .cart-page .cart .actions .update-cart {
-    margin-top: -.5em;
-    margin-bottom: 1em; }
-    .cart-page .cart .actions .update-cart .button {
-      display: block;
-      padding: 0.25em 0;
-      width: 100%;
-      font-size: 1.25em;
-      font-weight: lighter;
-      background-color: #5E5E5E;
-      color: white; }
-  .cart-page .cart .actions .coupon .coupon_code {
-    display: block;
-    border: 1px solid #D1D1D1;
-    height: 3em;
-    border-right: none;
-    margin-right: 0;
-    padding: 1em;
-    min-width: 75%; }
-    .cart-page .cart .actions .coupon .coupon_code::-webkit-input-placeholder {
-      color: #D1D1D1;
-      font-size: .9em; }
-    .cart-page .cart .actions .coupon .coupon_code:-ms-input-placeholder {
-      color: #D1D1D1;
-      font-size: .9em; }
-    .cart-page .cart .actions .coupon .coupon_code::-ms-input-placeholder {
-      color: #D1D1D1;
-      font-size: .9em; }
-    .cart-page .cart .actions .coupon .coupon_code::placeholder {
-      color: #D1D1D1;
-      font-size: .9em; }
-  .cart-page .cart .actions .coupon .btn-apply {
-    min-width: 25%; }
-  .cart-page .cart .actions .btn-action {
-    padding: 1em 0;
-    font-size: .9em;
-    font-weight: lighter; }
-    .cart-page .cart .actions .btn-action .fa {
-      font-size: 1em; }
-  .cart-page .cart .actions .btn-apply {
-    border: 1px solid #BC9B5D; }
-  .cart-page .cart .actions .special-note {
-    border: 1px solid #D1D1D1;
-    height: 150px;
-    padding: 1em;
-    width: 100%;
-    font-size: .9em;
-    resize: none; }
-    .cart-page .cart .actions .special-note::-webkit-input-placeholder {
-      color: #D1D1D1;
-      font-weight: lighter; }
-    .cart-page .cart .actions .special-note:-ms-input-placeholder {
-      color: #D1D1D1;
-      font-weight: lighter; }
-    .cart-page .cart .actions .special-note::-ms-input-placeholder {
-      color: #D1D1D1;
-      font-weight: lighter; }
-    .cart-page .cart .actions .special-note::placeholder {
-      color: #D1D1D1;
-      font-weight: lighter; }
 
-.cart-page .cart-collaterals {
+.cart-page .actions .update-cart {
+  margin-top: -.5em;
+  margin-bottom: 1em; }
+  .cart-page .actions .update-cart .button {
+    display: block;
+    padding: 0.25em 0;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: lighter;
+    background-color: #5E5E5E;
+    color: white; }
+
+.cart-page .actions .coupon .coupon_code {
+  display: block;
+  border: 1px solid #D1D1D1;
+  height: 3em;
+  border-right: none;
+  margin-right: 0;
   padding: 1em;
-  font-size: .9em; }
-  .cart-page .cart-collaterals .amount {
-    float: right; }
+  min-width: 75%; }
+  .cart-page .actions .coupon .coupon_code::-webkit-input-placeholder {
+    color: #D1D1D1;
+    font-size: .9em; }
+  .cart-page .actions .coupon .coupon_code:-ms-input-placeholder {
+    color: #D1D1D1;
+    font-size: .9em; }
+  .cart-page .actions .coupon .coupon_code::-ms-input-placeholder {
+    color: #D1D1D1;
+    font-size: .9em; }
+  .cart-page .actions .coupon .coupon_code::placeholder {
+    color: #D1D1D1;
+    font-size: .9em; }
+
+.cart-page .actions .coupon .btn-apply {
+  min-width: 25%; }
+
+.cart-page .actions .btn-action {
+  padding: 1em 0;
+  font-size: .9em;
+  font-weight: lighter; }
+  .cart-page .actions .btn-action .fa {
+    font-size: 1em; }
+
+.cart-page .actions .btn-apply {
+  border: 1px solid #BC9B5D; }
+
+.cart-page .actions .special-note {
+  border: 1px solid #D1D1D1;
+  height: 150px;
+  padding: 1em;
+  width: 100%;
+  font-size: .9em;
+  resize: none; }
+  .cart-page .actions .special-note::-webkit-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .cart-page .actions .special-note:-ms-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .cart-page .actions .special-note::-ms-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .cart-page .actions .special-note::placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+
+.cart-collaterals {
+  padding: 1em;
+  font-size: .9em;
+  font-weight: lighter; }
 
 @media (min-width: 768px) {
   .cart-page .cart .cart_item {
@@ -11587,4 +11592,7 @@ button {
       width: 100%; }
       .cart-page .actions .update-cart .button {
         float: right;
-        max-width: 200px; } }
+        max-width: 200px; }
+  .cart__btn {
+    float: right;
+    width: 200px; } }

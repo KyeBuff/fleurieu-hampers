@@ -250,14 +250,16 @@ do_action( 'woocommerce_before_cart' ); ?>
 				</form>
 
 				<div class="row cart__bottom">
-					<div class="cart-collaterals col-12">
-						<p class="cart-collaterals__subtotal">Subtotal<?php echo $sub_total; ?></p>
-					</div>
-					<div class="col-12 col-md-6">
-						<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
-					</div>
-					<div class="col-12 col-md-6 mt-3 pb-3">
-						<a class="gold cart__back" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
+					<div class="col-12">
+						<div class="cart-collaterals col-12">
+							<p class="cart-collaterals__subtotal">Subtotal <span class="float-right"><?php echo $sub_total; ?></span></p>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
+						</div>
+						<div class="col-12 col-md-6 mt-3 pb-3">
+							<a class="gold cart__back" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
+						</div>
 					</div>
 				</div>
 
