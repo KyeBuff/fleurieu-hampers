@@ -10924,7 +10924,8 @@ a.skip-link {
       color: black;
       opacity: 0.75; }
 
-body {
+html, body {
+  overflow-x: hidden;
   width: 100vw; }
 
 button {
@@ -11023,22 +11024,29 @@ button {
   .header-logo img {
     max-width: 125px; }
 
-.navbar-nav .nav-link {
-  color: black;
-  text-align: center;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  text-transform: uppercase;
+.navbar {
   width: 100%; }
-  .navbar-nav .nav-link:hover {
-    -webkit-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+
+.navbar-nav {
+  width: 100%; }
+  .navbar-nav .nav-link {
+    color: black;
+    text-align: center;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    display: block; }
+    .navbar-nav .nav-link:hover {
+      -webkit-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
 
 .navbar-toggler {
   color: black; }
