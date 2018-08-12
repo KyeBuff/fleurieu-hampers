@@ -49,17 +49,24 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<main class="site-main col-12 cart-page" id="main">
 
 				<div class="row cart__top">
-					<div class="col-12 col-md-6 pb-3 d-none d-md-block">
+					<?php if(!$cart_total) { ?>
+					<div class="col-12 pb-2">
+						<h2 class="cart__header text-center">Your shopping cart is empty...</h2>
+					</div>
+					<?php } ?>
+					<div class="col-12 <?php echo $cart_total ? 'col-md-6 d-none d-md-block' : 'text-center'; ?> pb-3">
 						<a class="gold cart__back" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
 					</div>
+					<?php if($cart_total) { ?>
 					<div class="col-12 col-md-6">
 						<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
 					</div>
 					<div class="col-12 col-md-6 d-md-none">
 						<h2 class="cart__header">My Cart <?php echo $cart_total ? "($cart_total)" : '' ?></h2>
 					</div>
+					<?php } ?>
 				</div>
-
+				<?php if($cart_total) { ?>
 				<form class="woocommerce-cart-form row" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 					<?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -269,6 +276,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					</div>
 
 				</form>
+				<?php } ?>
 
 				<?php do_action( 'woocommerce_after_cart' ); ?>
 			</main>
