@@ -11,6 +11,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 $cart_total = WC()->cart->get_cart_contents_count();
+$contact_number = get_field('contact_tel', 'options');
 
 ?>
 <!DOCTYPE html>
@@ -37,10 +38,12 @@ $cart_total = WC()->cart->get_cart_contents_count();
 		<header>
 			<div class="container">
 				<div class="header-top">
+					<?php if ($contact_number) { ?>
 					<div class="header-top__contact">
 						<p>NEED HELP?</p>
-						<p>CALL <a href="tel:0417 520 040">0417 520 040</a></p>
+						<p>CALL <a href="tel:<?php echo $contact_number; ?>"><?php echo $contact_number; ?></a></p>
 					</div>
+					<?php } ?>
 					<div class="header-top__user-info d-none d-md-block">
 						<a class="header-top__log-in" href="#">Log In</a>
 						<button id="show-cart" class="header-top__cart <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>						
@@ -51,7 +54,9 @@ $cart_total = WC()->cart->get_cart_contents_count();
 					</div>
 				</div>
 				<div class="header-logo">
-					<img src="<?php echo get_stylesheet_directory_uri() . '/img/logo.png' ?>" alt="Fleurieu Hampers logo">		
+					<a href="<?php echo get_site_url(); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/img/logo.png' ?>" alt="Fleurieu Hampers logo">		
+					</a>
 				</div>
 				<div class="header-top__user-info d-md-none">
 					<a href="<?php echo get_site_url(); ?>/cart" class="header-top__cart d-md-none <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>
