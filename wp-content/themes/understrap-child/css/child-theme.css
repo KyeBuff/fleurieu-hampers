@@ -10987,6 +10987,11 @@ button {
     .section__header::after {
       right: 0; } }
 
+@media (max-width: 575.98px) {
+  .product-page .site-main {
+    padding: 1em;
+    width: 100%; } }
+
 .header-top {
   text-align: center;
   padding: 1em 0; }

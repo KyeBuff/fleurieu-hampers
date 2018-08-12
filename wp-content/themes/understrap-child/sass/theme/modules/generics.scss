@@ -84,3 +84,12 @@ button {
 		}
 	}
 }
+
+@media (max-width: 575.98px) {
+	.product-page {
+		.site-main {
+			padding: $spacing;
+			width: 100%;
+		}
+	}
+}
