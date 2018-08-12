@@ -93,7 +93,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
 								<div class="row woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-									<div class="col-3 product-thumbnail">
+									<div class="col-3 col-md-1 product-thumbnail">
 										<?php
 										$sku = esc_attr( $_product->get_sku());
 										$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
@@ -106,7 +106,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 										?>
 									</div>
 
-									<div class="col-md-3 product-name d-none d-md-block">
+									<div class="col-md-5 product-name d-none d-md-block">
 										<?php
 										if ( ! $product_permalink ) {
 											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
