@@ -60,7 +60,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					</div>
 				</div>
 
-				<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+				<form class="woocommerce-cart-form row" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 					<?php do_action( 'woocommerce_before_cart_table' ); ?>
 					<div class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
@@ -114,6 +114,19 @@ do_action( 'woocommerce_before_cart' ); ?>
 											<span class="d-block">SKU: <?php echo esc_attr( $_product->get_sku()); ?></span>
 										</div>
 										<?php } ?>
+										<div class="product-remove d-none d-md-block">
+										<?php
+											// @codingStandardsIgnoreLine
+											echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
+												'<a href="%s" class="cart__remove--md" aria-label="%s" data-product_id="%s" data-product_sku="%s">Remove</a>',
+												esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+												__( 'Remove this item', 'woocommerce' ),
+												esc_attr( $product_id ),
+												esc_attr( $_product->get_sku() )
+											), $cart_item_key );
+
+										?>
+										</div>
 									</div>
 									<div class="product-name col-9 col-md-6 d-md-none" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 										<?php
@@ -219,8 +232,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						
 						</div>
-						<div class="actions col-12">
-							<div class="update-cart">
+						<div class="actions col-12 col-md-6">
+							<div class="update-cart d-md-none">
 								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update', 'woocommerce' ); ?></button>
 							</div>
 							<?php if ( wc_coupons_enabled() ) { ?>
@@ -233,7 +246,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							</div>
 							<?php } ?>
 							<div class="note-container">
-								<button id="add-note" class="d-block gold btn-action"><i class="fa fa-tags mr-2"></i>Add a note</button>
+								<button id="add-note" class="d-block gold btn-action"><i class="fa fa-envelope mr-2"></i>Add a note</button>
 								<div id="note">
 									<textarea id="special-note" class="special-note" name="special-note" placeholder="Instructions? Special requests? Add them here."></textarea>
 								</div>
@@ -245,23 +258,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 
 						<?php do_action( 'woocommerce_after_cart_contents' ); ?>
-					</div>
 					<?php do_action( 'woocommerce_after_cart_table' ); ?>
-				</form>
-
-				<div class="row cart__bottom">
-					<div class="col-12">
-						<div class="cart-collaterals col-12">
+					<div class="cart__bottom col-md-6">
+						<div class="cart-collaterals">
 							<p class="cart-collaterals__subtotal">Subtotal <span class="float-right"><?php echo $sub_total; ?></span></p>
 						</div>
-						<div class="col-12 col-md-6">
-							<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
+						<a href="<?php echo get_site_url(); ?>/checkout/" class="btn btn-primary float-md-right cart__btn"><i class="fa fa-lock mr-2 mt-1"></i>Checkout</a>
 						</div>
-						<div class="col-12 col-md-6 mt-3 pb-3">
-							<a class="gold cart__back" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
-						</div>
+						<a class="gold cart__back d-md-none" href="<?php echo get_site_url(); ?>/shop"><i class="fa fa-chevron-left"></i> Continue Shopping</a>
 					</div>
-				</div>
+
+				</form>
 
 				<?php do_action( 'woocommerce_after_cart' ); ?>
 			</main>
