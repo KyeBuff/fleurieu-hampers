@@ -15,47 +15,63 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+get_header();
+
+$container   = get_theme_mod( 'understrap_container_type' );
+
 get_header( 'shop' ); ?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+<div class="wrapper cart-wrapper" id="page-wrapper">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+		<div class="row">
 
-		<?php endwhile; // end of the loop. ?>
+			<main class="site-main col-12 cart-page" id="main">
 
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
+			<?php
+				/**
+				 * woocommerce_before_main_content hook.
+				 *
+				 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+				 * @hooked woocommerce_breadcrumb - 20
+				 */
+				do_action( 'woocommerce_before_main_content' );
+			?>
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-<?php get_footer( 'shop' );
+					<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+				<?php endwhile; // end of the loop. ?>
+
+			<?php
+				/**
+				 * woocommerce_after_main_content hook.
+				 *
+				 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+				 */
+				do_action( 'woocommerce_after_main_content' );
+			?>
+
+			<?php
+				/**
+				 * woocommerce_sidebar hook.
+				 *
+				 * @hooked woocommerce_get_sidebar - 10
+				 */
+				do_action( 'woocommerce_sidebar' );
+			?>
+
+			</main>
+		</div><!-- .row -->
+
+	</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+
+<?php get_footer( 'shop' ); 
