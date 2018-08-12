@@ -10928,6 +10928,9 @@ html, body {
   overflow-x: hidden;
   width: 100vw; }
 
+body {
+  min-height: 100vh; }
+
 button {
   background-color: transparent;
   border: none; }

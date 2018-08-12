@@ -58,4 +58,15 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 		$(this).next().toggleClass('hide-form-meta-field');
 	});
+
+
+	// Sticky footer 
+	const body = $('body'),
+	bodyHeight = body.height(),
+	footer = $('.footer-wrapper'),
+	footerHeight = footer.outerHeight();
+
+
+	footer.offset({top: bodyHeight - footerHeight});
+
 });
