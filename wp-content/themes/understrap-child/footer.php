@@ -13,6 +13,9 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<!-- Fixes stray anchor tag in WooCommerce template -->
+</a>
+
 <div class="wrapper footer-wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
