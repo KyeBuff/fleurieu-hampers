@@ -11650,3 +11650,68 @@ button {
       padding: 2em 0 0;
       color: #5E5E5E;
       text-decoration: underline; } }
+
+.checkout .entry-title {
+  color: #5e5e5e;
+  font-size: 1.5em;
+  font-weight: lighter; }
+
+.checkout .woocommerce .woocommerce-checkout .form-row {
+  float: none;
+  padding: 0;
+  width: 100%; }
+  .checkout .woocommerce .woocommerce-checkout .form-row label {
+    display: block;
+    width: 100%;
+    padding: 1em 0 0;
+    color: #5E5E5E;
+    font-size: 1em;
+    font-weight: lighter; }
+  .checkout .woocommerce .woocommerce-checkout .form-row .input-text {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-weight: lighter; }
+  .checkout .woocommerce .woocommerce-checkout .form-row .required {
+    color: #BC9B5D; }
+  .checkout .woocommerce .woocommerce-checkout .form-row .woocommerce-input-wrapper {
+    display: block;
+    width: 100%; }
+
+.checkout .woocommerce .woocommerce-checkout .woocommerce-billing-fields h3 {
+  color: #5E5E5E;
+  font-size: 1.25em;
+  font-weight: lighter; }
+
+.checkout .woocommerce .woocommerce-checkout .select2-selection {
+  min-height: 38px; }
+
+.checkout .woocommerce .woocommerce-checkout .select2-selection__rendered {
+  min-height: 38px;
+  padding: .25em .5em;
+  color: #5E5E5E;
+  font-weight: lighter; }
+
+.checkout .woocommerce .woocommerce-checkout .select2 {
+  margin-top: .5em; }
+
+@media (min-width: 768px) {
+  .checkout .woocommerce .woocommerce-checkout .col-sm-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .checkout .woocommerce .woocommerce-checkout .form-row {
+    float: left;
+    clear: none;
+    width: 50%; }
+    .checkout .woocommerce .woocommerce-checkout .form-row:nth-of-type(odd) {
+      padding-right: 1em; }
+    .checkout .woocommerce .woocommerce-checkout .form-row:nth-of-type(even) {
+      padding-left: 1em; }
+  .checkout .woocommerce .woocommerce-checkout #billing_address_1_field {
+    clear: both; }
+  .checkout .woocommerce .woocommerce-checkout #billing_address_2_field {
+    margin-top: calc(48px + .5em);
+    float: right; }
+  .checkout .woocommerce .woocommerce-checkout #billing_city_field {
+    clear: both; } }

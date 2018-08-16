@@ -22,7 +22,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<main class="site-main col-12" id="main">
+			<main class="site-main col-12 checkout" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
