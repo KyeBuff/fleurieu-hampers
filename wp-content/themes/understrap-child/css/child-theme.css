@@ -11695,7 +11695,7 @@ button {
   margin-top: .5em; }
 
 @media (min-width: 768px) {
-  .checkout .woocommerce .woocommerce-checkout .col-sm-7 {
+  .checkout .woocommerce .woocommerce-checkout .col-sm-7, .checkout .woocommerce .woocommerce-checkout .col-sm-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -11708,9 +11708,9 @@ button {
       padding-right: 1em; }
     .checkout .woocommerce .woocommerce-checkout .form-row:nth-of-type(even) {
       padding-left: 1em; }
-  .checkout .woocommerce .woocommerce-checkout #billing_address_1_field {
+  .checkout .woocommerce .woocommerce-checkout #billing_address_1_field, .checkout .woocommerce .woocommerce-checkout #shipping_address_1_field {
     clear: both; }
-  .checkout .woocommerce .woocommerce-checkout #billing_address_2_field {
+  .checkout .woocommerce .woocommerce-checkout #billing_address_2_field, .checkout .woocommerce .woocommerce-checkout #shipping_address_2_field {
     margin-top: calc(48px + .5em);
     float: right; }
   .checkout .woocommerce .woocommerce-checkout #billing_city_field {

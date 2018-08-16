@@ -47,7 +47,7 @@
 			.select2-selection__rendered {
 				min-height: 38px;
 				padding: .25em .5em;
-				
+
 				color: $grey;
 				font-weight: lighter;
 			}
@@ -62,7 +62,7 @@
 	.checkout {
 		.woocommerce {
 			.woocommerce-checkout {
-				.col-sm-7 {
+				.col-sm-7, .col-sm-5 {
 					flex: 0 0 100%;
 					max-width: 100%;
 				}
@@ -78,10 +78,10 @@
 						padding-left: $spacing;
 					}
 				}
-				#billing_address_1_field {
+				#billing_address_1_field, #shipping_address_1_field {
 					clear: both;
 				}
-				#billing_address_2_field {
+				#billing_address_2_field, #shipping_address_2_field {
 					margin-top: calc(48px + .5em);
 					float: right;
 				}
