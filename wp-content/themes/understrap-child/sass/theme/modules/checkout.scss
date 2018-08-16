@@ -55,6 +55,33 @@
 				margin-top: .5em;
 			}
 		}
+		#ship-to-different-address {
+			margin: $spacing / 2 0;
+			padding: 0;
+
+			background-color: $grey;
+			border: none;
+			border-radius: 0;
+
+			.input-checkbox {
+				display: none;
+			}
+			label {
+				margin: 0;
+				width: 100%;
+			}
+			span {	
+				display: block;
+				padding: $spacing / 2;
+				width: 100%;
+
+				color: $white;
+				font-weight: lighter;
+				text-align: center;
+				font-size: .6em;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
