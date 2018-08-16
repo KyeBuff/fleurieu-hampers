@@ -11656,6 +11656,18 @@ button {
   font-size: 1.5em;
   font-weight: lighter; }
 
+.checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
+  padding-left: 0;
+  color: #BC9B5D;
+  font-size: .9em;
+  font-weight: lighter;
+  background-color: transparent;
+  border-top: none; }
+  .checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info::before {
+    display: none; }
+  .checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info .showcoupon {
+    color: #BC9B5D; }
+
 .checkout .woocommerce .woocommerce-checkout .form-row {
   float: none;
   padding: 0;
@@ -11710,6 +11722,31 @@ button {
   .checkout .woocommerce .woocommerce-checkout .btn:hover, .checkout .woocommerce .woocommerce-checkout .wpcf7 input:hover[type=submit], .wpcf7 .checkout .woocommerce .woocommerce-checkout input:hover[type=submit] {
     background-color: #fab89d;
     color: white; }
+
+.checkout .woocommerce .woocommerce-checkout label[for="order_comments"] {
+  color: #BC9B5D;
+  font-size: .9em;
+  font-weight: lighter; }
+
+.checkout .woocommerce #order_comments {
+  border: 1px solid #D1D1D1;
+  height: 150px;
+  padding: 1em;
+  width: 100%;
+  font-size: .9em;
+  resize: none; }
+  .checkout .woocommerce #order_comments::-webkit-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .checkout .woocommerce #order_comments:-ms-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .checkout .woocommerce #order_comments::-ms-input-placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
+  .checkout .woocommerce #order_comments::placeholder {
+    color: #D1D1D1;
+    font-weight: lighter; }
 
 .checkout .woocommerce #ship-to-different-address {
   margin: 0.5em 0;

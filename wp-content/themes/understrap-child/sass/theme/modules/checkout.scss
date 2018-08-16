@@ -5,6 +5,24 @@
 	    font-weight: lighter;
 	}
 	.woocommerce {
+		.woocommerce-form-coupon-toggle {
+			.woocommerce-info {
+				padding-left: 0;
+				
+				color: $gold;
+			    font-size: .9em;
+			    font-weight: lighter;
+
+				background-color: transparent;
+				border-top: none;
+				&::before {
+					display: none;
+				}
+				.showcoupon {
+					color: $gold;
+				}
+			}
+		}
 		.woocommerce-checkout {
 			.form-row {
 				float: none;
@@ -74,6 +92,23 @@
 					background-color: $checkout_pink;
 					color: $white;
 				}
+			}
+			label[for="order_comments"] {
+				color: $gold;
+			    font-size: .9em;
+			    font-weight: lighter;
+			}
+		}
+		#order_comments {
+			border: 1px solid $lightgrey;
+			height: 150px;
+			padding: $spacing;
+			width: 100%;
+			font-size: .9em;
+			resize: none;
+			&::placeholder {
+				color: $lightgrey;
+				font-weight: lighter;
 			}
 		}
 		#ship-to-different-address {
