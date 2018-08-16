@@ -54,6 +54,27 @@
 			.select2 {
 				margin-top: .5em;
 			}
+			.btn {
+				display: block;
+
+				padding: $spacing / 2;
+
+				background-color: $checkout_pink;
+				border: none;
+				border-radius: 0;
+
+				color: $white;
+				font-size: 1.25em;
+				font-weight: lighter;
+				text-align: center;
+				.fa {
+					font-size: .95em;
+				}
+				&:hover {
+					background-color: $checkout_pink;
+					color: $white;
+				}
+			}
 		}
 		#ship-to-different-address {
 			margin: $spacing / 2 0;
@@ -116,6 +137,9 @@
 					clear: both;
 				}
 			}
+		}
+		#ship-to-different-address {
+			max-width: 300px;
 		}
 	}
 }

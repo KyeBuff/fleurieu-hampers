@@ -11694,6 +11694,23 @@ button {
 .checkout .woocommerce .woocommerce-checkout .select2 {
   margin-top: .5em; }
 
+.checkout .woocommerce .woocommerce-checkout .btn,
+.checkout .woocommerce .woocommerce-checkout .wpcf7 input[type=submit], .wpcf7 .checkout .woocommerce .woocommerce-checkout input[type=submit] {
+  display: block;
+  padding: 0.5em;
+  background-color: #fab89d;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 1.25em;
+  font-weight: lighter;
+  text-align: center; }
+  .checkout .woocommerce .woocommerce-checkout .btn .fa, .checkout .woocommerce .woocommerce-checkout .wpcf7 input[type=submit] .fa, .wpcf7 .checkout .woocommerce .woocommerce-checkout input[type=submit] .fa {
+    font-size: .95em; }
+  .checkout .woocommerce .woocommerce-checkout .btn:hover, .checkout .woocommerce .woocommerce-checkout .wpcf7 input:hover[type=submit], .wpcf7 .checkout .woocommerce .woocommerce-checkout input:hover[type=submit] {
+    background-color: #fab89d;
+    color: white; }
+
 .checkout .woocommerce #ship-to-different-address {
   margin: 0.5em 0;
   padding: 0;
@@ -11735,4 +11752,6 @@ button {
     margin-top: calc(48px + .5em);
     float: right; }
   .checkout .woocommerce .woocommerce-checkout #billing_city_field {
-    clear: both; } }
+    clear: both; }
+  .checkout #ship-to-different-address {
+    max-width: 300px; } }
