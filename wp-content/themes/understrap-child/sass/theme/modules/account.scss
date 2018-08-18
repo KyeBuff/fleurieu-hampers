@@ -9,7 +9,7 @@
 			border-radius: 0;
 			margin: 1%;
 			padding: $spacing;
-			width: 31.33%;
+			width: 48%;
 
 			color: $white;
 			font-size: 1em;
@@ -33,6 +33,12 @@
 }
 
 .woocommerce {
+	.woocommerce-Address-title {
+		h3 {
+			font-size: 1.25em;
+			font-weight: lighter;
+		}
+	}
 	.woocommerce-EditAccountForm {
 		color: $grey;
 		legend {
@@ -59,6 +65,59 @@
 			font-size: 1em;
 
 			background-color: $grey;
+		}
+	}
+	form {
+		.woocommerce-address-fields__field-wrapper {
+			.form-row {
+				width: 100%;
+				.required {
+					color: $gold;
+				}
+				.woocommerce-input-wrapper {
+					width: 100%;
+				}
+				label, .input-text {
+					width: 100%;
+				}
+				.select2-selection {
+					min-height: 38px;
+				}
+				.select2-selection__clear {
+					display: none;
+				}
+				.select2-selection__rendered {
+					min-height: 38px;
+					padding: .25em .5em;
+
+					color: $grey;
+					font-weight: lighter;
+				}
+			}
+		}
+		.btn[name="save_address"] {
+			border: none;
+			border-radius: 0;
+			height: $spacing * 3;
+			margin: $spacing 0;
+			width: 100%;
+
+			color: $white;
+			font-size: 1em;
+
+			background-color: $grey;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.woocommerce-MyAccount-navigation {
+		.list-group {
+			display: flow-root;
+			.list-group-item {
+				float: none;
+				width: 100%;
+			}
 		}
 	}
 }

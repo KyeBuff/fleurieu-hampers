@@ -12107,7 +12107,7 @@ button {
     border-radius: 0;
     margin: 1%;
     padding: 1em;
-    width: 31.33%;
+    width: 48%;
     color: white;
     font-size: 1em;
     text-align: center;
@@ -12130,6 +12130,10 @@ button {
 .woocommerce-MyAccount-content {
   padding: 1em; }
 
+.woocommerce .woocommerce-Address-title h3 {
+  font-size: 1.25em;
+  font-weight: lighter; }
+
 .woocommerce .woocommerce-EditAccountForm {
   color: #5E5E5E; }
   .woocommerce .woocommerce-EditAccountForm legend {
@@ -12150,3 +12154,38 @@ button {
     color: white;
     font-size: 1em;
     background-color: #5E5E5E; }
+
+.woocommerce form .woocommerce-address-fields__field-wrapper .form-row {
+  width: 100%; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .required {
+    color: #BC9B5D; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .woocommerce-input-wrapper {
+    width: 100%; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row label, .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .input-text {
+    width: 100%; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .select2-selection {
+    min-height: 38px; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .select2-selection__clear {
+    display: none; }
+  .woocommerce form .woocommerce-address-fields__field-wrapper .form-row .select2-selection__rendered {
+    min-height: 38px;
+    padding: .25em .5em;
+    color: #5E5E5E;
+    font-weight: lighter; }
+
+.woocommerce form .btn[name="save_address"], .woocommerce form .wpcf7 input[name="save_address"][type=submit], .wpcf7 .woocommerce form input[name="save_address"][type=submit] {
+  border: none;
+  border-radius: 0;
+  height: 3em;
+  margin: 1em 0;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  background-color: #5E5E5E; }
+
+@media (min-width: 768px) {
+  .woocommerce-MyAccount-navigation .list-group {
+    display: flow-root; }
+    .woocommerce-MyAccount-navigation .list-group .list-group-item {
+      float: none;
+      width: 100%; } }
