@@ -193,12 +193,41 @@
 				cursor: pointer;
 			}
 		}
+		h3 {
+			margin: $spacing 0;
+		    color: $grey;
+		    font-size: 1.25em;
+		    font-weight: lighter;
+		}
+		.woocommerce-checkout-review-order-table {
+			max-width: 50em;
+			border: none;
+
+			font-size: .9em;
+			th, td {
+				padding: $spacing / 2 0;
+
+				font-weight: lighter;
+			}
+			th {
+				font-weight: normal;
+			}
+		}
 	}
 }
 
 @include media-breakpoint-up(sm) {
 	.checkout {
 		.woocommerce {
+			.woocommerce-form-coupon {
+				max-width: 40em;
+			    .form-row-first {
+					width: 75%;
+				}
+				.form-row-last {
+					width: 25%;
+				}
+			}
 			.woocommerce-checkout {
 				.col-sm-7, .col-sm-5 {
 					flex: 0 0 100%;

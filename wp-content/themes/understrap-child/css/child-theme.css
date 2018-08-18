@@ -11789,7 +11789,7 @@ button {
         color: white; }
 
 .checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   padding-left: 0;
   color: #BC9B5D;
   font-size: .9em;
@@ -11902,7 +11902,29 @@ button {
     font-size: .6em;
     cursor: pointer; }
 
+.checkout .woocommerce h3 {
+  margin: 1em 0;
+  color: #5E5E5E;
+  font-size: 1.25em;
+  font-weight: lighter; }
+
+.checkout .woocommerce .woocommerce-checkout-review-order-table {
+  max-width: 50em;
+  border: none;
+  font-size: .9em; }
+  .checkout .woocommerce .woocommerce-checkout-review-order-table th, .checkout .woocommerce .woocommerce-checkout-review-order-table td {
+    padding: 0.5em 0;
+    font-weight: lighter; }
+  .checkout .woocommerce .woocommerce-checkout-review-order-table th {
+    font-weight: normal; }
+
 @media (min-width: 576px) {
+  .checkout .woocommerce .woocommerce-form-coupon {
+    max-width: 40em; }
+    .checkout .woocommerce .woocommerce-form-coupon .form-row-first {
+      width: 75%; }
+    .checkout .woocommerce .woocommerce-form-coupon .form-row-last {
+      width: 25%; }
   .checkout .woocommerce .woocommerce-checkout .col-sm-7, .checkout .woocommerce .woocommerce-checkout .col-sm-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
