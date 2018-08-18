@@ -11,12 +11,15 @@ $about_pages = get_field('about_us_pages', 'options');
 
 $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
+
+$title = get_the_title();
+
 ?>
 
 <!-- Fixes stray anchor tag in WooCommerce template -->
 </a>
 
-<div class="wrapper footer-wrapper" id="wrapper-footer">
+<div class="wrapper footer-wrapper <?php echo $title === 'My account' ? 'static-footer' : null; ?>" id="wrapper-footer" style="">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 

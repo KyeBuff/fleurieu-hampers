@@ -5,6 +5,10 @@
 	color: $white;
 }
 
+.static-footer {
+	position: static !important;
+}
+
 .footer-content {
 	display: flex;
 	flex-wrap: wrap;

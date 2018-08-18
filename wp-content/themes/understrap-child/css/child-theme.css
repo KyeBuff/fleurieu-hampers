@@ -11103,6 +11103,9 @@ button {
   background-color: black;
   color: white; }
 
+.static-footer {
+  position: static !important; }
+
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12015,7 +12018,6 @@ button {
     max-width: 300px; } }
 
 .woocommerce-message, .woocommerce-error {
-  display: none;
   position: fixed;
   left: 2%;
   bottom: 0;
