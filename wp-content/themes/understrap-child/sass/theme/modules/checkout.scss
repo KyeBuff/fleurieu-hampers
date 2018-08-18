@@ -5,8 +5,63 @@
 	    font-weight: lighter;
 	}
 	.woocommerce {
+		.woocommerce-form-coupon {
+			border: none;
+			margin-top: 0;
+			padding: $spacing 0;
+
+			color: $grey;
+		    font-size: .9em;
+		    font-weight: lighter;
+		    .form-row-first {
+				width: 60%;
+			}
+			.form-row-last {
+				width: 40%;
+			}
+			.form-row {
+				display: block;
+				float: left;
+
+				margin: 0;
+				padding: 0;
+
+				&::before, &::after {
+					display: none;
+				}
+				.form-control {
+					display: block;
+					border: 1px solid $lightgrey;
+					border-radius: 0;
+					height: $spacing * 3;
+					border-right: none;
+					margin-right: 0;
+					padding: $spacing $spacing / 2;
+					font-size: .9em;
+
+					&::placeholder {
+						color: $lightgrey;
+					}
+				}
+				.btn {
+					border-color: $gold;
+					border-radius: 0;
+					height: $spacing * 3;
+					width: 100%;
+
+					color: $gold;
+					font-size: .9em;
+					&:hover {
+						background-color: $gold;
+						color: $white;
+					}
+				}
+
+			}
+		}
 		.woocommerce-form-coupon-toggle {
 			.woocommerce-info {
+				margin-bottom: $spacing;
 				padding-left: 0;
 				
 				color: $gold;
@@ -141,7 +196,7 @@
 	}
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(sm) {
 	.checkout {
 		.woocommerce {
 			.woocommerce-checkout {
@@ -149,6 +204,15 @@
 					flex: 0 0 100%;
 					max-width: 100%;
 				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.checkout {
+		.woocommerce {
+			.woocommerce-checkout {
 				.form-row {
 					float: left;
 					clear: none;
