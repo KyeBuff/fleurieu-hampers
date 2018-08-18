@@ -124,22 +124,22 @@
 			}
 		}
 	}
-	.actions {
-		.update-cart {
-			margin-top: -.5em;
-			margin-bottom: $spacing;
-			.button {
-				display: block;
-				padding: $spacing / 4 0;
-				width: 100%;
+	.update-cart {
+		margin-top: -.5em;
+		margin-bottom: $spacing;
+		.button {
+			display: block;
+			padding: $spacing / 4 0;
+			width: 100%;
 
-				font-size: 1.25em;
-				font-weight: lighter;
+			font-size: 1.25em;
+			font-weight: lighter;
 
-				background-color: $grey;
-				color: $white;
-			}
+			background-color: $grey;
+			color: $white;
 		}
+	}
+	.actions {
 		.coupon {
 			display: flex;
 			.coupon_code {
@@ -216,6 +216,9 @@
 				.product-thumbnail {
 					padding-left: 0;
 				}
+				&:last-child {
+					padding-bottom: 0;
+				}
 			}
 		}
 		.actions {
@@ -232,6 +235,12 @@
 				.btn-action {
 					padding-top: 0;
 				}
+			}
+		}
+		.update-cart {
+			.button {
+				float: right;
+				max-width: 10em;
 			}
 		}
 	}
