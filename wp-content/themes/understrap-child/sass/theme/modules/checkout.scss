@@ -5,6 +5,69 @@
 	    font-weight: lighter;
 	}
 	.woocommerce {
+		form {
+			.form-row {
+				.required {
+					color: $gold;
+				}
+			}
+		}
+		.woocommerce-info {
+			margin-bottom: $spacing;
+			padding-left: 0;
+			
+		    font-size: .9em;
+		    font-weight: lighter;
+
+			background-color: transparent;
+			border-top: none;
+			&::before {
+				display: none;
+			}
+			.showcoupon {
+				color: $gold;
+			}
+		}
+		.woocommerce-form-login-toggle {
+			.woocommerce-info {
+			    font-weight: normal;
+			    a {
+			    	font-weight: lighter;
+			    	text-decoration: underline;
+			    }
+			}
+		}
+		.woocommerce-form-login {
+			border: none;
+			margin-top: 0;
+			padding: $spacing 0;
+			p {
+			    color: $grey;
+				font-size: .9em;
+  				font-weight: lighter;
+			}
+			.lost_password {
+				a {
+				    color: $grey;
+					text-decoration: underline;
+				}
+			}
+			.btn {
+				border: none;
+				border-radius: 0;
+				height: $spacing * 3;
+				margin: $spacing 0;
+				width: 100%;
+
+				color: $white;
+				font-size: 1em;
+
+				background-color: $grey;
+			}
+			.woocommerce-form__label {
+				padding: $spacing $spacing * 2 $spacing 0;
+			}
+		}
 		.woocommerce-form-coupon {
 			border: none;
 			margin-top: 0;
@@ -61,21 +124,7 @@
 		}
 		.woocommerce-form-coupon-toggle {
 			.woocommerce-info {
-				margin-bottom: $spacing;
-				padding-left: 0;
-				
 				color: $gold;
-			    font-size: .9em;
-			    font-weight: lighter;
-
-				background-color: transparent;
-				border-top: none;
-				&::before {
-					display: none;
-				}
-				.showcoupon {
-					color: $gold;
-				}
 			}
 		}
 		.woocommerce-checkout {
@@ -98,9 +147,6 @@
 					padding: $spacing / 2;
 
 					font-weight: lighter;
-				}
-				.required {
-					color: $gold;
 				}
 				.woocommerce-input-wrapper {
 					display: block;
@@ -243,6 +289,15 @@
 @include media-breakpoint-up(sm) {
 	.checkout {
 		.woocommerce {
+			.woocommerce-form-login {
+				max-width: 40em;
+				.btn {
+					max-width: 15em;
+				}
+				.woocommerce-form__label {
+					width: 100%;
+				}
+			}
 			.woocommerce-form-coupon {
 				max-width: 40em;
 			    .form-row-first {

@@ -1,4 +1,5 @@
-.woocommerce-message {
+.woocommerce-message, .woocommerce-error {
+	display: none;
 	position: fixed;
 	left: 2%;
 	bottom: 0;
@@ -6,6 +7,7 @@
 
 	background-color: $grey;
 	border: none;
+	padding: $spacing;
 	width: 96%;
 
 	opacity: 1;
@@ -15,9 +17,8 @@
     font-weight: lighter;
 
 	animation: popUp 6s;
-
     opacity: 0;
-	a.button {
+	a.button, a {
 		display: inline-block;
 		border: none;
 		margin-left: $spacing;
@@ -36,8 +37,21 @@
 	}
 }
 
+.woocommerce-error {
+	background-color: $error;
+    &::before {
+    	display: none;
+    }
+    a {
+    	float: right;
+    	margin-left: 0;
+    }
+	animation: popUp 10s;
+}
+
 @keyframes popUp {
 	0% {
+    	display: block;
 	    transform: translate3d(-125vw,0,0);
 		opacity: 0;
 	}
