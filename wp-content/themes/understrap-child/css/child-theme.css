@@ -11861,6 +11861,25 @@ button {
   font-size: .9em;
   font-weight: lighter; }
 
+.checkout .woocommerce .woocommerce-checkout #payment {
+  background-color: transparent; }
+  .checkout .woocommerce .woocommerce-checkout #payment .payment_methods {
+    border-bottom: none;
+    padding: 0;
+    color: #5E5E5E; }
+  .checkout .woocommerce .woocommerce-checkout #payment .place-order {
+    padding: 1em 0;
+    color: #5E5E5E;
+    font-size: .8em; }
+    .checkout .woocommerce .woocommerce-checkout #payment .place-order .woocommerce-privacy-policy-link {
+      text-decoration: underline; }
+  .checkout .woocommerce .woocommerce-checkout #payment .payment_box {
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: transparent; }
+    .checkout .woocommerce .woocommerce-checkout #payment .payment_box::before {
+      display: none; }
+
 .checkout .woocommerce #order_comments {
   border: 1px solid #D1D1D1;
   height: 150px;
@@ -11899,7 +11918,7 @@ button {
     color: white;
     font-weight: lighter;
     text-align: center;
-    font-size: .6em;
+    font-size: .8em;
     cursor: pointer; }
 
 .checkout .woocommerce h3 {

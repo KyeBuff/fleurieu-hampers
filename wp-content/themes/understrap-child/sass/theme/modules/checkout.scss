@@ -153,6 +153,30 @@
 			    font-size: .9em;
 			    font-weight: lighter;
 			}
+			#payment {
+				background-color: transparent;
+				.payment_methods {
+					border-bottom: none;
+					padding: 0;
+					color: $grey;
+				}
+				.place-order {
+					padding: $spacing 0;
+					color: $grey;
+					font-size: .8em;
+					.woocommerce-privacy-policy-link {
+						text-decoration: underline;
+					}
+				}
+				.payment_box {
+					&::before {
+						display: none;
+					}
+					margin: 0;
+					padding: $spacing / 2 0;
+					background-color: transparent;
+				}
+			}
 		}
 		#order_comments {
 			border: 1px solid $lightgrey;
@@ -189,7 +213,7 @@
 				color: $white;
 				font-weight: lighter;
 				text-align: center;
-				font-size: .6em;
+				font-size: .8em;
 				cursor: pointer;
 			}
 		}

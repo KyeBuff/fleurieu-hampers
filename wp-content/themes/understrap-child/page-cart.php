@@ -243,15 +243,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<div class="update-cart d-md-none">
 								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update', 'woocommerce' ); ?></button>
 							</div>
-							<?php if ( wc_coupons_enabled() ) { ?>
-							<div class="coupon-container">
-								<button id="show-coupon" class="d-block gold btn-action"><i class="fa fa-tags mr-2"></i>Enter a promo code</button>
-								<div id="coupon-group" class="coupon hide-form-meta-field">
-									<label class="d-none" for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text coupon_code" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Enter a coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button gold btn-apply" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply', 'woocommerce' ); ?></button>
-									<?php do_action( 'woocommerce_cart_coupon' ); ?>
-								</div>
-							</div>
-							<?php } ?>
 							<div class="note-container">
 								<button id="add-note" class="d-block gold btn-action"><i class="fa fa-envelope mr-2"></i>Add a note</button>
 								<div id="note" class="hide-form-meta-field">
