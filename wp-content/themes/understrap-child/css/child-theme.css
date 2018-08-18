@@ -12096,3 +12096,57 @@ button {
     opacity: 0;
     -webkit-transform: translate3d(-125vw, 0, 0);
             transform: translate3d(-125vw, 0, 0); } }
+
+.woocommerce-MyAccount-navigation .list-group {
+  display: flow-root;
+  padding: 1em 0 2em; }
+  .woocommerce-MyAccount-navigation .list-group .list-group-item {
+    display: block;
+    float: left;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin: 1%;
+    padding: 1em;
+    width: 31.33%;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background-color: #5E5E5E;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+    .woocommerce-MyAccount-navigation .list-group .list-group-item:hover {
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      background-color: white;
+      color: #5E5E5E;
+      border: 1px solid #5E5E5E;
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+
+.woocommerce-MyAccount-content {
+  padding: 1em; }
+
+.woocommerce .woocommerce-EditAccountForm {
+  color: #5E5E5E; }
+  .woocommerce .woocommerce-EditAccountForm legend {
+    padding: 1em 0 0; }
+  .woocommerce .woocommerce-EditAccountForm em {
+    display: block;
+    padding: 1em 0;
+    font-size: .8em; }
+  .woocommerce .woocommerce-EditAccountForm .form-row .required {
+    color: #BC9B5D; }
+  .woocommerce .woocommerce-EditAccountForm .btn,
+  .woocommerce .woocommerce-EditAccountForm .wpcf7 input[type=submit], .wpcf7 .woocommerce .woocommerce-EditAccountForm input[type=submit] {
+    border: none;
+    border-radius: 0;
+    height: 3em;
+    margin: 1em 0;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    background-color: #5E5E5E; }
