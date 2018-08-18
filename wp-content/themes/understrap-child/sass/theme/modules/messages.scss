@@ -1,0 +1,57 @@
+.woocommerce-message {
+	position: fixed;
+	left: 2%;
+	bottom: 0;
+	z-index: 10000;
+
+	background-color: $grey;
+	border: none;
+	width: 96%;
+
+	opacity: 1;
+
+	color: $white;
+    font-size: .9em;
+    font-weight: lighter;
+
+	animation: popUp 6s;
+
+    opacity: 0;
+	a.button {
+		display: inline-block;
+		border: none;
+		margin-left: $spacing;
+		padding: 2px $spacing 0;
+
+		color: $white;
+	    font-size: .9em;
+	    font-weight: lighter;
+	    line-height: auto;
+	    text-decoration: underline;
+
+	    background-color: transparent;
+	    &:hover {
+	    	background-color: transparent;
+	    }
+	}
+}
+
+@keyframes popUp {
+	0% {
+	    transform: translate3d(-125vw,0,0);
+		opacity: 0;
+	}
+	15% {
+	    transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	    transform: translate3d(0,0,0);
+	}
+	100% {
+		display: none;
+		opacity: 0;
+	    transform: translate3d(-125vw,0,0);
+	}
+}
