@@ -10981,7 +10981,7 @@ button {
   font-size: 1.1em;
   cursor: pointer; }
 
-input, textarea {
+input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1em;
   font-weight: 300; }
@@ -11001,8 +11001,11 @@ input, textarea {
   .wpcf7 input:focus[type=email],
   .wpcf7 input:focus[type=file],
   .wpcf7 input:focus[type=submit], .wpcf7 input.wpcf7-validation-errors:focus, textarea.form-control:focus,
-  .wpcf7 textarea:focus {
+  .wpcf7 textarea:focus, select.form-control:focus,
+  .wpcf7 select:focus {
     border-color: #BC9B5D; }
+  input.custom-select:focus, textarea.custom-select:focus, select.custom-select:focus {
+    border-color: #5E5E5E; }
 
 .fa {
   font-size: 1.5em; }
@@ -11033,6 +11036,12 @@ input, textarea {
   outline: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
+
+.entry-title {
+  color: #5E5E5E;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  padding: 1em 0.5em; }
 
 @media (min-width: 768px) {
   .section__header {
@@ -11413,7 +11422,7 @@ input, textarea {
     display: block;
     padding: 0.5em;
     width: 6em;
-    text-align: left; }
+    text-align: center; }
 
 .woocommerce #content div.product form.cart .btn[name="add-to-cart"], .woocommerce #content div.product form.cart .wpcf7 input[name="add-to-cart"][type=submit], .wpcf7 .woocommerce #content div.product form.cart input[name="add-to-cart"][type=submit] {
   border: none;

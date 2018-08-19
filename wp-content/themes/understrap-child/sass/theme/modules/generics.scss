@@ -56,12 +56,15 @@ button {
 	cursor: pointer;
 }
 
-input, textarea {
+input, textarea, select {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
 	&.form-control:focus {
 		border-color: $gold;
+	}
+	&.custom-select:focus {
+		border-color: $grey;
 	}
 }
 
@@ -103,6 +106,14 @@ input, textarea {
 	outline: none !important;
   	-webkit-box-shadow: none !important;
   	box-shadow: none !important;
+}
+
+.entry-title {
+	color: $grey;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+
+	padding: $spacing $spacing / 2;
 }
 
 @include media-breakpoint-up(md) {
