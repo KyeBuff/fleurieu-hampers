@@ -13,6 +13,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 $cart_total = WC()->cart->get_cart_contents_count();
 $contact_number = get_field('contact_tel', 'options');
 
+$logged_in = is_user_logged_in();
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -47,7 +49,7 @@ $contact_number = get_field('contact_tel', 'options');
 				</div>
 				<?php } ?>
 				<div class="header-top__user-info d-none d-md-block">
-					<a class="header-top__log-in" href="#">Log In</a>
+					<a class="header-top__log-in" href="<?php echo $logged_in ?  wp_logout_url( get_site_url() . '/' ) : get_site_url() . '/my-account/' ?>"><?php echo is_user_logged_in() ? 'Log out' : 'Log in'; ?></a>
 					<button id="show-cart" class="header-top__cart <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>						
 						<?php if ($cart_total) { ?>
 							<span class="header-top__item-count"><?php echo $cart_total > 9 ? '9+' : $cart_total; ?></span>
