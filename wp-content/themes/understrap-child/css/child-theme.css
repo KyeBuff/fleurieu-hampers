@@ -12204,6 +12204,11 @@ ul.woocommerce-mini-cart {
   .checkout #ship-to-different-address {
     max-width: 300px; } }
 
+.woocommerce-message {
+  text-indent: 2em; }
+  .woocommerce-message::before {
+    left: -1em; }
+
 .woocommerce-message, .woocommerce-error {
   position: fixed;
   left: 2%;
@@ -12219,7 +12224,9 @@ ul.woocommerce-mini-cart {
   font-weight: 300;
   -webkit-animation: popUp 6s;
           animation: popUp 6s;
-  opacity: 0; }
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1; }
   .woocommerce-message a.button, .woocommerce-message a, .woocommerce-error a.button, .woocommerce-error a {
     display: inline-block;
     border: none;

@@ -1,3 +1,9 @@
+.woocommerce-message {
+	text-indent: $spacing * 2;
+	&::before {
+		left: -$spacing;
+	}
+}
 .woocommerce-message, .woocommerce-error {
 	position: fixed;
 	left: 2%;
@@ -16,7 +22,8 @@
     font-weight: 300;
 
 	animation: popUp 6s;
-    opacity: 0;
+	    transform: translate3d(0,0,0);
+    opacity: 1;
 	a.button, a {
 		display: inline-block;
 		border: none;
