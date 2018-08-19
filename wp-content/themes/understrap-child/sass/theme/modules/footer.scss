@@ -34,10 +34,6 @@
 		margin: $spacing / 2 0;
 
 		color: $white;
-		&:hover {
-			color: $white;
-			text-decoration: underline;
-		}
 	}
 }
 .social {
@@ -50,6 +46,14 @@
 	}
 	.fa-social-icon {
 		font-size: 1.1em;
+	}
+	.fa-stack {
+		transition: transform .25s ease-in-out;
+		transform: scale(1);
+		&:hover {
+			transition: transform .25s ease-in-out;
+			transform: scale(1.2);
+		}
 	}
 }
 

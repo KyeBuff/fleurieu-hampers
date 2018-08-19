@@ -20,6 +20,10 @@ a {
 	color: $black;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
+
+	transition: transform .25s ease-in-out;
+	transform: scale(1);
+
 	&:hover {
 		text-decoration: none;
 	}

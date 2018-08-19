@@ -10940,7 +10940,13 @@ button {
 a {
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
   a:hover {
     text-decoration: none; }
 
@@ -11160,9 +11166,6 @@ input, textarea {
   display: block;
   margin: 0.5em 0;
   color: white; }
-  .links__link:hover {
-    color: white;
-    text-decoration: underline; }
 
 .social__link {
   margin: 0 0.25em; }
@@ -11173,6 +11176,21 @@ input, textarea {
 
 .social .fa-social-icon {
   font-size: 1.1em; }
+
+.social .fa-stack {
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+  .social .fa-stack:hover {
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .legal-text {
   font-size: .8em;
