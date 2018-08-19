@@ -11320,17 +11320,29 @@ input, textarea {
   .woocommerce ul.products li.product {
     float: none;
     min-width: 100%;
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    transition: -webkit-transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
-    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-    -webkit-transform: scale(1.025) .woocommerce ul.products li.product;
-            transform: scale(1.025) .woocommerce ul.products li.product; }
-    .woocommerce ul.products li.product :hover {
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+    .woocommerce ul.products li.product:hover {
+      -webkit-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
       -webkit-transform: scale(1.025);
               transform: scale(1.025); }
+    .woocommerce ul.products li.product .onsale {
+      left: 1em;
+      top: 1em;
+      right: auto;
+      margin: 0;
+      min-height: auto;
+      padding: 0 1em;
+      border-radius: 0;
+      font-size: .9em;
+      font-weight: 300;
+      line-height: 2em;
+      background-color: #826DA6; }
     .woocommerce ul.products li.product .woocommerce-loop-product__title {
       color: #5E5E5E;
       font-size: 1.2em;
