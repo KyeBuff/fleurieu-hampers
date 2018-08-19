@@ -11319,9 +11319,18 @@ input, textarea {
   padding: 1em; }
   .woocommerce ul.products li.product {
     float: none;
-    min-width: 100%; }
-    .woocommerce ul.products li.product:hover {
-      opacity: 0.9; }
+    min-width: 100%;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    -webkit-transform: scale(1.025) .woocommerce ul.products li.product;
+            transform: scale(1.025) .woocommerce ul.products li.product; }
+    .woocommerce ul.products li.product :hover {
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(1.025);
+              transform: scale(1.025); }
     .woocommerce ul.products li.product .woocommerce-loop-product__title {
       color: #5E5E5E;
       font-size: 1.2em;
