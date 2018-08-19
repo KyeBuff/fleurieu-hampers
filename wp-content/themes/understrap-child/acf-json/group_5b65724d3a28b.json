@@ -46,11 +46,11 @@
             ]
         },
         {
-            "key": "field_5b65727fffd9c",
-            "label": "Text",
-            "name": "featured_text",
-            "type": "textarea",
-            "instructions": "",
+            "key": "field_5b79b955bc68f",
+            "label": "Popular products text",
+            "name": "popular_text",
+            "type": "text",
+            "instructions": "Text that displays under the popular products.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -60,9 +60,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1533679174
+    "modified": 1534703164
 }
