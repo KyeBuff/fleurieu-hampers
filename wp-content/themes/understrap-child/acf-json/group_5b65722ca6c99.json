@@ -75,8 +75,7 @@
                             },
                             "choices": {
                                 "Header and text overlay": "Header and text overlay",
-                                "Header overlay": "Header overlay",
-                                "Header overlay with sale tag": "Header overlay with sale tag"
+                                "Header overlay": "Header overlay"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -90,7 +89,7 @@
                             "key": "field_5b66018c1504e",
                             "label": "Header",
                             "name": "header",
-                            "type": "text",
+                            "type": "group",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -99,11 +98,47 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b79b190f399c",
+                                    "label": "Styled text",
+                                    "name": "styled_text",
+                                    "type": "text",
+                                    "instructions": "Text will be rendered with italic styled font.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b79b19df399d",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
                         },
                         {
                             "key": "field_5b6601c41504f",
@@ -131,6 +166,25 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b79b2d95282a",
+                            "label": "Include link to shop tag?",
+                            "name": "sale_tag",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Show sale tag.",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ]
                 }
@@ -154,5 +208,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1533679138
+    "modified": 1534701597
 }

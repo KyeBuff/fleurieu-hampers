@@ -10970,7 +10970,6 @@ input, textarea {
   padding-top: 0; }
 
 .section__header {
-  border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin-bottom: 0.5em;
   padding: 1em 0;
@@ -11212,6 +11211,11 @@ input, textarea {
   .carousel-item__header {
     margin: 1em 0;
     font-family: 'Source Sans Pro', sans-serif; }
+    .carousel-item__header .carousel-item__header--styled {
+      display: block;
+      font-family: 'Marck Script', cursive;
+      font-size: 1.5em;
+      text-align: center; }
 
 .carousel-nav {
   top: calc(50% - 20px);
@@ -11221,7 +11225,7 @@ input, textarea {
 @media (min-width: 576px) {
   .carousel-item__tag {
     position: absolute;
-    bottom: 1.2em;
+    bottom: 1em;
     right: -1.25em;
     z-index: 100;
     padding: 1em;

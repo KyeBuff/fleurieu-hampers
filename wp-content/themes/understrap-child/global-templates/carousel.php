@@ -15,19 +15,17 @@
 
 				if ($type === 'Header and text overlay') {
 					$class = 'header-overlay';
-				} else if ($type === 'Header overlay with sale tag') {
-					$class = 'header-sale';
-				}
+				} 
 
 			?>
 			<div class="carousel-item <?php echo $class; ?> <?php echo $i === 0 ? 'active' : '' ?>" style="background-image: url(<?php echo $slide['image']; ?>)">
 				<div class="carousel-item__overlay">
-					<h3 class="carousel-item__header"><?php echo $slide['header']; ?></h3>
+					<h3 class="carousel-item__header"><span class="carousel-item__header--styled"><?php echo $slide['header']['styled_text']; ?></span><?php echo $slide['header']['text']; ?></h3>
 					<?php if ($class === 'header-overlay') { ?>
 						<p class="carousel-item__text"><?php echo $slide['sub_text']; ?></p>
 					<?php } ?>
 				</div>
-				<?php if ($class === 'header-sale') { ?>
+				<?php if ($slide['sale_tag']) { ?>
 					<a class="carousel-item__tag d-none d-sm-inline" href="<?php echo get_site_url() . '/shop'; ?>">Sale</a>
 				<?php } ?>
 			</div>
