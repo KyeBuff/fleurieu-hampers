@@ -1,0 +1,24 @@
+.about {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	.entry-content {
+		padding: 0 $spacing;
+		p {
+			margin: $spacing 0;
+		}
+	}
+	img {
+		display: block;
+		margin: $spacing 0;
+		width: 100%;
+	}
+}
+
+
+@include media-breakpoint-up(md) {
+	.about {
+		img {
+			max-width: 50%;
+		}
+	}
+}

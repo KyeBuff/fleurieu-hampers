@@ -11044,6 +11044,8 @@ input, textarea, select {
   padding: 1em 0.5em; }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 1000px; }
   .section__header {
     position: relative;
     border-top: none;
@@ -12383,3 +12385,19 @@ ul.woocommerce-mini-cart {
     .woocommerce-MyAccount-navigation .list-group .list-group-item {
       float: none;
       width: 100%; } }
+
+.about {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+  .about .entry-content {
+    padding: 0 1em; }
+    .about .entry-content p {
+      margin: 1em 0; }
+  .about img {
+    display: block;
+    margin: 1em 0;
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .about img {
+    max-width: 50%; } }

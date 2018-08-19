@@ -117,6 +117,9 @@ input, textarea, select {
 }
 
 @include media-breakpoint-up(md) {
+	.container {
+		max-width: 1000px;
+	}
 	.section__header {
 		position: relative;
 
