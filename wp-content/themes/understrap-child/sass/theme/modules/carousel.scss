@@ -40,6 +40,14 @@
 	}
 }
 
+.carousel-nav {
+	top: calc(50% - 20px);
+	bottom: auto;
+
+	padding: $spacing;
+}
+
+
 @include media-breakpoint-up(sm) {
 	.carousel-item {
 		@at-root #{&}__tag {
@@ -53,12 +61,20 @@
 
 			transform: rotate(-90deg);
 
-			background-color: pink;
+			background-color: $checkout_pink;
+			opacity: 0.95;
 
 			font-size: 2em;
 			letter-spacing: .4em;
 			text-align: center;
 			text-transform: uppercase;
+
+			&:hover {
+				transition: all .5s ease-in-out;
+				background-color: $checkout_pink;
+				color: $white;
+				opacity: 1;
+			}
 		}
 	}
 }

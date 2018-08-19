@@ -28,17 +28,17 @@
 					<?php } ?>
 				</div>
 				<?php if ($class === 'header-sale') { ?>
-					<a class="carousel-item__tag d-none d-sm-inline" href="#">Sale</a>
+					<a class="carousel-item__tag d-none d-sm-inline" href="<?php echo get_site_url() . '/shop'; ?>">Sale</a>
 				<?php } ?>
 			</div>
 		<?php } ?>
 
 	</div>
-	<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+	<a class="carousel-nav carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		<span class="sr-only">Previous</span>
 	</a>
-	<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+	<a class="carousel-nav carousel-control-next" href="#carousel" role="button" data-slide="next">
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>

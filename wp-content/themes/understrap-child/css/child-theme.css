@@ -11179,6 +11179,11 @@ button {
   .carousel-item__header {
     margin: 1em 0; }
 
+.carousel-nav {
+  top: calc(50% - 20px);
+  bottom: auto;
+  padding: 1em; }
+
 @media (min-width: 576px) {
   .carousel-item__tag {
     position: absolute;
@@ -11188,11 +11193,18 @@ button {
     padding: 1em;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    background-color: pink;
+    background-color: #fab89d;
+    opacity: 0.95;
     font-size: 2em;
     letter-spacing: .4em;
     text-align: center;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+    .carousel-item__tag:hover {
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #fab89d;
+      color: white;
+      opacity: 1; } }
 
 .featured-products__carousel {
   max-width: 100vw;
