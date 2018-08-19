@@ -11196,20 +11196,16 @@ input, textarea {
   .carousel-item.header .carousel-item__overlay {
     background-color: transparent;
     color: white; }
-    .carousel-item.header .carousel-item__overlay .carousel-item__header {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 2.5em; }
-  .carousel-item.header-sale .carousel-item__overlay .carousel-item__header {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.5em; }
   .carousel-item__overlay {
-    margin: 100px auto 0;
+    margin: 5em auto 0;
     max-width: 250px;
     padding: 0.5em;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center; }
   .carousel-item__header {
     margin: 1em 0;
+    font-size: 2em;
+    font-weight: 300;
     font-family: 'Source Sans Pro', sans-serif; }
     .carousel-item__header .carousel-item__header--styled {
       display: block;
