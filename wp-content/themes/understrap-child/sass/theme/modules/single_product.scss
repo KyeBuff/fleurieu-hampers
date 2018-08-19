@@ -2,7 +2,7 @@
 	#content {
 		p, h2, label, input, button {
 			color: $grey;
-			font-weight: lighter;
+			font-weight: 300;
 		}
 		div.product {
 			span.onsale {
@@ -10,6 +10,9 @@
 			}
 			.product_title {
 				display: none;
+			}
+			p.stock {
+				font-weight: normal;
 			}
 			div.images {
 				float: none;
@@ -32,7 +35,7 @@
 			.price {
 				.woocommerce-Price-amount {
 					color: $grey;
-					font-weight: lighter;
+					font-weight: 300;
 				}
 			}
 			form.cart {
@@ -81,8 +84,12 @@
 					cursor: pointer;
 					.toggle-icon {
 						float: right;
+
+						margin-top: .1em;
+
+						font-family: 'Source Sans Pro', sans-serif;
 						font-size: 1.75em;
-						font-weight: lighter;
+						font-weight: 300;
 						line-height: 50%;
 					}
 				}

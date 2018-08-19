@@ -56,14 +56,18 @@
 .navbar-nav {
 	width: 100%;
 	.nav-link {
+		display: block;
+
+		width: 100%;
+
 		color: $black;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
 		text-align: center;
 		transition: transform .25s ease-in-out;
 		transform: scale(1);
 		text-transform: uppercase;
-		width: 100%;
 		text-align: center;
-		display: block;
 		&:hover {
 			transition: all .25s ease-in-out;
 			transform: scale(1.2);
@@ -73,6 +77,10 @@
 
 .navbar-toggler {
 	color: $black;
+}
+
+.woocommerce-breadcrumb {
+	display: none;
 }
 
 @include media-breakpoint-up(md) {
@@ -86,7 +94,7 @@
 			margin-right: $spacing;
 
 			color: $black;
-			font-weight: lighter;
+			font-weight: 300;
 		}
 		@at-root #{&}__cart {
 			font-size: 1.25em;
@@ -101,7 +109,7 @@
 	}
 	.header-logo {
 		img {
-			max-width: 225px;
+			max-width: 200px;
 		}
 	}
 	.navbar-nav {

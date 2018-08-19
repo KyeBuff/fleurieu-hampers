@@ -10,12 +10,14 @@
 			min-width: 100%;
 			.woocommerce-loop-product__title {
 				color: $grey;
+				font-size: 1.2em;
 				font-weight: normal;
 			}
 			.price {
 				.woocommerce-Price-amount {
 					color: $grey;
-					font-weight: lighter;
+					font-size: 1.2em;
+					font-weight: 300;
 				}
 			}
 		}
@@ -41,6 +43,14 @@
 		ul.products {
 			li.product {
 				min-width: 25%;
+				.woocommerce-loop-product__title {
+					font-size: 1em;
+				}
+				.price {
+					.woocommerce-Price-amount {
+						font-size: 1em;
+					}
+				}
 			}
 		}
 	}

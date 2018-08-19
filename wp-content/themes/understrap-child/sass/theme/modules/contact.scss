@@ -1,4 +1,10 @@
 .contact {
+	.entry-header {
+		h2 {
+			font-size: 2em;
+			font-family: 'Marck Script', cursive;
+		}
+	}
 	.wpcf7-form-control[type="text"], .wpcf7-form-control[type="email"], .wpcf7-textarea {
 		border: none;
 		border-bottom: 1px solid $grey;
@@ -7,7 +13,7 @@
 		color: $grey;
 		caret-color: $grey;
 		font-size: .9em;
-		font-weight: lighter;
+		font-weight: 300;
 		&:focus {
 			border-bottom-color: $gold;
 			caret-color: $gold;

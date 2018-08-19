@@ -8,7 +8,6 @@
 	width: 100vw;
 
 	background-color: rgba(0, 0, 0, 0.6);
-
 	@at-root #{&}__content {
 		position: relative;
 		float: right;
@@ -39,7 +38,7 @@
 		margin: 0;
 
 		font-size: 1.5em;
-		font-weight: lighter;
+		font-weight: 300;
 	}
 	@at-root #{&}__footer {
 		position: absolute;
@@ -59,7 +58,7 @@
 
 		background-color: $add-cart;
 		color: $white;
-		font-weight: lighter;
+		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
 		&:hover {
@@ -83,13 +82,13 @@
 
 		color: $black;
 		strong {
-			font-size: 1.5em;
-			font-weight: lighter;
+			font-size: 1em;
+			font-weight: 300;
 		}
 		.amount {
 			display: block;
 			font-size: 1.5em;
-			font-weight: lighter;
+			font-weight: 300;
 		}
 	}
 	.mini_cart_item {
@@ -99,7 +98,8 @@
 
 		a {
 			color: $grey;
-			font-weight: lighter;
+			font-size: 1.25em;
+			font-weight: 300;
 		}
 		.remove {
 			display: none;

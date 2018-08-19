@@ -245,12 +245,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<div class="update-cart d-md-none">
 								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update', 'woocommerce' ); ?></button>
 							</div>
-							<div class="note-container">
-								<button id="add-note" class="d-block gold btn-action"><i class="fa fa-envelope mr-2"></i>Add a note</button>
-								<div id="note" class="hide-form-meta-field">
-									<textarea id="special-note" class="special-note" name="special-note" placeholder="Instructions? Special requests? Add them here."></textarea>
-								</div>
-							</div>
 
 							<?php do_action( 'woocommerce_cart_actions' ); ?>
 

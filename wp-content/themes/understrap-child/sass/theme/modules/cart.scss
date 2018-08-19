@@ -17,7 +17,7 @@
 
 	color: $white;
 	font-size: 1.25em;
-	font-weight: lighter;
+	font-weight: 300;
 	text-align: center;
 	.fa {
 		font-size: .95em;
@@ -48,7 +48,7 @@
 		padding: $spacing * 2 0 0;
 		color: $grey;
 		font-size: 1em;
-		font-weight: lighter;
+		font-weight: 300;
 	}
 	.cart {
 		width: 100%;
@@ -69,7 +69,7 @@
 			.product-name {
 				color: $grey;
 				font-size: .9em;
-				font-weight: lighter;
+				font-weight: 300;
 				a {
 					display: inline-block;
 					padding-bottom: $spacing / 4;
@@ -133,7 +133,7 @@
 			width: 100%;
 
 			font-size: 1.25em;
-			font-weight: lighter;
+			font-weight: 300;
 
 			background-color: $grey;
 			color: $white;
@@ -165,7 +165,7 @@
 		.btn-action {
 			padding: $spacing 0;
 			font-size: .9em;
-			font-weight: lighter;
+			font-weight: 300;
 			.fa {
 				font-size: 1em;
 			}
@@ -182,7 +182,7 @@
 				resize: none;
 				&::placeholder {
 				color: $lightgrey;
-				font-weight: lighter;
+				font-weight: 300;
 			}
 		}
 	}
@@ -192,10 +192,13 @@
 .cart-collaterals {
 	padding: $spacing 0;
 	font-size: .9em;
-	font-weight: lighter;
+	font-weight: 300;
 }
 
 @include media-breakpoint-up(md) {
+	.cart__back {
+		margin: 0;
+	}
 	.cart__top {
 		div:first-of-type, div:last-of-type {
 			padding-right: 0;
