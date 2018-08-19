@@ -8,6 +8,9 @@
 		li.product {
 			float: none;
 			min-width: 100%;
+			&:hover {
+				opacity: 0.9;
+			}
 			.woocommerce-loop-product__title {
 				color: $grey;
 				font-size: 1.2em;

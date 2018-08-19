@@ -19,6 +19,9 @@
 	font-size: 1.25em;
 	font-weight: 300;
 	text-align: center;
+	&:active {
+		background-color: $checkout_pink !important;
+	}
 	.fa {
 		font-size: .95em;
 	}

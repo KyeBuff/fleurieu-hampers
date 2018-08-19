@@ -13,6 +13,6 @@
 			<p class="cart-preview__header text-center">Cart</p>
 		</div>
 		<?php woocommerce_mini_cart(); ?>
-		<a class="cart-preview__btn" href="<?php echo get_site_url(); ?>/cart">View Cart</a>
+		<a class="btn cart-preview__btn" href="<?php echo get_site_url(); ?>/cart">View Cart</a>
 	</div>
 </div>

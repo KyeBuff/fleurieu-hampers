@@ -115,6 +115,12 @@
 					color: $gold;
 					font-size: .9em;
 					&:hover {
+						transition: all .5s ease-in-out;
+						background-color: $gold;
+						color: $white;
+						transform: none;
+					}
+					&:active {
 						background-color: $gold;
 						color: $white;
 					}
@@ -161,6 +167,7 @@
 				}
 			}
 			.select2-selection {
+				border-color: #ced4da;
 				min-height: 38px;
 			}
 			.select2-selection__clear {
@@ -171,6 +178,7 @@
 				padding: .25em .5em;
 
 				color: $grey;
+				font-size: .625em;
 				font-weight: 300;
 			}
 			.btn {
@@ -243,7 +251,12 @@
 			background-color: $grey;
 			border: none;
 			border-radius: 0;
-
+			transition: transform .25s ease-in-out;
+			transform: scale(1);
+			&:hover {
+				transition: transform .25s ease-in-out;
+				transform: scale(1.025);
+			}
 			.input-checkbox {
 				display: none;
 			}
@@ -283,6 +296,9 @@
 				font-weight: normal;
 			}
 		}
+	}
+	#place_order {
+		font-size: 1.75em;
 	}
 }
 
@@ -340,7 +356,7 @@
 					margin-top: calc(48px + .5em);
 					float: right;
 				}
-				#billing_city_field {
+				#billing_city_field, #shipping_city_field {
 					clear: both;
 				}
 			}

@@ -238,7 +238,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						}
 						?>
 							<div class="update-cart d-none d-md-block">
-								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update', 'woocommerce' ); ?></button>
+								<button type="submit" class="btn button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update', 'woocommerce' ); ?></button>
 							</div>
 						</div>
 						<div class="actions col-12 col-md-6">

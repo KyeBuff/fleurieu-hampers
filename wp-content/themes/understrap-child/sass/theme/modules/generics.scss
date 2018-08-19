@@ -29,6 +29,16 @@ a {
 	}
 }
 
+.btn {
+	border-radius: 0;
+	transition: transform .25s ease-in-out;
+	transform: scale(1);
+	&:hover {
+		transition: transform .25s ease-in-out;
+		transform: scale(1.025);
+	}
+}
+
 p, label, span {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
@@ -50,6 +60,9 @@ input, textarea {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
+	&.form-control:focus {
+		border-color: $gold;
+	}
 }
 
 .fa {
@@ -72,6 +85,9 @@ input, textarea {
 
 .gold {
 	color: $gold;
+	&:hover {
+		color: $gold;
+	}
 }
 
 .separator {
