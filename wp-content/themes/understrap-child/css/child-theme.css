@@ -11083,6 +11083,7 @@ input, textarea, select {
       color: #fab89d; }
   .header-top__cart--items {
     position: relative;
+    top: .5em;
     color: #49c94e; }
     .header-top__cart--items:hover {
       color: #49c94e; }
@@ -12297,11 +12298,18 @@ ul.woocommerce-mini-cart {
             transform: translate3d(-125vw, 0, 0); } }
 
 .woocommerce-MyAccount-navigation .list-group {
-  display: flow-root;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1em 0 2em; }
   .woocommerce-MyAccount-navigation .list-group .list-group-item {
     display: block;
-    float: left;
     border: 1px solid transparent;
     border-radius: 0;
     margin: 1%;
