@@ -12232,9 +12232,9 @@ ul.woocommerce-mini-cart {
   font-weight: 300;
   -webkit-animation: popUp 6s;
           animation: popUp 6s;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  opacity: 1; }
+  -webkit-transform: translate3d(-125vw, 0, 0);
+          transform: translate3d(-125vw, 0, 0);
+  opacity: 0; }
   .woocommerce-message a.button, .woocommerce-message a, .woocommerce-message .btn,
   .woocommerce-message .wpcf7 input[type=submit], .wpcf7 .woocommerce-message input[type=submit], .woocommerce-error a.button, .woocommerce-error a, .woocommerce-error .btn,
   .woocommerce-error .wpcf7 input[type=submit], .wpcf7 .woocommerce-error input[type=submit] {
