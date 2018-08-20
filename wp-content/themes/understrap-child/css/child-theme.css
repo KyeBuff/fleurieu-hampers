@@ -11842,7 +11842,8 @@ ul.woocommerce-mini-cart {
   .checkout .woocommerce .woocommerce-info::before {
     display: none; }
   .checkout .woocommerce .woocommerce-info .showcoupon {
-    color: #BC9B5D; }
+    color: #BC9B5D;
+    text-decoration: underline; }
 
 .checkout .woocommerce .woocommerce-form-login-toggle .woocommerce-info {
   font-weight: normal; }
@@ -12231,9 +12232,9 @@ ul.woocommerce-mini-cart {
   font-weight: 300;
   -webkit-animation: popUp 6s;
           animation: popUp 6s;
-  -webkit-transform: translate3d(-125vw, 0, 0);
-          transform: translate3d(-125vw, 0, 0);
-  opacity: 0; }
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1; }
   .woocommerce-message a.button, .woocommerce-message a, .woocommerce-message .btn,
   .woocommerce-message .wpcf7 input[type=submit], .wpcf7 .woocommerce-message input[type=submit], .woocommerce-error a.button, .woocommerce-error a, .woocommerce-error .btn,
   .woocommerce-error .wpcf7 input[type=submit], .wpcf7 .woocommerce-error input[type=submit] {
@@ -12241,15 +12242,17 @@ ul.woocommerce-mini-cart {
     display: inline-block;
     border: none;
     margin-left: 1em;
-    padding: 2px 1em 0;
+    padding: 5px 1em;
     color: white;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 300;
     line-height: auto;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent; }
     .woocommerce-message a.button:hover, .woocommerce-message a:hover, .woocommerce-message .btn:hover, .woocommerce-message .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-message input:hover[type=submit], .woocommerce-error a.button:hover, .woocommerce-error a:hover, .woocommerce-error .btn:hover, .woocommerce-error .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-error input:hover[type=submit] {
-      background-color: transparent; }
+      background-color: transparent;
+      color: white;
+      text-decoration: underline; }
 
 .woocommerce-error {
   background-color: #b81c23;

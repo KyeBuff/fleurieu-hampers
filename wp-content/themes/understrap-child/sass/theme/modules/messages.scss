@@ -22,24 +22,26 @@
     font-weight: 300;
 
 	animation: popUp 6s;
-	transform: translate3d(-125vw,0,0);
-    opacity: 0;
+	transform: translate3d(0,0,0);
+    opacity: 1;
 	a.button, a, .btn {
 		float: right;
 		display: inline-block;
 		border: none;
 		margin-left: $spacing;
-		padding: 2px $spacing 0;
+		padding: 5px $spacing;
 
 		color: $white;
-	    font-size: .9em;
+	    font-size: 1em;
 	    font-weight: 300;
 	    line-height: auto;
-	    text-decoration: underline;
+	    text-decoration: none;
 
 	    background-color: transparent;
 	    &:hover {
 	    	background-color: transparent;
+	    	color: $white;
+   		 	text-decoration: underline;
 	    }
 	}
 }
