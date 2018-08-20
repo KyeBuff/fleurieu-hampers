@@ -11040,8 +11040,7 @@ input, textarea, select {
 .entry-title {
   color: #5E5E5E;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2em;
-  padding: 1em 0.5em; }
+  font-size: 2em; }
 
 @media (min-width: 768px) {
   .container {
@@ -12394,7 +12393,7 @@ ul.woocommerce-mini-cart {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300; }
   .about .entry-content {
-    padding: 0 1em; }
+    padding: 0; }
     .about .entry-content p {
       margin: 1em 0; }
   .about img {

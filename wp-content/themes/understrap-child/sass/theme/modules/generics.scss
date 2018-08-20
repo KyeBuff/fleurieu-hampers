@@ -113,7 +113,6 @@ input, textarea, select {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2em;
 
-	padding: $spacing $spacing / 2;
 }
 
 @include media-breakpoint-up(md) {
