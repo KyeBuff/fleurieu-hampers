@@ -97,6 +97,9 @@
 			color: $black;
 			font-weight: 300;
 		}
+		@at-root #{&}__cart--items {
+			top: 0;
+		}
 		@at-root #{&}__cart {
 			font-size: 1.25em;
 			&.has-items {

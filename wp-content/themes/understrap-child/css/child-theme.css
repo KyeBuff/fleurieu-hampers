@@ -11160,6 +11160,9 @@ input, textarea, select {
       margin-right: 1em;
       color: black;
       font-weight: 300; }
+    .header-top__cart--items {
+      position: relative;
+      top: 0; }
     .header-top__cart {
       font-size: 1.25em; }
       .header-top__cart.has-items {
