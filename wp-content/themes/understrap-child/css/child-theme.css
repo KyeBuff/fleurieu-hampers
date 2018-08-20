@@ -12404,3 +12404,15 @@ ul.woocommerce-mini-cart {
 @media (min-width: 768px) {
   .about img {
     max-width: 50%; } }
+
+.lost_reset_password .btn,
+.lost_reset_password .wpcf7 input[type=submit], .wpcf7 .lost_reset_password input[type=submit] {
+  display: block;
+  padding: 0.5em;
+  background-color: #fab89d;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center; }
