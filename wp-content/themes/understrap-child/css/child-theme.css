@@ -12230,10 +12230,13 @@ ul.woocommerce-mini-cart {
   font-weight: 300;
   -webkit-animation: popUp 6s;
           animation: popUp 6s;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  opacity: 1; }
-  .woocommerce-message a.button, .woocommerce-message a, .woocommerce-error a.button, .woocommerce-error a {
+  -webkit-transform: translate3d(-125vw, 0, 0);
+          transform: translate3d(-125vw, 0, 0);
+  opacity: 0; }
+  .woocommerce-message a.button, .woocommerce-message a, .woocommerce-message .btn,
+  .woocommerce-message .wpcf7 input[type=submit], .wpcf7 .woocommerce-message input[type=submit], .woocommerce-error a.button, .woocommerce-error a, .woocommerce-error .btn,
+  .woocommerce-error .wpcf7 input[type=submit], .wpcf7 .woocommerce-error input[type=submit] {
+    float: right;
     display: inline-block;
     border: none;
     margin-left: 1em;
@@ -12244,7 +12247,7 @@ ul.woocommerce-mini-cart {
     line-height: auto;
     text-decoration: underline;
     background-color: transparent; }
-    .woocommerce-message a.button:hover, .woocommerce-message a:hover, .woocommerce-error a.button:hover, .woocommerce-error a:hover {
+    .woocommerce-message a.button:hover, .woocommerce-message a:hover, .woocommerce-message .btn:hover, .woocommerce-message .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-message input:hover[type=submit], .woocommerce-error a.button:hover, .woocommerce-error a:hover, .woocommerce-error .btn:hover, .woocommerce-error .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-error input:hover[type=submit] {
       background-color: transparent; }
 
 .woocommerce-error {
