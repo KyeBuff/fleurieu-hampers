@@ -11591,13 +11591,12 @@ ul.woocommerce-mini-cart {
       color: #5E5E5E;
       font-size: 1.25em;
       font-weight: 300; }
-      ul.woocommerce-mini-cart .mini_cart_item a .attachment-woocommerce_thumbnail {
-        margin-right: 1em; }
     ul.woocommerce-mini-cart .mini_cart_item .remove {
       display: none; }
-    ul.woocommerce-mini-cart .mini_cart_item .size-woocommerce_thumbnail {
+    ul.woocommerce-mini-cart .mini_cart_item .size-woocommerce_thumbnail, ul.woocommerce-mini-cart .mini_cart_item .woocommerce-placeholder {
       float: left;
       margin-right: 0.25em;
+      margin-right: 1em;
       width: 100px; }
     ul.woocommerce-mini-cart .mini_cart_item .quantity {
       display: block;

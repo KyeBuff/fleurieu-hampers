@@ -114,16 +114,14 @@ ul.woocommerce-mini-cart {
 			color: $grey;
 			font-size: 1.25em;
 			font-weight: 300;
-			.attachment-woocommerce_thumbnail {
-				margin-right: $spacing;
-			}
 		}
 		.remove {
 			display: none;
 		}
-		.size-woocommerce_thumbnail {
+		.size-woocommerce_thumbnail, .woocommerce-placeholder {
 			float: left;
 			margin-right: $spacing / 4;
+			margin-right: $spacing;
 			width: 100px;
 		}
 		.quantity {
