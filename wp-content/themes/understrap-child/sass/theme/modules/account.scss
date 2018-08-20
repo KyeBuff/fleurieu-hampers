@@ -21,9 +21,6 @@
 			transform: scale(1);
 			&:hover {
 				transition: all .3s ease-in-out;
-				background-color: $white;
-				color: $grey;
-				border: 1px solid $grey;
 				transform: scale(1.05);
 			}
 		}
@@ -31,6 +28,33 @@
 }
 .woocommerce-MyAccount-content {
 	padding: $spacing;
+	mark {
+		color: $black;
+		margin-left: -.2em;
+		margin-right: -.2em;
+		background-color: transparent;
+		&:last-child {
+			text-transform: lowercase;
+		}
+	}
+	.woocommerce-columns--addresses {
+		padding: 0;
+	}
+	.woocommerce-column--billing-address, .woocommerce-column--shipping-address {
+		margin-bottom: $spacing * 2;
+		max-width: 100%;
+	}
+	.woocommerce-table.order_details {
+		border: none;
+		tr {
+			th:first-child {
+				padding-left: 0;
+			}
+			td:first-child {
+				padding-left: 0;
+			}
+		}
+	}
 }
 
 .woocommerce {
