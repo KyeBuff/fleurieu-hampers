@@ -49,6 +49,9 @@ $logged_in = is_user_logged_in();
 				</div>
 				<?php } ?>
 				<div class="header-top__user-info d-none d-md-block">
+					<?php if ($logged_in) { ?>
+					<a class="header-top__log-in" href="<?php echo get_site_url() . '/my-account/' ?>">My Account</a>
+					<?php } ?>
 					<a class="header-top__log-in" href="<?php echo $logged_in ?  wp_logout_url( get_site_url() . '/' ) : get_site_url() . '/my-account/' ?>"><?php echo is_user_logged_in() ? 'Log out' : 'Log in'; ?></a>
 					<button id="show-cart" class="header-top__cart <?php echo $cart_total ? 'header-top__cart--items' : null; ?>"><i class="fa fa-shopping-cart"></i>						
 						<?php if ($cart_total) { ?>
