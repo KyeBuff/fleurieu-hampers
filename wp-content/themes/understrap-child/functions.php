@@ -55,4 +55,13 @@ function add_options() {
 
 }
 
-add_action('woocommerce_checkout_update_order_meta', 'custom_checkout_field_update_order_meta');
+add_filter('woocommerce_checkout_fields', 'custom_woocommerce_checkout_fields');
+
+function custom_woocommerce_checkout_fields( $fields ) {
+
+     $fields['order']['order_comments']['label'] = '<span class="order-info">Addtional Information (optional)</span> </br> Would you like a personalised plaque or gift note? </br> Do you have any special requirements for delivery?';
+     $fields['order']['order_comments']['placeholder'] = 'Let us know...';
+
+     return $fields;
+
+}

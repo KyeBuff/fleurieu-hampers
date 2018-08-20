@@ -12033,6 +12033,10 @@ ul.woocommerce-mini-cart {
   .checkout .woocommerce .woocommerce-checkout .form-row .woocommerce-input-wrapper {
     display: block;
     width: 100%; }
+  .checkout .woocommerce .woocommerce-checkout .form-row .order-info {
+    color: #5E5E5E; }
+  .checkout .woocommerce .woocommerce-checkout .form-row .optional {
+    display: none; }
 
 .checkout .woocommerce .woocommerce-checkout .woocommerce-billing-fields h3 {
   color: #5E5E5E;
