@@ -63,7 +63,7 @@ jQuery(document).ready(function() {
 	// Sticky footer 
 	const body = $('body'),
 	bodyHeight = body.height(),
-	footer = $('.footer-wrapper'),
+	footer = $('.footer-wrapper');
 
 	footer.offset({top: bodyHeight});
 
