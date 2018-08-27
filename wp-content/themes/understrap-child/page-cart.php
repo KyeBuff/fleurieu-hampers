@@ -1,6 +1,6 @@
 <?php
 /**
- * The template is for displaying the contact page
+ * The template is for displaying the cart page
 
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
