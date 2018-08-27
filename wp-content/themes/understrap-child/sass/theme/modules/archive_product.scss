@@ -3,6 +3,9 @@
 }
 
 .woocommerce {
+	.woocommerce-products-header__title {
+		display: none;
+	}
 	ul.products {
 		padding: $spacing;
 		li.product {

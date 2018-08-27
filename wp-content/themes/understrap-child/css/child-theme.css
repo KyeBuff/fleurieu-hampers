@@ -11333,6 +11333,9 @@ input, textarea, select {
 .woocommerce-result-count {
   display: none; }
 
+.woocommerce .woocommerce-products-header__title {
+  display: none; }
+
 .woocommerce ul.products {
   padding: 1em; }
   .woocommerce ul.products li.product {
