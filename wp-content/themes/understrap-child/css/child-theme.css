@@ -12553,6 +12553,7 @@ ul.woocommerce-mini-cart {
   .woocommerce-order-received .woocommerce-order .woocommerce-order-overview li {
     margin: 0;
     width: 50%;
+    border-right: none;
     padding: 1em 0; }
 
 .woocommerce-order-received .woocommerce-order .woocommerce-order-details__title {
