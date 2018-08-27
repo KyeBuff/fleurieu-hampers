@@ -40,8 +40,10 @@ jQuery(document).ready(function() {
 		}
 	});
 
+	const cartPreview = $('.cart-preview');
+
+
 	$('#show-cart').on('click', function() {
-		const cartPreview = $('.cart-preview');
 		if(cartPreview.hasClass('d-none')) {
 			cartPreview.removeClass('d-none');
 			cartPreview.hide();
@@ -50,10 +52,9 @@ jQuery(document).ready(function() {
 	});
 
 	$('#close-cart').on('click', function() {
-		$('.cart-preview').fadeOut();
+		cartPreview.fadeOut();
 	});
 
-					
 	$('.btn-action').on('click', function(e) {
 		e.preventDefault();
 		$(this).next().toggleClass('hide-form-meta-field');
