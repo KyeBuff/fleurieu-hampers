@@ -35,4 +35,17 @@
 			}
 		}
 	}
+		.col-1, .col-2 {
+			padding: 0;
+			max-width: none;
+			min-width: auto;
+			address, p {
+				border: none;
+				padding: 0;
+
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 1em;
+				font-weight: 300;
+			}
+		}
 }

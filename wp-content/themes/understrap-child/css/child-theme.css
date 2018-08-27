@@ -12589,3 +12589,14 @@ ul.woocommerce-mini-cart {
     padding-bottom: 1em;
     padding-left: 0;
     font-family: 'Source Sans Pro', sans-serif; }
+
+.woocommerce-order-received .col-1, .woocommerce-order-received .col-2 {
+  padding: 0;
+  max-width: none;
+  min-width: auto; }
+  .woocommerce-order-received .col-1 address, .woocommerce-order-received .col-1 p, .woocommerce-order-received .col-2 address, .woocommerce-order-received .col-2 p {
+    border: none;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 300; }
