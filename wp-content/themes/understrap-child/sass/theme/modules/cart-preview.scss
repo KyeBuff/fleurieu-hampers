@@ -100,15 +100,13 @@ ul.woocommerce-mini-cart {
 			font-weight: 300;
 		}
 		.amount {
-			display: block;
+			display: block;	
 			font-size: 1.5em;
 			font-weight: 300;
 		}
 	}
 	.mini_cart_item { 
 		display: flow-root;
-
-		margin: $spacing 0;
 
 		a {
 			color: $grey;

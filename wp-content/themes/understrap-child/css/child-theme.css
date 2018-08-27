@@ -11394,7 +11394,7 @@ input, textarea, select {
   color: #5E5E5E;
   font-weight: 300; }
 
-.woocommerce #content h2 {
+.woocommerce #content .entry-summary h2 {
   font-size: 2.25em; }
 
 .woocommerce #content div.product span.onsale {
@@ -11593,8 +11593,7 @@ ul.woocommerce-mini-cart {
       font-size: 1.5em;
       font-weight: 300; }
   ul.woocommerce-mini-cart .mini_cart_item {
-    display: flow-root;
-    margin: 1em 0; }
+    display: flow-root; }
     ul.woocommerce-mini-cart .mini_cart_item a {
       color: #5E5E5E;
       font-size: 1.25em;
