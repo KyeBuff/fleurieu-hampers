@@ -1,10 +1,29 @@
 .about {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
 	.entry-content {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
 		padding: 0;
 		p {
 			margin: $spacing 0;
+		}
+		h1 {
+			font-size: 1.8em;
+		}
+		h2 {
+			font-size: 1.6em;
+		}
+		h3 {
+			font-size: 1.4em;
+		}
+		h4 {
+			font-size: 1.2em;
+		}
+		h5 {
+			font-size: 1em;
+		}
+		h1, h2, h3, h4, h5 {
+			color: $grey;
+			font-weight: 300;
 		}
 	}
 	img {

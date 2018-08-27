@@ -12419,17 +12419,30 @@ ul.woocommerce-mini-cart {
       float: none;
       width: 100%; } }
 
-.about {
+.about .entry-content {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300; }
-  .about .entry-content {
-    padding: 0; }
-    .about .entry-content p {
-      margin: 1em 0; }
-  .about img {
-    display: block;
-    margin: 1em 0;
-    width: 100%; }
+  font-weight: 300;
+  padding: 0; }
+  .about .entry-content p {
+    margin: 1em 0; }
+  .about .entry-content h1 {
+    font-size: 1.8em; }
+  .about .entry-content h2 {
+    font-size: 1.6em; }
+  .about .entry-content h3 {
+    font-size: 1.4em; }
+  .about .entry-content h4 {
+    font-size: 1.2em; }
+  .about .entry-content h5 {
+    font-size: 1em; }
+  .about .entry-content h1, .about .entry-content h2, .about .entry-content h3, .about .entry-content h4, .about .entry-content h5 {
+    color: #5E5E5E;
+    font-weight: 300; }
+
+.about img {
+  display: block;
+  margin: 1em 0;
+  width: 100%; }
 
 @media (min-width: 768px) {
   .about img {
