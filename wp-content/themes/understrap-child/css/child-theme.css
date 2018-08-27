@@ -11439,27 +11439,33 @@ input, textarea, select {
   color: #5E5E5E;
   font-weight: 300; }
 
-.woocommerce #content div.product form.cart div.quantity {
-  margin: 1em 0 4em;
-  float: none; }
-  .woocommerce #content div.product form.cart div.quantity .sr-only {
-    position: static;
-    height: auto;
-    width: auto; }
-  .woocommerce #content div.product form.cart div.quantity .qty {
-    display: block;
-    padding: 0.5em;
-    width: 6em;
-    text-align: center; }
+.woocommerce #content div.product .mashsb-container {
+  margin: 1em 0; }
+  .woocommerce #content div.product .mashsb-container .mashsb-buttons .mash-large .text {
+    display: none; }
 
-.woocommerce #content div.product form.cart .btn[name="add-to-cart"], .woocommerce #content div.product form.cart .wpcf7 input[name="add-to-cart"][type=submit], .wpcf7 .woocommerce #content div.product form.cart input[name="add-to-cart"][type=submit] {
-  border: none;
-  border-radius: 0;
-  padding: 1em;
-  width: 100%;
-  background-color: #B59C6D;
-  color: white;
-  text-transform: uppercase; }
+.woocommerce #content div.product form.cart {
+  margin-bottom: 0; }
+  .woocommerce #content div.product form.cart div.quantity {
+    margin: 1em 0 4em;
+    float: none; }
+    .woocommerce #content div.product form.cart div.quantity .sr-only {
+      position: static;
+      height: auto;
+      width: auto; }
+    .woocommerce #content div.product form.cart div.quantity .qty {
+      display: block;
+      padding: 0.5em;
+      width: 6em;
+      text-align: center; }
+  .woocommerce #content div.product form.cart .btn[name="add-to-cart"], .woocommerce #content div.product form.cart .wpcf7 input[name="add-to-cart"][type=submit], .wpcf7 .woocommerce #content div.product form.cart input[name="add-to-cart"][type=submit] {
+    border: none;
+    border-radius: 0;
+    padding: 1em;
+    width: 100%;
+    background-color: #B59C6D;
+    color: white;
+    text-transform: uppercase; }
 
 .woocommerce #content div.product .additional-info .additional-info__section {
   border-top: 1px solid #5E5E5E;
@@ -11492,6 +11498,20 @@ input, textarea, select {
     .woocommerce #content .flex-active-slide a img {
       height: auto;
       width: auto; }
+
+@media (min-width: 768px) {
+  .woocommerce #content div.product .mashsb-container .mashsb-buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .woocommerce #content div.product .mashsb-container .mashsb-buttons .mash-large {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      margin-left: 1em;
+      max-width: auto; }
+      .woocommerce #content div.product .mashsb-container .mashsb-buttons .mash-large .icon::before {
+        margin: 0; } }
 
 .contact .entry-header h2 {
   font-size: 2em;

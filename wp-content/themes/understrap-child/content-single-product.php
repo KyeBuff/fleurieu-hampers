@@ -76,6 +76,7 @@ $sale_price = $post_meta['_sale_price'][0];
 			 */
 			do_action( 'woocommerce_before_single_product_summary' );
 			wc_get_template( 'single-product/short-description.php' );
+
 		?>
 		</div>
 
@@ -94,14 +95,14 @@ $sale_price = $post_meta['_sale_price'][0];
 			* @hooked woocommerce_template_single_sharing - 50
 			* @hooked WC_Structured_Data::generate_product_data() - 60
 			*/
-			// do_action( 'woocommerce_single_product_summary' );
 	 	?>
 	 	</div>
 	 	<div class="col-12 additional-info order-md-2 d-md-none">
-			<?php get_template_part('product-templates/product', 'additional') ?>
+			<?php 
+			get_template_part('product-templates/product', 'additional') 
+			?>
 	 	</div>
 	</div>
-
 	<?php
 
 		/**
@@ -113,7 +114,6 @@ $sale_price = $post_meta['_sale_price'][0];
 		 */
 	?>
 </div>
-
 
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

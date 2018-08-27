@@ -6,7 +6,7 @@ $return_policy = get_field('return_policy', 'options');
 $product_info = get_field('product_information');
 
 ?>
-
+<?php echo do_shortcode('[mashshare]'); ?>
 <div class="additional-info__section">
 	<button class="additional-info__toggle">PRODUCT INFO<span class="toggle-icon">+</span></button>
 	<div class="additional-info__content d-none">

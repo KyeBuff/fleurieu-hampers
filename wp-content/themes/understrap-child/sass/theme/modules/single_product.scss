@@ -43,7 +43,18 @@
 					font-weight: 300;
 				}
 			}
+			.mashsb-container {
+				margin: $spacing 0;
+				.mashsb-buttons {
+					.mash-large {
+						.text {
+							display: none;
+						}
+					}
+				}
+			}
 			form.cart {
+				margin-bottom: 0;
 				div.quantity {
 					margin: $spacing 0 $spacing * 4;
 					float: none;
@@ -115,3 +126,27 @@
 		}
 	}
 } 
+
+@include media-breakpoint-up(md) {
+	.woocommerce {
+		#content {
+			div.product {
+				.mashsb-container {
+					.mashsb-buttons {
+						justify-content: flex-end;
+						.mash-large {
+							flex: 0 0 auto;
+							margin-left: $spacing;
+							max-width: auto;
+							.icon {
+								&::before {
+									margin: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
