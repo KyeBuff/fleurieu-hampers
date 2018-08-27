@@ -64,9 +64,7 @@ jQuery(document).ready(function() {
 	const body = $('body'),
 	bodyHeight = body.height(),
 	footer = $('.footer-wrapper'),
-	footerHeight = footer.outerHeight();
 
-
-	footer.offset({top: bodyHeight - footerHeight});
+	footer.offset({top: bodyHeight});
 
 });
