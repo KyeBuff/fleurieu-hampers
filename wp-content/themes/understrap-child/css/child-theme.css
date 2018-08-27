@@ -12540,3 +12540,31 @@ ul.woocommerce-mini-cart {
       padding-left: 0; }
     #customer_login > div:last-child {
       padding-right: 0; } }
+
+.woocommerce-order-received .site-main {
+  padding: 1em; }
+
+.woocommerce-order-received .woocommerce-order .woocommerce-order-overview {
+  margin: 2em 0;
+  padding-left: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300; }
+  .woocommerce-order-received .woocommerce-order .woocommerce-order-overview li {
+    margin: 0;
+    width: 50%;
+    padding: 1em 0; }
+
+.woocommerce-order-received .woocommerce-order .woocommerce-order-details__title {
+  margin: 1em 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300; }
+
+.woocommerce-order-received .woocommerce-order .order_details {
+  border: none; }
+  .woocommerce-order-received .woocommerce-order .order_details th, .woocommerce-order-received .woocommerce-order .order_details td {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0;
+    font-family: 'Source Sans Pro', sans-serif; }

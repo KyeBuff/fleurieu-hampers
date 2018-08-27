@@ -1,0 +1,38 @@
+.woocommerce-order-received {
+	.site-main {
+		padding: $spacing;
+	}
+	.woocommerce-order {
+		.woocommerce-order-overview {
+			margin: $spacing * 2 0;
+			padding-left: 0;
+
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.1em;
+			font-weight: 300;
+			li {
+				margin: 0;
+				width: 50%;
+
+				border-right: none;
+				padding: $spacing 0;
+			}
+		}
+		.woocommerce-order-details__title {
+			margin: $spacing 0;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+		.order_details {
+			border: none;
+			th, td {
+				padding-top: $spacing;
+				padding-bottom: $spacing;
+				padding-left: 0;
+				
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+		}
+	}
+}
