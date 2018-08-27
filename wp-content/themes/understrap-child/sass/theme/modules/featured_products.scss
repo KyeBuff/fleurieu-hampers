@@ -14,4 +14,10 @@
 	@at-root #{&}__text {
 		overflow: hidden;
 	}
+	.slick-link {
+		float: left;
+		display: block;
+		height: 100%;
+		overflow: hidden;
+	}
 }
