@@ -11042,6 +11042,11 @@ input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2em; }
 
+.woocommerce .site-main {
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 100%; }
+
 @media (min-width: 768px) {
   .container {
     max-width: 1000px; }

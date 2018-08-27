@@ -115,6 +115,14 @@ input, textarea, select {
 
 }
 
+.woocommerce {
+	.site-main {
+		padding-right: $spacing;
+		padding-left: $spacing;
+		width: 100%;
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.container {
 		max-width: 1000px;
