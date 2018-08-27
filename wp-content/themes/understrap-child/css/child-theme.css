@@ -11373,6 +11373,8 @@ input, textarea, select {
       color: #5E5E5E;
       font-size: 1.1em;
       font-weight: 300; }
+    .woocommerce ul.products li.product .add-to-cart-container {
+      display: none; }
 
 @media (min-width: 576px) {
   .woocommerce ul.products {
