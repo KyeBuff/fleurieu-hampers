@@ -11363,11 +11363,10 @@ input, textarea, select {
       background-color: #826DA6; }
     .woocommerce ul.products li.product .woocommerce-loop-product__title {
       color: #5E5E5E;
-      font-size: 1.2em;
-      font-weight: normal; }
+      font-size: 1.25em; }
     .woocommerce ul.products li.product .price .woocommerce-Price-amount {
       color: #5E5E5E;
-      font-size: 1.2em;
+      font-size: 1.1em;
       font-weight: 300; }
 
 @media (min-width: 576px) {
@@ -11394,6 +11393,9 @@ input, textarea, select {
 .woocommerce #content p, .woocommerce #content h2, .woocommerce #content label, .woocommerce #content input, .woocommerce #content button {
   color: #5E5E5E;
   font-weight: 300; }
+
+.woocommerce #content h2 {
+  font-size: 2.25em; }
 
 .woocommerce #content div.product span.onsale {
   display: none; }
