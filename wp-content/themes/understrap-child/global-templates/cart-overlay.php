@@ -7,6 +7,7 @@
 ?>
 
 <div class="cart-preview d-none" id="cart-preview">
+	<div class="cart-preview__overlay"></div>
 	<div class="cart-preview__content">
 		<div class="cart-preview__heading">
 			<button id="close-cart" class="cart-preview__close" id="close-cart-preview"><i class="fa fa-chevron-right"></i></button>

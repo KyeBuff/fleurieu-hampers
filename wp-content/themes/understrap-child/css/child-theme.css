@@ -11565,6 +11565,11 @@ input, textarea, select {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6); }
+  .cart-preview__overlay {
+    float: left;
+    height: 100vh;
+    width: 75vw;
+    cursor: pointer; }
   .cart-preview__content {
     position: relative;
     float: right;

@@ -55,6 +55,13 @@ jQuery(document).ready(function() {
 		cartPreview.fadeOut();
 	});
 
+
+	$('.cart-preview__overlay').on('click', function() {
+		cartPreview.fadeOut();
+	});
+
+	
+
 	$('.btn-action').on('click', function(e) {
 		e.preventDefault();
 		$(this).next().toggleClass('hide-form-meta-field');
