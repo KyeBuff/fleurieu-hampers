@@ -66,6 +66,6 @@ jQuery(document).ready(function() {
 	bodyHeight = body.height(),
 	footer = $('.footer-wrapper');
 
-	footer.offset({top: bodyHeight});
+	footer.offset({top: bodyHeight - footer.height()});
 
 });
