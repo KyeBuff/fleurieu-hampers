@@ -11564,7 +11564,23 @@ input, textarea, select {
   z-index: 1000;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6); }
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw); }
+  .cart-preview.slide-in {
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw); }
   .cart-preview__overlay {
     float: left;
     height: 100vh;
@@ -11578,6 +11594,8 @@ input, textarea, select {
     height: 100vh;
     width: 25vw;
     overflow: scroll;
+    -webkit-box-shadow: 0px -1px 15px #5E5E5E;
+            box-shadow: 0px -1px 15px #5E5E5E;
     background-color: white; }
   .cart-preview__heading {
     position: relative;

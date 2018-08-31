@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="cart-preview d-none" id="cart-preview">
+<div class="cart-preview" id="cart-preview">
 	<div class="cart-preview__overlay"></div>
 	<div class="cart-preview__content">
 		<div class="cart-preview__heading">

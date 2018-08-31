@@ -42,25 +42,22 @@ jQuery(document).ready(function() {
 
 	const cartPreview = $('.cart-preview');
 
+	const closeCart = $('#close-cart');
 
 	$('#show-cart').on('click', function() {
-		if(cartPreview.hasClass('d-none')) {
-			cartPreview.removeClass('d-none');
-			cartPreview.hide();
-		}
-		cartPreview.fadeIn();
+		cartPreview.toggleClass('slide-in');
 	});
 
-	$('#close-cart').on('click', function() {
-		cartPreview.fadeOut();
+	closeCart.on('click', function() {
+		closeCart.toggleClass('rotate-left');
+		cartPreview.toggleClass('slide-in');
 	});
 
 
 	$('.cart-preview__overlay').on('click', function() {
-		cartPreview.fadeOut();
+		closeCart.toggleClass('rotate-left');
+		cartPreview.toggleClass('slide-in');
 	});
-
-	
 
 	$('.btn-action').on('click', function(e) {
 		e.preventDefault();
