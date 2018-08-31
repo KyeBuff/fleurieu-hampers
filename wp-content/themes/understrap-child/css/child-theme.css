@@ -11315,6 +11315,9 @@ input, textarea, select {
       color: white;
       opacity: 1; } }
 
+.featured-products .slick-track, .featured-products .slick-list {
+  overflow: auto; }
+
 .featured-products__carousel {
   max-width: 100vw;
   overflow: hidden; }
