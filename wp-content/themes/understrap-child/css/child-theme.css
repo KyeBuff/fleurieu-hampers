@@ -11262,42 +11262,37 @@ input, textarea, select {
   .links__link {
     margin: 0; } }
 
-.carousel-inner {
-  height: 500px; }
+.section__carousel .section__header {
+  margin: 1em 0; }
 
-.carousel-item {
+.carousel-slick-item {
   position: relative;
   height: 500px;
   padding: 1em;
   background-size: cover;
   background-repeat: no-repeat; }
-  .carousel-item.header .carousel-item__overlay {
+  .carousel-slick-item.header .carousel-item__overlay {
     background-color: transparent;
     color: white; }
-  .carousel-item__overlay {
+  .carousel-slick-item__overlay {
     margin: 5em auto 0;
     max-width: 250px;
     padding: 0.5em;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center; }
-  .carousel-item__header {
+  .carousel-slick-item__header {
     margin: 1em 0;
     font-size: 2em;
     font-weight: 300;
     font-family: 'Source Sans Pro', sans-serif; }
-    .carousel-item__header .carousel-item__header--styled {
+    .carousel-slick-item__header .carousel-slick-item__header--styled {
       display: block;
       font-family: 'Marck Script', cursive;
       font-size: 1.5em;
       text-align: center; }
 
-.carousel-nav {
-  top: calc(50% - 20px);
-  bottom: auto;
-  padding: 1em; }
-
 @media (min-width: 576px) {
-  .carousel-item__tag {
+  .carousel-slick-item__tag {
     position: absolute;
     bottom: 1em;
     right: -1.25em;
@@ -11311,7 +11306,7 @@ input, textarea, select {
     letter-spacing: .4em;
     text-align: center;
     text-transform: uppercase; }
-    .carousel-item__tag:hover {
+    .carousel-slick-item__tag:hover {
       -webkit-transition: all .5s ease-in-out;
       transition: all .5s ease-in-out;
       background-color: #fab89d;

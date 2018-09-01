@@ -1,8 +1,10 @@
-.carousel-inner {
-	height: 500px;
+.section__carousel {
+	.section__header {
+		margin: $spacing 0;
+	}
 }
 
-.carousel-item {
+.carousel-slick-item {
 	position: relative;
 	height: 500px;
 	padding: $spacing;
@@ -31,7 +33,7 @@
 		font-size: 2em;
 		font-weight: 300;
 		font-family: 'Source Sans Pro', sans-serif;
-		.carousel-item__header--styled {
+		.carousel-slick-item__header--styled {
 			display: block;
 			font-family: 'Marck Script', cursive;
 			font-size: 1.5em;
@@ -40,16 +42,8 @@
 	}
 }
 
-.carousel-nav {
-	top: calc(50% - 20px);
-	bottom: auto;
-
-	padding: $spacing;
-}
-
-
 @include media-breakpoint-up(sm) {
-	.carousel-item {
+	.carousel-slick-item {
 		@at-root #{&}__tag {
 			position: absolute;
 			bottom: $spacing;

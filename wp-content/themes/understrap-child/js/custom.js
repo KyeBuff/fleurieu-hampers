@@ -25,6 +25,15 @@ jQuery(document).ready(function() {
 	  ]
 	});
 
+	$('.main__carousel').slick({
+		infinite: false,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
 	$('.additional-info__toggle').on('click', function() {
 		const button = $(this);
 		const icon = button.children();
