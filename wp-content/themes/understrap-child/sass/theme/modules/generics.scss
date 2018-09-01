@@ -123,6 +123,12 @@ input, textarea, select {
 	}
 }
 
+.woocommerce-page {
+	.entry-title {
+		display: none;
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.container {
 		max-width: 1000px;
