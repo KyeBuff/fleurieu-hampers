@@ -3,12 +3,8 @@
 		overflow: hidden;
 	}
 	.slick-slide {
-		height: 350px;
 		img {
-			height: 100%;
-			margin: 0 auto;
-			max-width: 90%;
-			object-fit: cover;
+			max-width: 100%;
 		}
 	}
 	@at-root #{&}__carousel {
@@ -37,6 +33,12 @@
 	.featured-products {
 		.slick-slide {
 			height: 200px;
+			img {
+				height: 100%;
+				margin: 0 auto;
+				max-width: 90%;
+				object-fit: cover;
+			}
 		}
 	}
 }

@@ -11313,14 +11313,8 @@ input, textarea, select {
 .featured-products .slick-track, .featured-products .slick-list {
   overflow: hidden; }
 
-.featured-products .slick-slide {
-  height: 350px; }
-  .featured-products .slick-slide img {
-    height: 100%;
-    margin: 0 auto;
-    max-width: 90%;
-    -o-object-fit: cover;
-       object-fit: cover; }
+.featured-products .slick-slide img {
+  max-width: 100%; }
 
 .featured-products__carousel {
   max-width: 100vw;
@@ -11344,7 +11338,13 @@ input, textarea, select {
 
 @media (min-width: 576px) {
   .featured-products .slick-slide {
-    height: 200px; } }
+    height: 200px; }
+    .featured-products .slick-slide img {
+      height: 100%;
+      margin: 0 auto;
+      max-width: 90%;
+      -o-object-fit: cover;
+         object-fit: cover; } }
 
 .woocommerce-result-count {
   display: none; }
