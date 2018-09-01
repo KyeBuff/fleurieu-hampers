@@ -16,9 +16,6 @@ $title = get_the_title();
 
 ?>
 
-<!-- Fixes stray anchor tag in WooCommerce template -->
-</a>
-
 <div class="wrapper footer-wrapper <?php echo $title === 'My account' ? 'static-footer' : null; ?>" id="wrapper-footer" style="">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
