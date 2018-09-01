@@ -24,7 +24,7 @@
 		z-index: 1000;
 		height: 100vh;
 		width: 100vw;
-		transform: translateX(-100vw);
+		transform: translateX(-1000px);
 		cursor: pointer;
 		transition: opacity .5s ease-in-out;
 		opacity: 0;
@@ -32,11 +32,10 @@
 	@at-root #{&}__content {
 		position: fixed;
 		top: 0;
-		left: 75vw;
+		right: 0;
 		z-index: 1001;
-		max-width: 500px;
-		min-width: 300px;
 		height: 100vh;
+		min-width: 300px;
 		width: 25vw;
 
 		overflow: scroll;
@@ -47,7 +46,7 @@
 
 		transition: transform .25s ease-in-out;
 		transition-delay: .25s;
-		transform: translateX(25vw);
+		transform: translateX(1000px);
 	}
 
 	@at-root #{&}__heading {
@@ -173,4 +172,3 @@
 		}
 	}	
 }
-

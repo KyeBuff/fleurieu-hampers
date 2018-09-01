@@ -11592,8 +11592,8 @@ input, textarea, select {
   z-index: 1000;
   height: 100vh;
   width: 100vw;
-  -webkit-transform: translateX(-100vw);
-          transform: translateX(-100vw);
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
   cursor: pointer;
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
@@ -11602,11 +11602,10 @@ input, textarea, select {
 .cart-preview__content {
   position: fixed;
   top: 0;
-  left: 75vw;
+  right: 0;
   z-index: 1001;
-  max-width: 500px;
-  min-width: 300px;
   height: 100vh;
+  min-width: 300px;
   width: 25vw;
   overflow: scroll;
   -webkit-box-shadow: 0px -1px 15px #5E5E5E;
@@ -11618,8 +11617,8 @@ input, textarea, select {
   transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
   -webkit-transition-delay: .25s;
           transition-delay: .25s;
-  -webkit-transform: translateX(25vw);
-          transform: translateX(25vw); }
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px); }
 
 .cart-preview__heading {
   position: relative;
