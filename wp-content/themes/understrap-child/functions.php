@@ -65,3 +65,8 @@ function custom_woocommerce_checkout_fields( $fields ) {
      return $fields;
 
 }
+
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
