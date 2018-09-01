@@ -11595,8 +11595,8 @@ input, textarea, select {
   z-index: 1000;
   height: 100vh;
   width: 100vw;
-  -webkit-transform: translateX(-1000px);
-          transform: translateX(-1000px);
+  -webkit-transform: translateX(-2000px);
+          transform: translateX(-2000px);
   cursor: pointer;
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
@@ -11620,8 +11620,8 @@ input, textarea, select {
   transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
   -webkit-transition-delay: .25s;
           transition-delay: .25s;
-  -webkit-transform: translateX(1000px);
-          transform: translateX(1000px); }
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px); }
 
 .cart-preview__heading {
   position: relative;
