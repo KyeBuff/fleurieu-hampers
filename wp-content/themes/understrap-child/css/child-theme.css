@@ -11741,7 +11741,7 @@ input, textarea, select {
     font-size: 1em; }
 
 #content .cart-page {
-  padding: 2em 1em; }
+  padding: 2em 0; }
   #content .cart-page .cart__top, #content .cart-page .cart__bottom {
     margin: 0; }
   #content .cart-page .shop_table {
@@ -11935,392 +11935,375 @@ input, textarea, select {
       color: #5E5E5E;
       text-decoration: underline; } }
 
-.woocommerce-checkout .site-main .entry-title {
-  color: #5e5e5e;
-  font-size: 1.5em;
-  font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce form .form-row .required {
-  color: #BC9B5D; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-info {
-  margin-bottom: 1em;
-  padding-left: 0;
-  font-size: .9em;
-  font-weight: 300;
-  background-color: transparent;
-  border-top: none; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-info::before {
-    display: none; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-info .showcoupon {
-    color: #BC9B5D;
-    text-decoration: underline; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-form-login-toggle .woocommerce-info {
-  font-weight: normal; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login-toggle .woocommerce-info a {
+.woocommerce-checkout #main {
+  padding: 1em; }
+  .woocommerce-checkout #main .entry-title {
+    color: #5e5e5e;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .woocommerce-checkout #main .woocommerce form .form-row .required {
+    color: #BC9B5D; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-info {
+    margin-bottom: 1em;
+    padding-left: 0;
+    font-size: .9em;
     font-weight: 300;
-    text-decoration: underline; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-form-login {
-  border: none;
-  margin-top: 0;
-  padding: 1em 0; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login p {
+    background-color: transparent;
+    border-top: none; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-info::before {
+      display: none; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-info .showcoupon {
+      color: #BC9B5D;
+      text-decoration: underline; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-login-toggle .woocommerce-info {
+    font-weight: normal; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login-toggle .woocommerce-info a {
+      font-weight: 300;
+      text-decoration: underline; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-login {
+    border: none;
+    margin-top: 0;
+    padding: 1em 0; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login p {
+      color: #5E5E5E;
+      font-size: .9em;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .lost_password a {
+      color: #5E5E5E;
+      text-decoration: underline; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .btn,
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-login input[type=submit] {
+      border: none;
+      border-radius: 0;
+      height: 3em;
+      margin: 1em 0;
+      width: 100%;
+      color: white;
+      font-size: 1em;
+      background-color: #5E5E5E; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .woocommerce-form__label {
+      padding: 1em 2em 1em 0; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon {
+    border: none;
+    margin-top: 0;
+    padding: 1em 0;
     color: #5E5E5E;
     font-size: .9em;
     font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .lost_password a {
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row-first {
+      width: 60%; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row-last {
+      width: 40%; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0; }
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row::before, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row::after {
+        display: none; }
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .form-control, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=text],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=search],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=url],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=tel],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=number],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=range],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=date],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=month],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=week],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=time],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=color],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=email],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=file],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit],
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row select,
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row textarea, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors {
+        display: block;
+        border: 1px solid #D1D1D1;
+        border-radius: 0;
+        height: 3em;
+        border-right: none;
+        margin-right: 0;
+        padding: 1em 0.5em;
+        font-size: .9em; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .form-control::-webkit-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row select::-webkit-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row textarea::-webkit-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::-webkit-input-placeholder {
+          color: #D1D1D1; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .form-control:-ms-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=text]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=search]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=url]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=number]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=range]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=date]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=month]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=week]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=time]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=color]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=email]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=file]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row select:-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row textarea:-ms-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors:-ms-input-placeholder {
+          color: #D1D1D1; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .form-control::-ms-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row select::-ms-input-placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row textarea::-ms-input-placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::-ms-input-placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::-ms-input-placeholder {
+          color: #D1D1D1; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .form-control::placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row select::placeholder,
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row textarea::placeholder, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::placeholder, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::placeholder {
+          color: #D1D1D1; }
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .btn,
+      .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input[type=submit] {
+        border-color: #BC9B5D;
+        border-radius: 0;
+        height: 3em;
+        width: 100%;
+        color: #BC9B5D;
+        font-size: .9em; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .btn:hover, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input:hover[type=submit] {
+          -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+          background-color: #BC9B5D;
+          color: white;
+          -webkit-transform: none;
+                  transform: none; }
+        .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .btn:active, .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input:active[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row input:active[type=submit] {
+          background-color: #BC9B5D;
+          color: white; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
+    color: #BC9B5D; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row {
+    float: none;
+    padding: 0;
+    width: 100%; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row label {
+      display: block;
+      width: 100%;
+      padding: 1em 0 0;
+      color: #5E5E5E;
+      font-size: 1em;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row .input-text {
+      margin: 0 0 0.5em;
+      padding: 0.5em;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row .woocommerce-input-wrapper {
+      display: block;
+      width: 100%; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row .order-info {
+      color: #5E5E5E; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row .optional {
+      display: none; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .woocommerce-billing-fields h3 {
     color: #5E5E5E;
-    text-decoration: underline; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .btn,
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login input[type=submit] {
+    font-size: 1.25em;
+    font-weight: 300; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .select2-selection {
+    border-color: #ced4da;
+    min-height: 38px; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .select2-selection__clear {
+    display: none; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .select2-selection__rendered {
+    min-height: 38px;
+    padding: .25em .5em;
+    color: #5E5E5E;
+    font-size: .625em;
+    font-weight: 300; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .btn,
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-checkout input[type=submit] {
+    display: block;
+    padding: 0.5em;
+    background-color: #fab89d;
     border: none;
     border-radius: 0;
-    height: 3em;
-    margin: 1em 0;
-    width: 100%;
     color: white;
-    font-size: 1em;
-    background-color: #5E5E5E; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .woocommerce-form__label {
-    padding: 1em 2em 1em 0; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon {
-  border: none;
-  margin-top: 0;
-  padding: 1em 0;
-  color: #5E5E5E;
-  font-size: .9em;
-  font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row-first {
-    width: 60%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row-last {
-    width: 40%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row {
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row::before, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row::after {
-      display: none; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .form-control, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=text],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=search],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=url],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=tel],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=number],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=range],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=date],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=month],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=week],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=time],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=color],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=email],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=file],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit],
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row select,
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row textarea, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors {
-      display: block;
-      border: 1px solid #D1D1D1;
-      border-radius: 0;
-      height: 3em;
-      border-right: none;
-      margin-right: 0;
-      padding: 1em 0.5em;
-      font-size: .9em; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .form-control::-webkit-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row select::-webkit-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row textarea::-webkit-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::-webkit-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::-webkit-input-placeholder {
-        color: #D1D1D1; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .form-control:-ms-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=text]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=search]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=url]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=number]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=range]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=date]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=month]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=week]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=time]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=color]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=email]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=file]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row select:-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row textarea:-ms-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors:-ms-input-placeholder {
-        color: #D1D1D1; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .form-control::-ms-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row select::-ms-input-placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row textarea::-ms-input-placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::-ms-input-placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::-ms-input-placeholder {
-        color: #D1D1D1; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .form-control::placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=text]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=text]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=search]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=search]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=url]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=url]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=tel]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=tel]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=number]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=number]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=range]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=range]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=date]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=date]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=month]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=month]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=week]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=week]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=time]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=time]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=datetime-local]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=datetime-local]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=color]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=color]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=email]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=email]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=file]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=file]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit]::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit]::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 select::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row select::placeholder,
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 textarea::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row textarea::placeholder, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 .wpcf7-validation-errors::placeholder, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7-validation-errors::placeholder {
-        color: #D1D1D1; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .btn,
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input[type=submit] {
-      border-color: #BC9B5D;
-      border-radius: 0;
-      height: 3em;
-      width: 100%;
-      color: #BC9B5D;
-      font-size: .9em; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .btn:hover, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input:hover[type=submit] {
-        -webkit-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-        background-color: #BC9B5D;
-        color: white;
-        -webkit-transform: none;
-                transform: none; }
-      .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .btn:active, .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row .wpcf7 input:active[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row input:active[type=submit] {
-        background-color: #BC9B5D;
-        color: white; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
-  color: #BC9B5D; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row {
-  float: none;
-  padding: 0;
-  width: 100%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row label {
-    display: block;
-    width: 100%;
-    padding: 1em 0 0;
-    color: #5E5E5E;
-    font-size: 1em;
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .btn .fa, .woocommerce-checkout #main .woocommerce .woocommerce-checkout .wpcf7 input[type=submit] .fa, .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-checkout input[type=submit] .fa {
+      font-size: .95em; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .btn:hover, .woocommerce-checkout #main .woocommerce .woocommerce-checkout .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-checkout input:hover[type=submit] {
+      background-color: #fab89d;
+      color: white; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout label[for="order_comments"] {
+    color: #BC9B5D;
+    font-size: .9em;
     font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row .input-text {
-    margin: 0 0 0.5em;
-    padding: 0.5em;
-    font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row .woocommerce-input-wrapper {
-    display: block;
-    width: 100%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row .order-info {
-    color: #5E5E5E; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row .optional {
-    display: none; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .woocommerce-billing-fields h3 {
-  color: #5E5E5E;
-  font-size: 1.25em;
-  font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .select2-selection {
-  border-color: #ced4da;
-  min-height: 38px; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .select2-selection__clear {
-  display: none; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .select2-selection__rendered {
-  min-height: 38px;
-  padding: .25em .5em;
-  color: #5E5E5E;
-  font-size: .625em;
-  font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .btn,
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout input[type=submit] {
-  display: block;
-  padding: 0.5em;
-  background-color: #fab89d;
-  border: none;
-  border-radius: 0;
-  color: white;
-  font-size: 1.25em;
-  font-weight: 300;
-  text-align: center; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .btn .fa, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .wpcf7 input[type=submit] .fa, .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout input[type=submit] .fa {
-    font-size: .95em; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .btn:hover, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout input:hover[type=submit] {
-    background-color: #fab89d;
-    color: white; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout label[for="order_comments"] {
-  color: #BC9B5D;
-  font-size: .9em;
-  font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment {
-  background-color: transparent; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment .payment_methods {
-    border-bottom: none;
-    padding: 0;
-    color: #5E5E5E; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment .place-order {
-    padding: 1em 0;
-    color: #5E5E5E;
-    font-size: .8em; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment .place-order .woocommerce-privacy-policy-link {
-      text-decoration: underline; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment .payment_box {
-    margin: 0;
-    padding: 0.5em 0;
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment {
     background-color: transparent; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #payment .payment_box::before {
-      display: none; }
-
-.woocommerce-checkout .site-main .woocommerce #order_comments {
-  border: 1px solid #D1D1D1;
-  height: 150px;
-  padding: 1em;
-  width: 100%;
-  font-size: .9em;
-  resize: none; }
-  .woocommerce-checkout .site-main .woocommerce #order_comments::-webkit-input-placeholder {
-    color: #D1D1D1;
-    font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce #order_comments:-ms-input-placeholder {
-    color: #D1D1D1;
-    font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce #order_comments::-ms-input-placeholder {
-    color: #D1D1D1;
-    font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce #order_comments::placeholder {
-    color: #D1D1D1;
-    font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce #ship-to-different-address {
-  margin: 0.5em 0;
-  padding: 0;
-  background-color: #5E5E5E;
-  border: none;
-  border-radius: 0;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
-  -webkit-transform: scale(1);
-          transform: scale(1); }
-  .woocommerce-checkout .site-main .woocommerce #ship-to-different-address:hover {
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment .payment_methods {
+      border-bottom: none;
+      padding: 0;
+      color: #5E5E5E; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment .place-order {
+      padding: 1em 0;
+      color: #5E5E5E;
+      font-size: .8em; }
+      .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment .place-order .woocommerce-privacy-policy-link {
+        text-decoration: underline; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment .payment_box {
+      margin: 0;
+      padding: 0.5em 0;
+      background-color: transparent; }
+      .woocommerce-checkout #main .woocommerce .woocommerce-checkout #payment .payment_box::before {
+        display: none; }
+  .woocommerce-checkout #main .woocommerce #order_comments {
+    border: 1px solid #D1D1D1;
+    height: 150px;
+    padding: 1em;
+    width: 100%;
+    font-size: .9em;
+    resize: none; }
+    .woocommerce-checkout #main .woocommerce #order_comments::-webkit-input-placeholder {
+      color: #D1D1D1;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce #order_comments:-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce #order_comments::-ms-input-placeholder {
+      color: #D1D1D1;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce #order_comments::placeholder {
+      color: #D1D1D1;
+      font-weight: 300; }
+  .woocommerce-checkout #main .woocommerce #ship-to-different-address {
+    margin: 0.5em 0;
+    padding: 0;
+    background-color: #5E5E5E;
+    border: none;
+    border-radius: 0;
     -webkit-transition: -webkit-transform .25s ease-in-out;
     transition: -webkit-transform .25s ease-in-out;
     transition: transform .25s ease-in-out;
     transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
-    -webkit-transform: scale(1.025);
-            transform: scale(1.025); }
-  .woocommerce-checkout .site-main .woocommerce #ship-to-different-address .input-checkbox {
-    display: none; }
-  .woocommerce-checkout .site-main .woocommerce #ship-to-different-address label {
-    margin: 0;
-    width: 100%; }
-  .woocommerce-checkout .site-main .woocommerce #ship-to-different-address span {
-    display: block;
-    padding: 0.5em;
-    width: 100%;
-    color: white;
-    font-weight: 300;
-    text-align: center;
-    font-size: .8em;
-    cursor: pointer; }
-
-.woocommerce-checkout .site-main .woocommerce h3 {
-  margin: 1em 0;
-  color: #5E5E5E;
-  font-size: 1.25em;
-  font-weight: 300; }
-
-.woocommerce-checkout .site-main .woocommerce .woocommerce-checkout-review-order-table {
-  max-width: 50em;
-  border: none;
-  font-size: .9em; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout-review-order-table th, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout-review-order-table td {
-    padding: 0.5em 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+    .woocommerce-checkout #main .woocommerce #ship-to-different-address:hover {
+      -webkit-transition: -webkit-transform .25s ease-in-out;
+      transition: -webkit-transform .25s ease-in-out;
+      transition: transform .25s ease-in-out;
+      transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+      -webkit-transform: scale(1.025);
+              transform: scale(1.025); }
+    .woocommerce-checkout #main .woocommerce #ship-to-different-address .input-checkbox {
+      display: none; }
+    .woocommerce-checkout #main .woocommerce #ship-to-different-address label {
+      margin: 0;
+      width: 100%; }
+    .woocommerce-checkout #main .woocommerce #ship-to-different-address span {
+      display: block;
+      padding: 0.5em;
+      width: 100%;
+      color: white;
+      font-weight: 300;
+      text-align: center;
+      font-size: .8em;
+      cursor: pointer; }
+  .woocommerce-checkout #main .woocommerce h3 {
+    margin: 1em 0;
+    color: #5E5E5E;
+    font-size: 1.25em;
     font-weight: 300; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout-review-order-table th {
-    font-weight: normal; }
-
-.woocommerce-checkout .site-main #place_order {
-  font-size: 1.75em; }
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout-review-order-table {
+    max-width: 50em;
+    border: none;
+    font-size: .9em; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout-review-order-table th, .woocommerce-checkout #main .woocommerce .woocommerce-checkout-review-order-table td {
+      padding: 0.5em 0;
+      font-weight: 300; }
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout-review-order-table th {
+      font-weight: normal; }
+  .woocommerce-checkout #main #place_order {
+    font-size: 1.75em; }
 
 @media (min-width: 576px) {
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login {
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-login {
     max-width: 40em; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .btn,
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login input[type=submit] {
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .btn,
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .wpcf7 input[type=submit], .wpcf7 .woocommerce-checkout #main .woocommerce .woocommerce-form-login input[type=submit] {
       max-width: 15em; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-login .woocommerce-form__label {
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-login .woocommerce-form__label {
       width: 100%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon {
+  .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon {
     max-width: 40em; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row-first {
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row-first {
       width: 75%; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-form-coupon .form-row-last {
+    .woocommerce-checkout #main .woocommerce .woocommerce-form-coupon .form-row-last {
       width: 25%; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .col-sm-7, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .col-sm-5 {
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .col-sm-7, .woocommerce-checkout #main .woocommerce .woocommerce-checkout .col-sm-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%; } }
 
 @media (min-width: 768px) {
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row {
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row {
     float: left;
     clear: none;
     width: 50%; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row:nth-of-type(odd) {
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row:nth-of-type(odd) {
       padding-right: 1em; }
-    .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout .form-row:nth-of-type(even) {
+    .woocommerce-checkout #main .woocommerce .woocommerce-checkout .form-row:nth-of-type(even) {
       padding-left: 1em; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #billing_address_1_field, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #shipping_address_1_field, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #billing_postcode_field, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #shipping_postcode_field {
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout #billing_address_1_field, .woocommerce-checkout #main .woocommerce .woocommerce-checkout #shipping_address_1_field, .woocommerce-checkout #main .woocommerce .woocommerce-checkout #billing_postcode_field, .woocommerce-checkout #main .woocommerce .woocommerce-checkout #shipping_postcode_field {
     clear: both; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #billing_address_2_field, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #shipping_address_2_field {
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout #billing_address_2_field, .woocommerce-checkout #main .woocommerce .woocommerce-checkout #shipping_address_2_field {
     margin-top: calc(48px + .5em);
     float: right; }
-  .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #billing_city_field, .woocommerce-checkout .site-main .woocommerce .woocommerce-checkout #shipping_city_field {
+  .woocommerce-checkout #main .woocommerce .woocommerce-checkout #billing_city_field, .woocommerce-checkout #main .woocommerce .woocommerce-checkout #shipping_city_field {
     clear: both; }
-  .woocommerce-checkout .site-main #ship-to-different-address {
+  .woocommerce-checkout #main #ship-to-different-address {
     max-width: 300px; } }
 
 .woocommerce-message {

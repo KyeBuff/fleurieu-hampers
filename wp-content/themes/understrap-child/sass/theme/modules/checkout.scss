@@ -1,5 +1,6 @@
 .woocommerce-checkout {
-	.site-main {
+	#main {
+		padding: $spacing;
 		.entry-title {
 		    color: #5e5e5e;
 		    font-size: 1.5em;
@@ -313,7 +314,7 @@
 
 @include media-breakpoint-up(sm) {
 	.woocommerce-checkout {
-		.site-main {
+		#main {
 			.woocommerce {
 				.woocommerce-form-login {
 					max-width: 40em;
@@ -346,7 +347,7 @@
 
 @include media-breakpoint-up(md) {
 	.woocommerce-checkout {
-		.site-main {
+		#main {
 			.woocommerce {
 				.woocommerce-checkout {
 					.form-row {
