@@ -11828,6 +11828,9 @@ input, textarea, select {
       font-weight: 300;
       background-color: #5E5E5E;
       color: white; }
+      #content .cart-page .update-cart .button:disabled {
+        color: black;
+        opacity: 0.3; }
   #content .cart-page .actions .coupon {
     display: -webkit-box;
     display: -ms-flexbox;

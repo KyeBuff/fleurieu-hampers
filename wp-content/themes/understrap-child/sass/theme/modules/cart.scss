@@ -148,6 +148,10 @@
 
 				background-color: $grey;
 				color: $white;
+				&:disabled {
+					color: $black;
+					opacity: 0.3;
+				}
 			}
 		}
 		.actions {
