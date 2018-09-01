@@ -11262,9 +11262,6 @@ input, textarea, select {
   .links__link {
     margin: 0; } }
 
-.section__carousel .section__header {
-  margin: 1em 0; }
-
 .carousel-slick-item {
   position: relative;
   height: 500px;
