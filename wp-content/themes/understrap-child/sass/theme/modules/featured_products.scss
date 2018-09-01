@@ -1,6 +1,6 @@
 .featured-products {
 	.slick-track, .slick-list {
-		overflow: auto;
+		overflow: hidden;
 	}
 	@at-root #{&}__carousel {
 		max-width: 100vw;

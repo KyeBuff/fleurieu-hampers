@@ -11319,7 +11319,7 @@ input, textarea, select {
       opacity: 1; } }
 
 .featured-products .slick-track, .featured-products .slick-list {
-  overflow: auto; }
+  overflow: hidden; }
 
 .featured-products__carousel {
   max-width: 100vw;

@@ -12,9 +12,11 @@ $featured_products = get_field('products');
 		    $product_meta = get_post_meta($product->ID);
 		    $image_id = isset($product_meta['_thumbnail_id']) ? $product_meta['_thumbnail_id'] : null;
 		    ?>
+		    <?php if ($image_id) { ?>
 			<a class="slick-link" href="<?php echo get_the_permalink($product->ID); ?>">
-			<?php echo $image_id ? wp_get_attachment_image($image_id[0], 'all') : null; ?>
+			<?php echo wp_get_attachment_image($image_id[0], 'all') ?>
 			</a>
+			<?php } ?>
 		<?php } ?>
 	</div>
 </section>

@@ -17,9 +17,11 @@ $products = $query->get_products();
 		    $product_meta = get_post_meta($product);
 		    $image_id = isset($product_meta['_thumbnail_id']) ? $product_meta['_thumbnail_id'] : null;
 		    ?>
-			<a class="slick-link" href="<?php echo get_the_permalink($product); ?>">
-			<?php echo $image_id ? wp_get_attachment_image($image_id[0], 'all') : null; ?>
+		    <?php if ($image_id) { ?>
+			<a class="slick-link" href="<?php echo get_the_permalink($product->ID); ?>">
+			<?php echo wp_get_attachment_image($image_id[0], 'all') ?>
 			</a>
+			<?php } ?>
 		<?php } ?>
 	</div>
 	<p class="featured-products__text"><?php echo get_field('popular_text'); ?></p>
