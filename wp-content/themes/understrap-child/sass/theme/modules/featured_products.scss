@@ -31,7 +31,7 @@
 		overflow: hidden;
 
 		img {
-			padding: $spacing * 1.5;
+			padding: 0 $spacing * 1.5 0; 
 		}
 	}
 }
@@ -40,6 +40,18 @@
 	.featured-products {
 		.slick-slide {
 			height: 250px;
+			img {
+				margin: 0 auto;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.featured-products {
+		.slick-slide {
+			height: auto;
 			img {
 				margin: 0 auto;
 				object-fit: cover;

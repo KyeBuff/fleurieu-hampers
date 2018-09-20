@@ -11344,11 +11344,19 @@ input, textarea, select {
   float: left;
   overflow: hidden; }
   .featured-products .slick-link img {
-    padding: 1.5em; }
+    padding: 0 1.5em 0; }
 
 @media (min-width: 576px) {
   .featured-products .slick-slide {
     height: 250px; }
+    .featured-products .slick-slide img {
+      margin: 0 auto;
+      -o-object-fit: cover;
+         object-fit: cover; } }
+
+@media (min-width: 768px) {
+  .featured-products .slick-slide {
+    height: auto; }
     .featured-products .slick-slide img {
       margin: 0 auto;
       -o-object-fit: cover;
