@@ -11338,11 +11338,11 @@ input, textarea, select {
 
 @media (min-width: 576px) {
   .featured-products .slick-slide {
-    height: 200px; }
+    height: 250px;
+    padding: 1em; }
     .featured-products .slick-slide img {
       height: 100%;
       margin: 0 auto;
-      max-width: 90%;
       -o-object-fit: cover;
          object-fit: cover; } }
 

@@ -18,7 +18,7 @@ $products = $query->get_products();
 		    $image_id = isset($product_meta['_thumbnail_id']) ? $product_meta['_thumbnail_id'] : null;
 		    ?>
 		    <?php if ($image_id) { ?>
-			<a class="slick-link" href="<?php echo get_the_permalink($product->ID); ?>">
+			<a class="slick-link" href="<?php echo get_the_permalink($product); ?>">
 			<?php echo wp_get_attachment_image($image_id[0], 'all') ?>
 			</a>
 			<?php } ?>
