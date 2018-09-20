@@ -11342,10 +11342,9 @@ input, textarea, select {
       -ms-flex-pack: center;
           justify-content: center;
   float: left;
-  display: block;
   overflow: hidden; }
   .featured-products .slick-link img {
-    padding: 2em; }
+    padding: 1.5em; }
 
 @media (min-width: 576px) {
   .featured-products .slick-slide {
