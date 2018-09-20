@@ -11332,16 +11332,25 @@ input, textarea, select {
   overflow: hidden; }
 
 .featured-products .slick-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   float: left;
   display: block;
   overflow: hidden; }
+  .featured-products .slick-link img {
+    padding: 2em; }
 
 @media (min-width: 576px) {
   .featured-products .slick-slide {
-    height: 250px;
-    padding: 1em; }
+    height: 250px; }
     .featured-products .slick-slide img {
-      height: 100%;
       margin: 0 auto;
       -o-object-fit: cover;
          object-fit: cover; } }

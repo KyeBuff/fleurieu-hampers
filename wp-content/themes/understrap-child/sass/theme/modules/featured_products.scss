@@ -23,9 +23,17 @@
 		overflow: hidden;
 	}
 	.slick-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
 		float: left;
 		display: block;
 		overflow: hidden;
+
+		img {
+			padding: $spacing * 2;
+		}
 	}
 }
 
@@ -33,9 +41,7 @@
 	.featured-products {
 		.slick-slide {
 			height: 250px;
-			padding: $spacing;
 			img {
-				height: 100%;
 				margin: 0 auto;
 				object-fit: cover;
 			}
