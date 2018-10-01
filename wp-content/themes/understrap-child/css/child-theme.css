@@ -11267,7 +11267,8 @@ input, textarea, select {
   height: 500px;
   padding: 1em;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
   .carousel-slick-item.header .carousel-item__overlay {
     background-color: transparent;
     color: white; }
