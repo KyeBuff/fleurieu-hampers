@@ -16,6 +16,9 @@ $title = get_the_title();
 
 ?>
 
+<!-- WooCommerce Archive loop bug fix -->
+</a>
+
 <div class="wrapper footer-wrapper <?php echo $title === 'My account' ? 'static-footer' : null; ?>" id="wrapper-footer" style="">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
