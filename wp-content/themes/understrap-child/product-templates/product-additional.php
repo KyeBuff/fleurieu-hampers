@@ -8,12 +8,6 @@ $product_info = get_field('product_information');
 ?>
 <?php echo do_shortcode('[mashshare]'); ?>
 <div class="additional-info__section">
-	<button class="additional-info__toggle">PRODUCT INFO<span class="toggle-icon">+</span></button>
-	<div class="additional-info__content d-none">
-	<?php echo $product_info; ?>
-	</div>
-</div>
-<div class="additional-info__section">
 	<button class="additional-info__toggle">RETURN AND REFUND POLICY<span class="toggle-icon">+</span></button>
 	<div class="additional-info__content d-none">
 	<?php foreach ($return_policy as $text) { $text = $text['paragraph']; ?>

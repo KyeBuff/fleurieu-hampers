@@ -58,7 +58,12 @@ $sale_price = $post_meta['_sale_price'][0];
 				 * @hooked woocommerce_template_single_sharing - 50
 				 * @hooked WC_Structured_Data::generate_product_data() - 60
 				 */
+			$product_info = get_field('product_information');
+
 			?>
+			<div class="product-info">
+			<?php echo $product_info; ?>
+			</div>
 			<div class="d-none d-md-block">
 				<?php woocommerce_template_single_add_to_cart(); ?>
 			</div>

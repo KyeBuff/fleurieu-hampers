@@ -11440,6 +11440,9 @@ input, textarea, select {
 .woocommerce #content .entry-summary h2 {
   font-size: 2.25em; }
 
+.woocommerce #content .entry-summary .product-info ul {
+  list-style: disc; }
+
 .woocommerce #content div.product span.onsale {
   display: none; }
 
