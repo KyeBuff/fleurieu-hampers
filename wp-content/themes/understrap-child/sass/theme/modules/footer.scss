@@ -17,6 +17,19 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.paypal {
+	text-align: center;
+	p {
+		font-family: 'Marck Script',cursive;
+		font-size: 2.5em;
+		margin-bottom: 0;
+	}
+	.icon {
+		margin-top: -25px;
+		max-width: 250px;
+	}
+}
+
 .links {
 	@at-root #{&}__header {
 		margin-bottom: $spacing / 2;

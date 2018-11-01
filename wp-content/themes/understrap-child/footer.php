@@ -19,6 +19,11 @@ $title = get_the_title();
 <!-- WooCommerce Archive loop bug fix -->
 </a>
 
+<div class="paypal">
+	<p>We accept <span class="d-none">PayPal</span></p>
+	<img class="icon" src="<?php echo get_stylesheet_directory_uri() . '/img/pp.png'; ?>" alt="PayPal logo">
+</div>
+
 <div class="wrapper footer-wrapper <?php echo $title === 'My account' ? 'static-footer' : null; ?>" id="wrapper-footer" style="">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
@@ -26,7 +31,6 @@ $title = get_the_title();
 		<div class="row">
 
 			<div class="col-md-12">
-
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info footer-content">

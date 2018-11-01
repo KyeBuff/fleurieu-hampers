@@ -11210,6 +11210,16 @@ input, textarea, select {
           justify-content: space-between;
   font-family: 'Source Sans Pro', sans-serif; }
 
+.paypal {
+  text-align: center; }
+  .paypal p {
+    font-family: 'Marck Script',cursive;
+    font-size: 2.5em;
+    margin-bottom: 0; }
+  .paypal .icon {
+    margin-top: -25px;
+    max-width: 250px; }
+
 .links__header {
   margin-bottom: 0.5em;
   font-weight: bold;
