@@ -3,6 +3,25 @@
     "title": "Featured Products",
     "fields": [
         {
+            "key": "field_5be366d68cc85",
+            "label": "Featured title",
+            "name": "featured_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5b657253ffd9b",
             "label": "Products",
             "name": "products",
@@ -82,5 +101,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534703164
+    "modified": 1541629986
 }

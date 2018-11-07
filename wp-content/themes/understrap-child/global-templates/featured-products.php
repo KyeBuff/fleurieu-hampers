@@ -1,11 +1,12 @@
 <?php  
 
 $featured_products = get_field('products');
+$featured_title = get_field('featured_title');
 
 ?>
 
 <section class="section featured-products">
-	<h2 class="section__header">Featured</h2>
+	<h2 class="section__header"><?php echo $featured_title ? $featured_title : 'Featured'; ?></h2>
 	<div class="featured-products__carousel">
 		<?php foreach ($featured_products as $product) {
 			$product = $product['product'];

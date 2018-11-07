@@ -25,8 +25,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<main class="site-main col-12" id="main">
 
 			<?php get_template_part( 'global-templates/carousel' ); ?>
-			<?php get_template_part( 'global-templates/popular-products' ); ?>
 			<?php get_template_part( 'global-templates/featured-products' ); ?>
+			<?php get_template_part( 'global-templates/popular-products' ); ?>
 
 			</main><!-- #main -->
 
